@@ -16,7 +16,7 @@ return array(
 	'DB_NAME' => 'dygzz', // 数据库名称
 	'DB_USER' => 'root', // 数据库管理员用户名
 	//'DB_PWD' => 'e8mysql2015', // 数据库管理员密码
-	'DB_PWD' => '', // 数据库管理员密码
+	'DB_PWD' => 'root', // 数据库管理员密码
 	'DB_PREFIX' => 'dygzz_', // 数据库前缀
 
 		
