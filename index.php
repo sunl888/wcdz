@@ -9,5 +9,6 @@
 	
 	//加载框架入口文件
 	require ( THINK_PATH . 'ThinkPHP.php');
+	echo 111;
 	
 ?> 
