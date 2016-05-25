@@ -4,6 +4,7 @@ use Think\Controller;
 class IndexController extends BaseController {
 
     public function index(){
+		echo "hello wolrd";die;
         $Student = D('Student');
         $Class = D('Class');
         $Content = D('Content');
