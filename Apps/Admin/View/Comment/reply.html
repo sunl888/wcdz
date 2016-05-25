@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>e8通用后台</title>
+    
+    <link id="jquiCSS" rel="stylesheet" href="http://ajax.useso.com/ajax/libs/jqueryui/1.8.18/themes/ui-lightness/jquery-ui.css" type="text/css" media="all">
+    
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    
+     <link rel="stylesheet" href="__PUBLIC__/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+    <!-- 颜色选择组件 css -->
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/lib/Colorpicker/evol.colorpicker.css">
+    <!-- 时间选择组件 css -->
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/lib/Datepicker/css/bootstrap-datetimepicker.min.css">
+    
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- e8 style -->
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/css/main.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/e8admin/default/css/jquery.datetimepicker.css"/>
+
+    
+  </head>
+  
+  
+  <body>
+  
+    <div class="topbar">
+        
+        <!-- 面包屑 -->
+        <include file="./Apps/Admin/View/Include/mbx.html" />
+
+        <div class="topbar-search">
+            <form class="form-inline" role="form">
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                    <input type="email" class="form-control  input-sm" id="exampleInputEmail2" placeholder="Enter email">
+                    
+                    <i class="fa fa-search color-gray"></i>
+                </div>
+            </form>
+        </div>
+    </div><!-- /.topbar -->
+    
+    <div class="page-content">
+    
+        <div class="page-header col-sm-12">
+            <h1>回复留言</h1>
+        </div>
+        
+        <div class="col-sm-12">
+            <div class="tabbable">
+               <ul class="nav nav-tabs">
+                    <li class="active"><a href="#">回复留言</a></li>
+                    <li><a href="__APP__/Comment/index">留言管理 </a></li>
+					
+                </ul>
+                </ul>
+
+                <div class="tab-content">
+                
+                    <div  class="tab-pane in active">
+                        <p class="title background-blue">回复留言</p>
+                        <form action = "__APP__/Comment/reply" enctype="multipart/form-data"  method = "post">
+                            <input type="hidden" name="rid" value="{$id}"/>
+                             <table class="table-form" >
+                            <foreach name ="commentList" item="comment">
+                                <tr>
+                                    <th class = "table-name" width="150" >姓名:</th>
+                                    <td>
+                                        <input class="form-control input-sm wid-3" type="text" placeholder="" name="name" value="{$comment.name}" readonly>
+                                    </td>                                
+                                </tr>
+                                <tr>
+                                    <th class = "table-name" width="150" >邮箱:</th>
+                                    <td>
+                                        <input class="form-control input-sm wid-3" type="text" placeholder="" name="name" value="{$comment.email}" readonly>
+                                    </td>                                
+                                </tr>
+                                  <tr>
+                                    <th>留言内容:</th>
+                                     <td>
+                                         <textarea  class="form-control" style="height:90px;width:282px; "name="comment" readonly>{$comment.comment}
+                                         </textarea>
+                                    </td>                                
+                                </tr> 
+                                 <tr>
+                                    <th>回复内容:</th>
+                                     <td>
+                                         <textarea  c style="height:90px;width:282px; "name="answer"  >{$comment.answer}
+                                         </textarea>
+                                    </td>                                
+                                </tr> 
+                            </foreach>
+                                
+                             </table>
+
+                          <div style="width:100%;height:60px;"></div>
+                          <div class="admin-add">
+                            <button type="submit" class="btn btn-primary btn-sm">回复</button>
+                          </div>  
+                        </form>
+                    </div>
+                   
+                </div>
+            </div>
+        </div><!-- /span -->
+        
+    </div><!-- /.page-content -->
+      <!-- jQuery文件 -->
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <!-- jQuery-ui 文件 -->
+    <script src="http://libs.baidu.com/jqueryui/1.10.2/jquery-ui.min.js "></script>
+    <!-- Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+   
+   
+  </body>
+  <script src="__PUBLIC__/e8admin/default/js/jquery.js"></script>
+    <script src="__PUBLIC__/e8admin/default/js/jquery.datetimepicker.js"></script>
+
+    <script>
+
+    $('#datetimepicker2').datetimepicker({
+
+        timepicker:false,
+        format:'m/d/y',
+        formatDate:'m/d/y',
+        
+    });
+    </script>
+</html>

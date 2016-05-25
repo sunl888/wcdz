@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>e8通用后台</title>
+    
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+    
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- e8 style -->
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/css/main.css">
+    
+  </head>
+  
+  <body>
+  
+  	<div class="topbar">
+    	<!-- 包含搜索框 -->
+        
+        <!-- 面包屑 -->
+        <include file="./Apps/Admin/View/Include/mbx.html" />
+        
+        <div class="topbar-search">
+        	<form class="form-inline" role="form">
+            	<div class="form-group">
+            		<label class="sr-only" for="exampleInputEmail2">Email address</label>
+            		<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+                    
+                    <i class="fa fa-search color-gray"></i>
+          		</div>
+            </form>
+        </div>
+    </div><!-- /.topbar -->
+    
+    <div class="page-content">
+    
+        <div class="page-header col-sm-12">
+        	<h1>站点配置</h1>
+        </div>
+        
+      <div class="col-sm-12">
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li>
+						<a href="__APP__/Config/index">站点配置</a>
+					</li>
+
+					<li class="active">
+						<a  href="#">邮箱配置</a>
+					</li>
+
+					<li>
+						<a  href="__APP__/Config/file">附件配置</a>
+					</li>
+                    <li>
+						<a href="__APP__/Config/master">高级配置</a>
+					</li>
+                    <li>
+						<a  href="__APP__/Config/extend">扩展配置</a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+					
+					<!-- 邮箱配置 -->
+					<div class="tab-pane  in active">
+						<p class="title background-blue">邮箱配置</p>
+						<form action="__APP__/Config/email" method="post">
+                            <table class="table-form" >
+                            	<tr>
+                                	<th class = "table-name" width="150" >邮件发送模式</th>
+                                    <td>
+                                        	<label class="radio-inline wid-3">
+                                        	<if condition="$config['mail_type'] == 1">
+                                      			<input type="radio" name="mail_type" id="inlineRadio" value="1" checked>SMTP 函数发送
+                                			<else/>
+                                      			<input type="radio" name="mail_type" id="inlineRadio" value="0" > SMTP函数发送 
+                                      		</if>	                               				
+                                		</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<th>邮件服务器</th>
+                                 	<td>
+                        				<input class="form-control input-sm wid-2" type="text" name="mail_server" value="{$config.mail_server}"  />
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<th>邮件发送端口</th>
+                                 	<td>
+                         				<input class="form-control input-sm wid-2" type="text" name="mail_port" value="{$config.mail_port}"  />
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<th>发信人地址</th>
+                                 	<td>
+                                        <input class="form-control input-sm wid-2" type="text" name="mail_from" value="{$config.mail_from}"  placeholder=""/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<th>发件人名称</th>
+                                 	<td>
+                         			    <input class="form-control input-sm wid-2" type="text" name="mail_fname"  value="{$config.mail_fname}"  placeholder=""/> 
+                                    </td>
+                            	</tr>
+                                <tr>
+                                	<th>密码验证</th>
+                                    <td>
+                                    	  <if condition="$config['mail_auth'] == 1" >
+	                                        	<label class="radio-inline">
+	                                      			<input type="radio" name="mail_auth" id="inlineRadio" value="1" checked > 开启
+	                                      		</lable>
+	                                      		<label class="radio-inline">	
+	                                       			<input type="radio" name="mail_auth" id="inlineRadio" value="0" > 关闭
+	                                    		</label>
+                                    	  <else />	
+	                                    		<label class="radio-inline">
+	                                    			<input type="radio" name="mail_auth" id="inlineRadio" value="1"/> 开启
+	                                    		</label>
+	                                    		<label class="radio-inline">	
+	                                      			<input type="radio" name="mail_auth" id="inlineRadio" value="0" checked/> 关闭
+	                                   			</label>
+                                   		  </if>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<th>验证用户名</th>
+                                 	<td>
+                         				<input class="form-control input-sm wid-2" type="text" name="mail_user" value="{$config.mail_user}"  placeholder=""/>
+                                    </td>
+                            	</tr>
+                                <tr>
+                                	<th>验证密码</th>
+                                 	<td>
+                         				<input class="form-control input-sm wid-2" type="password" name="mail_password"  value="{$config.mail_password}"  placeholder=""/>
+                                    </td>
+                            	</tr> 
+							</table>
+                            <div style="width:100%;height:60px;"></div>
+                            <div class="admin-add">
+                                <button type="submit" class="btn btn-primary btn-sm">提交</button>
+                            </div>
+                            </form>
+					</div>
+					
+                </div>
+            </div>
+        </div>
+    </div><!-- /span -->
+    
+</div><!-- /.page-content -->
+
+
+<!-- jQuery文件 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!--  -->
+<script src="__PUBLIC__/e8admin/default/js/e8.js"></script>
+
+</body>
+</html>

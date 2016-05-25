@@ -1,0 +1,96 @@
+
+div.time{
+    background: url("../images/time_bg.gif" );
+    width: 100%;
+    height: 30px;
+}
+div.time span{
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+div.content_right{
+    width: 60%;
+    height: 80%;
+    border: 3px solid #C00;
+    float: right;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+div.content_right div.top{
+	position: relative;
+}
+div.content_right div.top img{
+    width: 100%;
+    height:30px;
+
+}
+div.content_right div.top p{
+	position: absolute;
+	bottom: 2px;
+	font-size: 16px;
+	color: white;
+    line-height: 30px;
+    margin-left:40px;
+	float:left;
+	left:2px;
+}
+div.content_right div.top p a{
+	color: orange;
+	margin-left: 10px;
+}
+div.content_right div.top p a:hover{
+	text-decoration:underline;
+	}
+div.content_right div.bottom{
+	width: 90%;
+	margin:0 auto;
+	height: 90%;
+	position:relative;
+	overflow:hidden;
+}
+div.content_right .writer{
+	position:absolute;
+	right:40px;
+	bottom:10px;
+	color:#333;
+	}
+div.content_right .writer a{
+	display:block;
+	width:70px;
+	height:20px;
+	color:#633;
+	}
+div.content_right .writer a:hover{
+	color:#c00;
+	text-decoration:underline;
+	}
+
+div.content_right div.bottom h2{
+	text-align: center;
+	margin-top: 20px;
+}
+div.content_right div.bottom p.time{
+	border-bottom:1px solid orange;
+	font-size: 12px;
+	text-align:center;
+}
+div.content_right div.bottom p.time i{
+	color:#f00;
+	}
+div.content_right div.bottom p.time span{
+	margin-left: 10px;
+	line-height: 40px;
+	
+}
+div.content_right div.bottom p.art{
+	text-indent: 30px;
+	line-height: 30px;
+	width: 90%;
+	margin:0 auto;
+}
+div.content_right div.bottom p.art_first{
+	margin-top: 20px;
+	height:70%;
+	overflow:hidden;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>e8通用后台</title>
+    
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
+    
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- e8 style -->
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/css/main.css">
+    
+  </head>
+  
+  <body>
+  
+  	<div class="topbar">
+    	
+        <!-- 面包屑 -->
+        <include file="./Apps/Admin/View/Include/mbx.html" />
+
+        <div class="topbar-search">
+        	<form class="form-inline" role="form">
+            	<div class="form-group">
+            		<label class="sr-only" for="exampleInputEmail2">Email address</label>
+            		<input type="email" class="form-control input-sm" id="exampleInputEmail2" placeholder="Enter email">
+                    
+                    <i class="fa fa-search color-gray"></i>
+          		</div>
+            </form>
+        </div>
+    </div><!-- /.topbar -->
+    
+    <div class="page-content">
+    
+        <div class="page-header col-sm-12">
+        	<h1>角色添加</h1>
+        </div>
+        
+        <div class="col-sm-12">
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li>
+						<a  href="__APP__/Role/index">角色管理</a>
+					</li>
+					
+					<li  class="active">
+						<a  href="#">添加角色</a>
+					</li>
+				</ul>
+                
+				
+				<div class="tab-content">
+                    
+                    <!-- 添加角色开始-->
+					<div class="tab-pane in active">
+						<p class="title background-blue">基本属性</p>
+                        <form id="add-role-form">
+                            <table width="100%" class="table-form">
+                                <tbody>
+                                	<tr>
+                                        <th width="100">父角色</th>
+                                        <td>
+                                            <select class="form-control input-sm wid-3" name="parentid">
+                                                <volist name="roleArr" id="role">
+                                                    <option value="{$role.id}">{$role.prefix}{$role.name}</option>
+                                                </volist>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th width="100">角色名称</th>
+                                        <td>
+                                        	<input type="text" name="name" class="form-control input-sm wid-3" placeholder="请输入分组名称"/>  
+                                        </td>
+                                    </tr>
+ 									 <tr>
+                                        <th width="100">角色描述</th>
+                                        <td>
+                                        	<textarea id="remark" class="form-control wid-3" style="height:90px;" name="remark"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th width="180">是否启用</th>
+                                        <td>
+                                         <span class="wid-3">
+                                           <input type="radio" value="1" name="status" checked />启用 
+                                           <input type="radio" value="0" name="status"/>禁止
+                                         </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div style="width:100%;height:60px;"></div>
+                            <div class="admin-add">
+                            	<button class="btn btn-primary btn-sm" type="button" id="submit">添加</button>
+                                <span class="e8-danger msg" id="danger-msg"></span>
+                                <span class="e8-prompt msg" id="prompt-msg"></span>
+                            </div>
+                         </form>
+					</div>
+                    <!-- 添加角色结束-->
+               		   
+	
+				</div>
+			</div>
+		</div><!-- /span -->
+        
+    </div><!-- /.page-content -->
+    
+  
+    <!-- jQuery文件 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="__PUBLIC__/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
+    <!--  -->
+    <script src="__PUBLIC__/e8admin/default/js/e8.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            var APP = "__APP__";
+
+            $("#submit").click(function(){
+                $.ajax({
+                    type: "post",
+                    url: APP+"/Role/add",
+                    dataType: "json",
+                    data: $("#add-role-form").serialize(),
+                    success: function(data){
+                        $(".msg").html("");
+                        if (data.status == 0) {
+                            $("#danger-msg").html(data.msg);
+                        } else {
+                            $("#prompt-msg").html(data.msg);
+                            setTimeout(function () { 
+                                location.href = APP + "/Role/index";
+                            }, 1500);
+                        }
+                    },
+                    error: function(request){
+                        alert("添加角色失败,请联系维护人员!");
+                    }
+                });
+            });
+        });
+
+    </script>
+    
+  </body>
+</html>

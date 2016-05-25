@@ -1,0 +1,250 @@
+/* CSS Document */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0;}
+
+a {
+  color:#000 !important;
+}
+
+a:link {
+  color:#000;
+  text-decoration:none;
+}
+a:visited {
+  color:#000;
+  text-decoration:none;
+}
+a:hover {
+  color:#000;
+  text-decoration:none;
+}
+a:active {
+  color:#000;
+  text-decoration:none;
+}
+
+
+/*  弹出框通用样式  */
+.dropdown-toggle {
+  display:block;
+}
+
+.dropdown-yellow li a:hover {
+  background:#FEE188;
+}
+
+
+/* 清除浮动样式 */
+.clearB {
+  clear:both;
+}
+
+/* 通用宽度样式 */
+.wid-1 {
+  width: 80px !important;
+  display: inline;
+}
+.wid-2 {
+  width: 180px !important;
+  display: inline;
+}
+.wid-3 {
+  width: 280px !important;
+  display: inline;
+}
+.wid-4{
+  width: 380px !important;
+  display: inline;
+}
+.wid-5{
+  width: 450px !important;
+  display: inline;
+}
+.wid-100{
+  width: 100% !important;
+  display: inline;
+}
+.wid-sm{
+  width:50px !important;
+  display:inherit;
+}
+
+/*  通用字体颜色样式  */
+.color-white {
+  color:#fff !important;
+}
+.color-red {
+  color:#C00 !important;
+}
+.color-gray{
+  color:gray !important;
+}
+.color-CCC{
+  color:#CCC !important;
+}
+
+
+/* 常用通知样式 */
+.e8-prompt {
+  color:#CC6633 !important;
+}
+.e8-danger {
+  color:#CC0000 !important;
+}
+
+
+/* 通用对齐样式 */
+.align-right {
+  text-align: right !important;
+}
+.align-center {
+  text-align: center !important;
+}
+.align-center a {
+  color: #266AAE !important;
+}
+.align-center a:hover {
+  text-decoration: underline;
+}
+.align-left {
+  text-align: left !important;
+}
+
+
+/* 通用字体样式 */ 
+.font-weight {
+  font-weight:bold;
+}
+.font-weight-100{
+  font-weight:100 !important;
+}
+
+/* 通用背景色样式 */
+.background-blue {
+  background: #EFF3F8;
+}
+
+
+/* 通用颜色选择框样式 */
+.color-picker {
+  background: url(../img/down.png) no-repeat scroll 40px center #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: normal;
+  overflow: hidden;
+  padding: 2px 13px 2px 3px;
+  position: relative;
+  vertical-align: middle;
+}
+.color-picker:hover {
+  background-color:#eef3f6;
+}
+.color-bg {
+  background: url(../img/transparent.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: inline-block;
+  height: 18px;
+  width: 34px;
+}
+.color-hidden {
+}
+
+/* 按钮相关通用样式 */
+.no-radius {
+  border-radius:0;
+}
+.e8-btn {
+  -moz-user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+
+
+/*  header 通用样式  */
+.widget-header{
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: linear-gradient(to bottom, #fff 0px, #eee 100%) repeat-x scroll 0 0 #f7f7f7;
+  border-color: #ccc #ccc #ddd;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: content-box;
+  color: #669fc7;
+  min-height: 38px;
+  padding-left: 12px;
+  position: relative;
+}
+
+
+
+/* 上传文件界面通用样式 */
+.upload-btn {
+  margin-top: 10px;
+}
+.file-list {
+  padding: 5px;
+  margin-top: 10px;
+  border: 1px solid #CCC;
+}
+
+/* 分页样式 */
+/*******  分页样式文件  *******/
+.pageBar {width:100%;margin-top:10px;}
+.pageBar div{
+  font-size:12px;
+  text-align:right;
+}
+.pageBar div .current {
+  font-weight: bold;
+  color: #000;
+  line-height: 1.42857;
+  margin-left: -1px;
+  padding: 1px 6px;
+  border-right: 1px solid #000;
+  text-decoration: underline;
+}
+.pageBar div .num{
+  color: #CCC;
+  line-height: 1.42857;
+  margin-left: -1px;
+  padding: 1px 6px;
+  border-right: 1px solid #000;
+}
+.pageBar div .num:hover {
+  color: red !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.pageBar div .next {
+  padding:2px 4px 2px 3px;
+  border: 1px solid #006666;
+  margin-left:5px;
+}
+.pageBar div .next:hover{
+  background: #006666;
+  color: #FFF !important;
+}
+.pageBar div .prev {
+  padding:2px 4px 2px 3px;
+  border: 1px solid #006666;
+  margin-left:5px;
+}
+.pageBar div .prev:hover{
+  background: #006666;
+  color: #FFF !important;
+}

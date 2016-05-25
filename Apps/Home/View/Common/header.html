@@ -1,0 +1,22 @@
+﻿ <div class="header">
+     <img class="dzlogo" src="__PUBLIC__/e8home/default/images/dzlogo.png" />
+     <span><img  class="title" src="__PUBLIC__/e8home/default/images/title.png" /></span>
+</div>
+<!--content-->
+<div class="content">
+        <!--nav-->
+        <div class="nav">
+                <ul class="nav_ul">
+                    <li><a href="__APP__/Index/index">首页</a></li>
+
+                    <foreach name="navList" item="nav">
+                        <li><a href="{$nav.url}">{$nav.nav_name}</a>
+                            <ul class="inside_nav">
+                                <foreach name="nav['sub_nav']" item="sub">
+                                    <li><p><a href="{$sub.url}">{$sub.nav_name}</a></p></li>
+                                </foreach>
+                            </ul>
+                        </li>
+                    </foreach>
+                      </ul>
+        </div>

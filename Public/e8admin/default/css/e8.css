@@ -1,0 +1,191 @@
+
+/*  头部样式  */
+.e8-navbar { 
+  background:#006666; 
+  width:100%; 
+  height:40px !important;
+  border-radius:0;
+}
+.navbar-header {
+  width:190px;
+}
+.navbar-info { 
+  line-height:40px; 
+  font-size:18px;
+  color:#fff;
+}
+.navbar-info:hover {
+  text-decoration:none;
+  color:#fff;
+}
+.icon-logo {
+  margin-left:10px;
+}
+.navbar-topmenu{
+  height:40px;
+}
+.topmenu {
+  height: 40px;
+  line-height: 40px;
+  margin-left:5px;
+}
+.topmenu li {
+  width: 80px;
+  text-align: center;
+  margin-left: -3px !important;
+}
+.topmenu li a{
+  display:block;
+}
+.topmenu li a:hover{
+  text-decoration:none;
+}
+.topmenu li:hover {
+  background:#339966;
+}
+.topmenu li.active {
+  background:#339966 url(../img/nav-border.gif) repeat-x top;
+}
+
+.navbar-user {
+  height: 40px;
+}
+.usermenu {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+}
+.usermenu li {
+  height: 39px;
+  line-height: 39px;
+}
+.usermenu li.user-info {
+  position: relative;
+  background:#007d7d;
+}
+.usermenu li.user-info:hover{
+  background: #008686;
+}
+.pop-usermenu {
+  position:absolute;
+  top: 40px;
+}
+.pop-usermenu li {
+  height:30px;
+  line-height:30px;
+}
+
+
+/* 内容部分样式 */
+.e8-container {
+  clear: both;
+}
+
+
+/* 左侧导航栏样式 */
+.left-content {
+  width:192px;
+  margin-top: -1px;
+  border-right: 1px solid #CCC;
+  background: #F2F2F2;
+}
+.fast-operation {
+  text-align:center;
+  border-bottom: 1px solid #CCC;
+}
+.fast-operation button{
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.e8-nav{
+  width: 191px;
+}
+.e8-nav li a{
+  color:#585858 !important;
+}
+
+.submenu {
+  background: #fff;
+}
+
+/* line css */
+.solid-line{
+  border-bottom:1px solid #CCC;
+}
+.dotted-line {
+  border-bottom:1px dotted #CCC;
+}
+
+.submenu li {
+  height: 35px;
+  line-height: 35px;
+}
+.submenu li a {
+  margin-left: 20px;
+  padding-left: 5px;
+  border-left:1px dotted #CCC;
+  display:block;
+}
+
+.submenu li a:hover {
+  color:#339966 !important;
+}
+
+.arrow {
+  color: #666;
+  display: inline-block;
+  font-size: 12px;
+  height: 12px;
+  line-height: 12px;
+  padding: 0;
+  position: absolute;
+  right: 11px;
+  text-shadow: none;
+  text-align:center;
+  top: 15px;
+  width: 12px !important;
+}
+
+.sidebar-collapse {
+  height:30px;
+  line-height: 30px;
+  width: 100%;
+  text-align: center;
+}
+.sidebar-collapse i{
+  cursor:pointer;
+}
+
+.right-content {
+  width: 100%;
+  margin-top:-1px;
+}
+
+
+
+/* 树形列表部分css 样式 */
+.tree-content {
+  min-width: 210px;
+  margin-top: -1px;
+  border-right: 1px solid #CCC;
+  background: #F2F2F2;
+  overflow-y: scroll;
+  display: none;
+}
+
+.tree-header{
+  width: 100%;
+  height: 41px;
+  line-height: 41px;
+  border-bottom :1px solid #CCC;
+  padding:0 5px 0 10px;
+}
+.tree-header button{
+  padding:0 !important;
+  margin-top:9px;
+}
+
+.tree-pancel {
+  clear:left;
+}

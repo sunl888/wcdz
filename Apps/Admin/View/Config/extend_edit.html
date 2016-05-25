@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>e8通用后台</title>
+    
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+    
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- e8 style -->
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/css/main.css">
+    
+  </head>
+  
+  <body>
+  
+  
+  	<div class="topbar">
+    	
+        <!-- 面包屑 -->
+        <include file="./Apps/Admin/View/Include/mbx.html" />
+
+        <div class="topbar-search">
+        	<form class="form-inline" role="form">
+            	<div class="form-group">
+            		<label class="sr-only" for="exampleInputEmail2">Email address</label>
+            		<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+                    
+                    <i class="fa fa-search color-gray"></i>
+          		</div>
+            </form>
+        </div>
+    </div><!-- /.topbar -->
+    
+    <div class="page-content">
+    
+        <div class="page-header col-sm-12">
+        	<h1>修改扩展配置</h1>
+        </div>
+        
+        <div class="col-sm-12">
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li >
+						<a href="__APP__/Config/index.html">站点配置</a>
+					</li>
+
+					<li>
+						<a  href="__APP__/Config/email.html">邮箱配置</a>
+					</li>
+
+					<li>
+						<a  href="__APP__/Config/file.html">附件配置</a>
+					</li>
+                    <li>
+						<a href="__APP__/Config/master.html">高级配置</a>
+					</li>
+                    <li class="active">
+						<a  href="__APP__/Config/extend.html">扩展配置</a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+
+                      <!-- 添加扩展配置 -->
+                       <div class="tab-pane  in active">
+                        <p class="title background-blue">修改扩展配置</p>
+                        	<form action="__APP__/Config/extend_edit" method="post">
+							<input type="hidden" value="{$config.id}" name="id" />
+							<table class="table-form" >
+                            	<tr>
+                                	<th class = "table-hover" width="150" >设置项:</th>
+                                    <td>
+                                    	<span class="col-sm-2">
+                                       		<input type="text" name="varname" value="{$config.varname}"  class="form-control input-sm" placeholder=""/>
+                                        </span>
+                                	</td>
+                        		</tr>
+                                <tr>
+                                	<th>设置值:</th>
+                                    <td>
+                                    	<span class="col-sm-2">
+                                            <input type="text" name="value" value="{$config.value}" class="form-control input-sm" placeholder=""/>
+                                        </span>
+               						 </td>
+                        		</tr>
+                        		<tr>
+                                	<th>设置项描述:</th>
+                                    <td>
+                                    	<span class="col-sm-3">
+                                            <input type="text" name="info" value="{$config.info}"  class="form-control input-sm" placeholder=""/>
+                                        </span>
+               						 </td>
+                        		</tr>
+                                <tr>
+                                    <th>类型:</th>
+                                    <td>
+                                    	<span class="col-xs-2">
+                                            <select class="form-control input-sm" name="type"> 
+                                             <if condition="$config.type == 'string'">
+												<option selected="selected">string</option>
+												<option>number</option>
+												<option>bool</option>
+											<elseif condition="$config.type == 'number'" />
+												<option>string</option>
+												<option selected="selected">number</option>
+												<option>bool</option>
+											<else />
+												<option>string</option>
+												<option>number</option>
+												<option selected="selected">bool</option>
+											</if>
+                                            </select>
+                                    	</span>
+                                    </td>
+                                </tr>
+                             </table>
+                            <div style="width:100%;height:60px;"></div>
+                            <div class="admin-add">
+                                <button type="submit" class="btn btn-primary btn-sm">保存</button>
+                            </div>
+                      </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /span -->
+    
+</div><!-- /.page-content -->
+
+
+<!-- jQuery文件 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!--  -->
+<script src="__PUBLIC__/e8admin/default/js/e8.js"></script>
+
+</body>
+</html>

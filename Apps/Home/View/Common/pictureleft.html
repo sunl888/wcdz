@@ -1,0 +1,17 @@
+<link href="__PUBLIC__/e8home/default/style/common.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/e8home/default/style/list.css" rel="stylesheet" type="text/css" />
+<div class="listleft">
+      <div class="lefttop">
+          <h2>图片新闻</h2>
+            <ul>
+              
+            </ul>
+        </div>
+        <div class="lxyz"><a href="__APP__/Show/leave_word"><img src="__PUBLIC__/e8home/default/images/comment.png" alt="" width="200px" height="70px"></a></div>
+        <foreach name="pictureList" item="picture">
+        <div class="xjp" width="177px" height="60px"><a href="__APP__/Show/Picture/id/{$picture.id}"><img src="{$Think.config.UPLOAD_PATH}{$picture.img}" alt="" width="200px" height="70px"></a></div>
+        </foreach>
+        <div class="lefbottom">
+            
+        </div>  
+    </div>

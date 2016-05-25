@@ -1,0 +1,94 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*time*/
+
+/*contentright*/	
+.contentright{
+	margin:0;
+	padding:0;
+	width:62%;
+	height:700px;
+	float:left;
+	margin-right:2%;
+	margin-top:20px;
+	background:url(../images/right_bg.gif) repeat-x center center;
+	}
+.contentright .locat{
+	width:95%;
+	height:40px;
+	line-height:40px;
+	margin-top:19px;
+	background:url(../images/posi_bg.gif) repeat-x center left;
+	color:#fff;
+	padding-left:5%;
+	}
+.contentright .locat a{
+	color:#f9cd1d;
+	margin-left:10px;
+	}
+.contentright .locat a:hover{
+	text-decoration:underline;
+	}
+.contentright h1{
+	margin-top:10px;
+	text-align:center;
+	}
+.contentright .borders{
+	width:80%;
+	height:55px;
+	margin-top:30px;
+	margin-left:15%;
+	}	
+.contentright span{
+	display:block;
+	width:10%;
+	height:52px;
+	background:#f39800;
+	float:left;
+	}
+.contentright span i{
+	display:block;
+	text-align:center;
+	margin-top:10%;
+	}
+.contentright input{
+	width:80%;
+	height:50px;
+	text-align:center ;
+	font-size:20px;
+	font-family:"微软雅黑";
+	}
+.contentright .borders_a{
+	width:80%;
+	height:135px;
+	margin-top:30px;
+    margin-left:15%;
+	}	
+.contentright textarea{
+	width:80%;
+	height:130px;
+	text-align:center;
+	font-size:20px;
+	font-family:"微软雅黑";
+	}
+.contentright .menu{
+	margin:0;
+	width:20%;
+	background:#f39800;
+	color:#fff;
+	margin-top:30px;
+	transition:all linear;
+	-moz-transition:all linear;
+	-ms-transition:all linear;
+	-o-transition:all linear;
+	-webkit-transition:all linear;
+	}
+.contentright .menu:hover{
+	transform:scale(1.1);
+	}
+.contentright .menu1{
+	margin-left:44%;
+	}
+.contentright .menu2{
+	margin-left:20px;
+	}

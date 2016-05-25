@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>e8通用后台</title>
+    
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+    
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- e8 style -->
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="__PUBLIC__/e8admin/default/css/main.css">
+    
+  </head>
+  
+  <body>
+  
+  
+  	<div class="topbar">
+    	
+        <!-- 面包屑 -->
+        <include file="./Apps/Admin/View/Include/mbx.html" />
+        
+        <div class="topbar-search">
+        	<form class="form-inline" role="form">
+            	<div class="form-group">
+            		<label class="sr-only" for="exampleInputEmail2">Email address</label>
+            		<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+                    
+                    <i class="fa fa-search color-gray"></i>
+          		</div>
+            </form>
+        </div>
+    </div><!-- /.topbar -->
+    
+    <div class="page-content">
+    
+        <div class="page-header col-sm-12">
+        	<h1>附件配置</h1>
+        </div>
+        
+        <div class="col-sm-12">
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li >
+						<a href="__APP__/Config/index">站点配置</a>
+					</li>
+
+					<li>
+						<a  href="__APP__/Config/email">邮箱配置</a>
+					</li>
+
+					<li class="active">
+						<a  href="#">附件配置</a>
+					</li>
+                    <li>
+						<a href="__APP__/Config/master">高级配置</a>
+					</li>
+                    <li>
+						<a  href="__APP__/Config/extend">扩展配置</a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+					
+					
+					<!-- 附件配置 -->
+					<div class="tab-pane in active">
+                        <p class="title background-blue">附件配置</p>
+                        <form action="__APP__/Config/file" method="post">
+                            <table class="table-form" >
+                            	<tr>
+                                	<th class = "table-name" width="165" >允许附件上传大小:</th>
+                                    <td>
+                                       	<input class="form-control input-sm wid-2" type="text" name="uploadmaxsize" value="{$config.uploadmaxsize}"  placeholder=""/>
+                                      	<span>KB</span>
+               						 </td>
+                            	</tr>
+                                <tr>
+                                	<th>允许附件上传类型:</th>
+                                    <td>
+                                        <input class="form-control input-sm wid-2" type="text" name="uploadallowext" value="{$config.uploadallowext}"  placeholder=""/>
+                                      	<span >多个用“|”隔开</span>
+               						 </td>
+                            	</tr>
+                                <tr>
+                                	<th>前台允许附件上传大小:</th>
+                                    <td>
+                                       	<input class="form-control input-sm wid-2" type="text" name="qtuploadmaxsize" value="{$config.qtuploadmaxsize}" placeholder=""/>
+                                        <span>KB</span>
+               						 </td>
+                            	</tr>
+                                <tr>
+                                	<th>前台允许附件上传类型:</th>
+                                    <td>
+                                        <input class="form-control input-sm wid-2" type="text" name="qtuploadallowext" value="{$config.qtuploadallowext}"  placeholder=""/>
+                                      	<span>多个用“|”隔开</span>
+               						 </td>
+                            	</tr>
+                                
+                            </table>
+                            <div style="width:100%;height:60px;"></div>
+                            <div class="admin-add">
+                                <button type="subnit" class="btn btn-primary btn-sm">提交</button>
+                            </div>
+                           </form> 
+
+                     </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div><!-- /span -->
+    
+</div><!-- /.page-content -->
+
+
+<!-- jQuery文件 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!--  -->
+<script src="__PUBLIC__/e8admin/default/js/e8.js"></script>
+
+</body>
+</html>

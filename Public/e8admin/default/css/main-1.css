@@ -1,0 +1,194 @@
+/* CSS Document */
+
+/*  mbx 部分CSS样式  */
+.topbar {
+  width: 100%;
+  height: 41px;
+  line-height: 41px;
+  padding-left: 15px;
+  position:relative;
+  background: #F2F2F2;
+  border-bottom: 1px solid #CCC;
+}
+
+.topbar-mbx{}
+.topbar-mbx ul li a:hover{
+  color:#339966 !important;
+  text-decoration:underline;
+}
+
+.topbar-search {
+  position:absolute;
+  right: 5px;
+  top: -2px;
+}
+.topbar-search form div i{
+  position:absolute;
+  right: 8px;
+  top: 15px;
+  cursor: pointer;
+} /*  end mbx */
+
+
+
+.page-content {
+  background: none repeat scroll 0 0 #fff;
+  margin: 0;
+  padding: 8px 0;
+}
+.page-header {
+   border-bottom: 1px dotted #e2e2e2;
+   margin: 0 0 12px;
+   padding-bottom: 16px;
+   padding-top: 7px;
+}
+.page-header h1{
+  color: #2679b5;
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 0 8px;
+  padding: 0;
+}
+
+.nav-tabs_1 {
+  padding:8px 10px 0 10px;
+}
+.nav-tabs_1 li.active {
+  border-bottom:2px solid #063 ;
+}
+.nav-tabs_1 li a{
+  padding: 5px 14px;
+  border-radius:0;
+  border: none;
+}
+.nav-tabs_1 > li.active > a, 
+.nav-tabs_1 > li.active > a:hover, 
+.nav-tabs_1 > li.active > a:focus {
+  border:none;
+}
+
+.tab-content{
+  padding: 16px 0;
+  position: relative;
+  z-index: 11;
+}
+
+p.title {
+  padding:4px 6px;
+  font-weight:bold;
+  color:#666;
+  font-size:12px;
+}
+
+/**************************
+
+	table-form 样式
+	Author: webdd
+	Time: 2014/8/26
+
+**************************/
+.table-form{
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;	
+  font-size:12px;
+}
+.table-form th{
+  border-right: 1px solid #e5e3e3;
+  font-weight: 100;
+  font-size:12px;
+  padding: 6px 10px 6px 15px;
+  vertical-align: midden;	
+}
+.table-form td{
+  font-size:12px;
+  color: #666;
+  padding:6px 10px 6px 15px;
+  vertical-align: top;	
+}
+.table-form tr{
+  background: url(../img/tr_bg.gif) repeat-x bottom;
+}
+
+.table-form tr:hover{background-color:#eef3f6;}	
+
+
+
+/**************************
+
+	内容添加页面 css style
+	Author: webdd
+	Time: 2014/8/26
+
+**************************/
+.a-con{
+  padding: 15px 15px 60px 15px;
+  background: #F2F2F2;
+}
+
+.c-l {
+  border: 1px solid #c4c4c4;
+  padding: 0 !important;
+}
+
+.c-l h4 {
+  padding: 10px 10px;
+  color: #666666;
+  font-size: 12px;
+  font-weight: bold;
+  background: #E6E6E6 url(../img/tr_bg.gif) repeat-x bottom;
+}
+
+.c-r {
+  padding: 0 0 0 10px !important;
+}
+.c-r-b {
+  border: 1px solid #c4c4c4;
+}
+.c-r h4 {
+  padding: 10px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #E6E6E6; 
+  background: #E6E6E6 url(../img/tr_bg.gif) repeat-x bottom;
+}
+
+.inp-bg-1{
+  background:#fff url(../img/input_hd.png) repeat-x bottom;
+}
+
+.content-attr {
+  background: none repeat scroll 0 0 #ffc;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  padding: 5px 8px;
+}
+
+.content-footer {
+  background: #F2F2F2;
+  padding: 5px 0;
+  text-align: center;
+  border-top: 1px solid #CCC;
+  z-index:10001;
+}
+.img-upload p{
+  text-align:center;
+}
+.img-upload img {
+  margin: 0 auto;
+  max-width: 170px;
+  max-height: 120px;
+}
+input[type="checkbox"]{
+  height:16px;
+  line-height: 16px;
+  margin-top: -1px;
+  vertical-align:middle;	
+}
+.checkbox-span{
+  height:18px;
+  line-height: 18px;
+  margin-left: 5px;
+  display: inline-block;
+}
