@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/dygzz/Public/e8home/default/style/common.css" rel="stylesheet" type="text/css" />
-<link href="/dygzz/Public/e8home/default/style/index.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="/dygzz/Public/e8home/default/js/jquery.js"></script>
-    <script type="text/javascript" src="/dygzz/Public/e8home/default/js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="/dygzz/Public/e8home/default/js/index.js"></script>
-    <script type="text/javascript" src="/dygzz/Public/e8home/default/js/textScroll.js"></script>
-    <script type="text/javascript" src="/dygzz/Public/e8home/default/js/js.js"></script>
+<link href="/wcdz/Public/e8home/default/style/common.css" rel="stylesheet" type="text/css" />
+<link href="/wcdz/Public/e8home/default/style/index.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/wcdz/Public/e8home/default/js/jquery.js"></script>
+    <script type="text/javascript" src="/wcdz/Public/e8home/default/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/wcdz/Public/e8home/default/js/index.js"></script>
+    <script type="text/javascript" src="/wcdz/Public/e8home/default/js/textScroll.js"></script>
+    <script type="text/javascript" src="/wcdz/Public/e8home/default/js/js.js"></script>
 <title><?php echo ($webInfo["sitename"]); ?>--</title>
 <style type="text/css">
 .floatingAd .ad{z-index:100;background:none;position:absolute;display:none;}
@@ -22,8 +22,8 @@
 .floatingAd .text .title{position:relative;float:left;font-size:12px;margin-left:5px;}
 </style>
 
-<script type="text/javascript" src="/dygzz/Public/e8home/default/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="/dygzz/Public/e8home/default/js/floatingAd.js"></script>
+<script type="text/javascript" src="/wcdz/Public/e8home/default/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/wcdz/Public/e8home/default/js/floatingAd.js"></script>
 <script type="text/javascript">
 $(function(){
 
@@ -62,18 +62,18 @@ $(function(){
 </script>
 </head>
 <body>
-<div class="body_bg"><img src="/dygzz/Public/e8home/default/images/bg.jpg" /></div>
+<div class="body_bg"><img src="/wcdz/Public/e8home/default/images/bg.jpg" /></div>
 <!--header-->
 ﻿ <div class="header">
-     <img class="dzlogo" src="/dygzz/Public/e8home/default/images/dzlogo.png" />
-     <span><img  class="title" src="/dygzz/Public/e8home/default/images/title.png" /></span>
+     <img class="dzlogo" src="/wcdz/Public/e8home/default/images/dzlogo.png" />
+     <span><img  class="title" src="/wcdz/Public/e8home/default/images/title.png" /></span>
 </div>
 <!--content-->
 <div class="content">
         <!--nav-->
         <div class="nav">
                 <ul class="nav_ul">
-                    <li><a href="/dygzz/index.php/Index/index">首页</a></li>
+                    <li><a href="/wcdz/index.php/Index/index">首页</a></li>
 
                     <?php if(is_array($navList)): foreach($navList as $key=>$nav): ?><li><a href="<?php echo ($nav["url"]); ?>"><?php echo ($nav["nav_name"]); ?></a>
                             <ul class="inside_nav">
@@ -87,7 +87,7 @@ $(function(){
         <div class="content_left">
           <div class="content_leftTop">
             <p class="newspic">
-                   <img class="logo_1" src="/dygzz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;新闻图片
+                   <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;新闻图片
             </p>
 <!--图片新闻开始--> 
 
@@ -95,13 +95,13 @@ $(function(){
             <div class="slider">
                 <ul class="slider-main">
                     <?php if(is_array($pictureList)): foreach($pictureList as $key=>$picture): ?><li class="slider-panel">
-                        <a href="/dygzz/index.php/Show/picture/id/<?php echo ($picture["id"]); ?>"><img src="<?php echo (C("UPLOAD_PATH")); echo ($picture["img"]); ?>"></a>
+                        <a href="/wcdz/index.php/Show/picture/id/<?php echo ($picture["id"]); ?>"><img src="<?php echo (C("UPLOAD_PATH")); echo ($picture["img"]); ?>"></a>
                     </li><?php endforeach; endif; ?>
                 </ul>
                 <div class="slider-extra">
                     <ul class="slider-nav">
                         <!--轮播图的个数-->
-                        <?php $__FOR_START_9154__=1;$__FOR_END_9154__=$imgCount+1;for($i=$__FOR_START_9154__;$i < $__FOR_END_9154__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
+                        <?php $__FOR_START_17205__=1;$__FOR_END_17205__=$imgCount+1;for($i=$__FOR_START_17205__;$i < $__FOR_END_17205__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
                     </ul>
 
                     <div class="slider-page">
@@ -120,12 +120,12 @@ $(function(){
         </div>
          <div class="content_leftBottom">
             <p class="newspic">
-                   <img class="logo_1" src="/dygzz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;交流园地
+                   <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;交流园地
 
             </p>
-                <p class="works"><a href=""><img class="works" src="/dygzz/Public/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
-                <p class="contact"><a href=""><img class="contact" src="/dygzz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
-                <p class="message"><a href=""><img class="message" src="/dygzz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
+                <p class="works"><a href=""><img class="works" src="/wcdz/Public/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
+                <p class="contact"><a href=""><img class="contact" src="/wcdz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
+                <p class="message"><a href=""><img class="message" src="/wcdz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
          </div>
       </div>
         
@@ -136,13 +136,13 @@ $(function(){
 
    <div class="content_centerTop">
                <span class="newspic">
-                   <img class="logo_1" src="/dygzz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;公告栏
+                   <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;公告栏
                    <span class="more"><a href="#">more>></a></span>
                </span>
     <div id="breakNews">
     <ul id="breakNewsList" class="list6">
         <!--首页公告-->
-        <?php if(is_array($noticeList)): foreach($noticeList as $key=>$notice): ?><li><a href="/dygzz/index.php/Show/content/id/<?php echo ($notice["id"]); ?>"><?php echo ($notice["title"]); ?><span class="date"><?php echo (date("Y/m/d",$notice["addtime"])); ?></span></a></li><?php endforeach; endif; ?>
+        <?php if(is_array($noticeList)): foreach($noticeList as $key=>$notice): ?><li><a href="/wcdz/index.php/Show/content/id/<?php echo ($notice["id"]); ?>"><?php echo ($notice["title"]); ?><span class="date"><?php echo (date("Y/m/d",$notice["addtime"])); ?></span></a></li><?php endforeach; endif; ?>
 
     </ul>
     </div>
@@ -153,7 +153,7 @@ scroll2.LineHeight = 24;
 </script>
             <div class="content_centerBottom">
                <span class="newspic">
-                   <img class="logo_1" src="/dygzz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;公寓风采
+                   <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;公寓风采
                     <span class="more"><a href="#">more>></a></span>
                </span>
                <ul>
@@ -181,13 +181,13 @@ scroll2.LineHeight = 24;
                   </div>
                   <div class="tabCon">
                     <div class="cur">
-                        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><p><a href="/dygzz/index.php/Show/content/id/{content.id}"><?php echo ($content["title"]); ?></a></p><?php endforeach; endif; ?>
+                        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><p><a href="/wcdz/index.php/Show/content/id/{content.id}"><?php echo ($content["title"]); ?></a></p><?php endforeach; endif; ?>
                     </div>
                     <div class="cur">
-                        <?php if(is_array($tzList)): foreach($tzList as $key=>$tz): ?><p><a href="/dygzz/index.php/Show/content/id/{tz.id}"><?php echo ($tz["title"]); ?></a></p><?php endforeach; endif; ?>
+                        <?php if(is_array($tzList)): foreach($tzList as $key=>$tz): ?><p><a href="/wcdz/index.php/Show/content/id/{tz.id}"><?php echo ($tz["title"]); ?></a></p><?php endforeach; endif; ?>
                     </div>
                     <div class="cur">
-                        <?php if(is_array($newList)): foreach($newList as $key=>$new): ?><p><a href="/dygzz/index.php/Show/content/id/{new.id}"><?php echo ($new["title"]); ?></a></p><?php endforeach; endif; ?>
+                        <?php if(is_array($newList)): foreach($newList as $key=>$new): ?><p><a href="/wcdz/index.php/Show/content/id/{new.id}"><?php echo ($new["title"]); ?></a></p><?php endforeach; endif; ?>
                     </div>
                   </div>
            </div>
