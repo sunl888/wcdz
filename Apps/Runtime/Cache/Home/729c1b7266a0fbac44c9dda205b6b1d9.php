@@ -2,25 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/dygzz/Public/e8home/default/style/common.css" rel="stylesheet" type="text/css" />
-<link href="/dygzz/Public/e8home/default/style/about.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/dygzz/Public/e8home/default/js/time.js"></script>
+<link href="/wcdz/Public/e8home/default/style/common.css" rel="stylesheet" type="text/css" />
+<link href="/wcdz/Public/e8home/default/style/about.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/wcdz/Public/e8home/default/js/time.js"></script>
 <title>详情页</title>
 </head>
 
 <body>
-<div class="body_bg"><img src="/dygzz/Public/e8home/default/images/bg.jpg" /></div>
+<div class="body_bg"><img src="/wcdz/Public/e8home/default/images/bg.jpg" /></div>
 <!--header-->
 ﻿ <div class="header">
-     <img class="dzlogo" src="/dygzz/Public/e8home/default/images/dzlogo.png" />
-     <span><img  class="title" src="/dygzz/Public/e8home/default/images/title.png" /></span>
+     <img class="dzlogo" src="/wcdz/Public/e8home/default/images/dzlogo.png" />
+     <span><img  class="title" src="/wcdz/Public/e8home/default/images/title.png" /></span>
 </div>
 <!--content-->
 <div class="content">
         <!--nav-->
         <div class="nav">
                 <ul class="nav_ul">
-                    <li><a href="/dygzz/index.php/Index/index">首页</a></li>
+                    <li><a href="/wcdz/index.php/Index/index">首页</a></li>
 
                     <?php if(is_array($navList)): foreach($navList as $key=>$nav): ?><li><a href="<?php echo ($nav["url"]); ?>"><?php echo ($nav["nav_name"]); ?></a>
                             <ul class="inside_nav">
@@ -37,7 +37,7 @@
   <div class="contentleft">
            <div class="contentleftTop">
                <span class="newspic">
-                   <img class="logo_1" src="/dygzz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;流动党员之家
+                   <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;流动党员之家
                </span>
                 <p class="ctac"><a href="">党员简介</a></p>
                 <p><a href="">党员风采</a></p>
@@ -45,24 +45,26 @@
            </div>
            <div class="contentleftBottom">
             <p class="newspic">
-                   <img class="logo_1" src="/dygzz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;交流园地
+                   <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;交流园地
             </p>
-                <p class="works"><a href=""><img class="works" src="/dygzz/Public/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
-                <p class="contact"><a href=""><img class="contact" src="/dygzz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
-                <p class="message"><a href=""><img class="message" src="/dygzz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
+                <p class="works"><a href=""><img class="works" src="/wcdz/Public/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
+                <p class="contact"><a href=""><img class="contact" src="/wcdz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
+                <p class="message"><a href=""><img class="message" src="/wcdz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
            </div>
        </div>
        <!--content_right-->
       <div class="content_right">
         <div class="top">
-            <img src="/dygzz/Public/e8home/default/images/posi_bg.gif">
-            <p>当前位置：{'$className'}>>正文<a href="<?php echo U('Index/index');?>">首页</a></p>
+            <img src="/wcdz/Public/e8home/default/images/posi_bg.gif">
+            <p>当前位置：<?php echo ($classList["classname"]); ?>>>正文<a href="<?php echo U('Index/index');?>">首页</a></p>
         </div>
         <div class="bottom">
             <h2><?php echo ($con["title"]); ?></h2>
-            <p class="time"><span>发布时间：<?php echo ($con["uptime"]); ?></span> <span>访问量:<i><?php echo ($con["views"]); ?></i></span><span>来源：<?php echo ($con["source"]); ?></span></p>
+            <p class="time"><span>发布时间：<?php echo (date("Y-m-d",$texttitle["addtime"])); ?></span>
+                <span>访问量:<i><?php echo ($texttitle["views"]); ?></i></span>
+                <span>来源：<?php echo ($texttitle["source"]); ?></span></p>
             <div class="cont">
-                <p><?php echo ($con["content"]); ?></p>
+                <p><?php echo ($textcontent["content"]); ?></p>
             </div>
             <p class="writer">责任编辑:<?php echo ($con["author"]); ?></p>
         </div> 

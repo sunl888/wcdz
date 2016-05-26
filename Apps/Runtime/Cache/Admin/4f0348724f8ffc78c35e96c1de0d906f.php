@@ -8,8 +8,8 @@
     <title>e8通用后台</title>
     
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-     <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+     <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
     
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -17,8 +17,8 @@
     <![endif]-->
     
     <!-- e8 style -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
     
   </head>
   
@@ -29,7 +29,7 @@
         <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -59,22 +59,22 @@
 			<div class="tabbable">
 				<ul class="nav nav-tabs">
 					<li>
-						<a href="/dygzz/admin.php/Class/index">栏目管理</a>
+						<a href="/wcdz/admin.php/Class/index">栏目管理</a>
 					</li>
 
 					<li>
-						<a href="/dygzz/admin.php/Class/add">添加栏目</a>
+						<a href="/wcdz/admin.php/Class/add">添加栏目</a>
 					</li>
                     
                     <li  class="active">
-						<a href="/dygzz/admin.php/Class/addlink">添加外部链接栏目</a>
+						<a href="/wcdz/admin.php/Class/addlink">添加外部链接栏目</a>
 					</li>
 				</ul>
 				
 				<div class="tab-content">
                     <div class="tab-pane in active">
                     	 <p class="title background-blue">基本属性</p>
-                         <form action="/dygzz/admin.php/Class/addlink" method="post" enctype="multipart/form-data">
+                         <form action="/wcdz/admin.php/Class/addlink" method="post" enctype="multipart/form-data">
                             <table width="100%" class="table-form">
                                 <tbody>
                                      <tr>
@@ -131,7 +131,7 @@
     <!-- jQuery文件 -->
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+	<script src="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
     <!--  -->
 	<script src="e8admin/default/js/e8.js"></script>
     

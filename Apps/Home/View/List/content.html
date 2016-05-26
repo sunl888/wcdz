@@ -39,13 +39,15 @@
       <div class="content_right">
         <div class="top">
             <img src="__PUBLIC__/e8home/default/images/posi_bg.gif">
-            <p>当前位置：{'$className'}>>正文<a href="{:U('Index/index')}">首页</a></p>
+            <p>当前位置：{$classList.classname}>>正文<a href="{:U('Index/index')}">首页</a></p>
         </div>
         <div class="bottom">
             <h2>{$con.title}</h2>
-            <p class="time"><span>发布时间：{$con.uptime}</span> <span>访问量:<i>{$con.views}</i></span><span>来源：{$con.source}</span></p>
+            <p class="time"><span>发布时间：{$texttitle.addtime|date="Y-m-d",###}</span>
+                <span>访问量:<i>{$texttitle.views}</i></span>
+                <span>来源：{$texttitle.source}</span></p>
             <div class="cont">
-                <p>{$con.content}</p>
+                <p>{$textcontent.content}</p>
             </div>
             <p class="writer">责任编辑:{$con.author}</p>
         </div> 

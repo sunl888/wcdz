@@ -3,21 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>E8CMS管理系统</title>
-<link type="text/css" href="/dygzz/Public/e8admin/default/css/login.css" rel="stylesheet" />
-<link type="text/css" href="/dygzz/Public/e8admin/default/css/login-com.css" rel="stylesheet" />
+<link type="text/css" href="/wcdz/Public/e8admin/default/css/login.css" rel="stylesheet" />
+<link type="text/css" href="/wcdz/Public/e8admin/default/css/login-com.css" rel="stylesheet" />
 </head>
 
 <body>
 
 	<div class="login">
     	<div class="l-info">
-        	<img src="/dygzz/Public/e8admin/default/img/login-sign.png" />
+        	<img src="/wcdz/Public/e8admin/default/img/login-sign.png" />
             <p>
             	欢迎使用E8网络后台管理系统！本系统由<a href="<?php echo ($syscon['E8_WEB_URL']); ?>"> E8网络工作室 </a>研发，E8工作室专注于网站建设、移动平台应用开发、企业级桌面系统开发等！
             </p>
         </div>
         
-        <form action="/dygzz/admin.php/Login/login" method="post">
+        <form action="/wcdz/admin.php/Login/login" method="post">
         <div class="l-form">
         	<p>
             	<label>账&emsp;号：</label>
@@ -30,11 +30,11 @@
             <p>
             	<label>验证码：</label>
                 <input id="yzm" maxlength="4" name="verify" type="text" />
-                <img id="verifyCode" src="/dygzz/admin.php/Login/createVerify" onclick="this.src='/dygzz/admin.php/Login/createVerify?time=<?php echo time();?>'" />
+                <img id="verifyCode" src="/wcdz/admin.php/Login/createVerify" onclick="this.src='/wcdz/admin.php/Login/createVerify?time=<?php echo time();?>'" />
             </p>
             <p>
             	<input type="submit" value="提交" />
-                <a href="/dygzz/admin.php/Findpassword/index" class="a-1">忘记密码</a>
+                <a href="/wcdz/admin.php/Findpassword/index" class="a-1">忘记密码</a>
             </p>
         </div>
         </form>

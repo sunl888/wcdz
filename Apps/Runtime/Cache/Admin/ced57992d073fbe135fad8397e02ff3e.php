@@ -7,12 +7,12 @@
     <title></title>
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
     <!-- e8 style -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
-    <script src="/dygzz/Public/e8admin/default/lib/echarts/esl.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
+    <script src="/wcdz/Public/e8admin/default/lib/echarts/esl.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -76,11 +76,11 @@
 
     <!-- jQuery文件 -->
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
 
     <script type="text/javascript" language="javascript">
-        var PUBLIC = "/dygzz/Public";
-        var APP = "/dygzz/admin.php";
+        var PUBLIC = "/wcdz/Public";
+        var APP = "/wcdz/admin.php";
         var myChart;
         var year = <?php echo ($y); ?>;
         var mouth = <?php echo ($m); ?>;
