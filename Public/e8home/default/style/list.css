@@ -177,7 +177,9 @@ div.tab_list ul{
     width: 100%;
 	
 }
-div.tab_list ul li{
+div.tab_list ul a,div.tab_list ul span{
+	display: block;
+	float: left;
     width: 12%;
     height: 30px;
     border: 1px solid orange;
@@ -185,12 +187,12 @@ div.tab_list ul li{
     line-height: 30px;
     margin-left: 1%;
 }
-div.tab_list ul li:hover{
+div.tab_list ul a:hover{
 	background:#f2e59f;
 	}
-div.tab_list ul li a{
+div.tab_list ul a{
 	color:#666;
 	}
-div.tab_list ul li:hover a{
+div.tab_list ul a:hover{
 	color:#c00;
 	}

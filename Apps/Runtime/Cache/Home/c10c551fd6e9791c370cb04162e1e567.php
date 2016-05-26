@@ -34,51 +34,44 @@
             <span id="localtime"></span>
         </div>
        <!--content_left-->
-  <div class="contentleft">
-           <div class="contentleftTop">
+<div class="contentleft">
+    <div class="contentleftTop">
                <span class="newspic">
                    <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;流动党员之家
                </span>
-                <p class="ctac"><a href="">党员简介</a></p>
-                <p><a href="">党员风采</a></p>
-                <p><a href="">服务交流</a></p>
-           </div>
-           <div class="contentleftBottom">
-            <p class="newspic">
-                   <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;交流园地
-            </p>
-                <p class="works"><a href=""><img class="works" src="/wcdz/Public/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
-                <p class="contact"><a href=""><img class="contact" src="/wcdz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
-                <p class="message"><a href=""><img class="message" src="/wcdz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
+        <!--左边导航-->
+        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><p class="ctac"><a href="/wcdz/index.php/List/content/class/<?php echo ($content["id"]); ?>"><?php echo ($content["classname"]); ?></a></p><?php endforeach; endif; ?>
+    </div>
+    <div class="contentleftBottom">
+        <p class="newspic">
+            <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;交流园地
+        </p>
+        <p class="works"><a href=""><img class="works" src="/wcdz/Public/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
+        <p class="contact"><a href=""><img class="contact" src="/wcdz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
+        <p class="message"><a href=""><img class="message" src="/wcdz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
+    </div>
+</div>
+       <!--content_right-->
+           <div class="content_right">
+               <div class="top">
+                   <img src="/wcdz/Public/e8home/default/images/posi_bg.gif">
+                   <p>当前位置：<?php echo ($classList["classname"]); ?>>>正文<a href="<?php echo U('Index/index');?>">首页</a></p>
+               </div>
+               <div class="artical">
+                   <?php if(is_array($contentPage)): foreach($contentPage as $key=>$content): ?><p><span><img src="/wcdz/Public/e8home/default/images/span.png"></span><a href="#"><?php echo ($content["title"]); ?></a><span class="date"><?php echo (date("Y-m-d",$content["addtime"])); ?></span></p><?php endforeach; endif; ?>
+               </div>
+               <div class="tab_list">
+                   <ul class="tab">
+                       <?php echo ($page); ?>
+
+                   </ul>
+
+               </div>
            </div>
        </div>
-       <!--content_right-->
-       <div class="content_right">
-        <div class="top">
-            <img src="/wcdz/Public/e8home/default/images/posi_bg.gif">
-            <p>当前位置：党委公告>>正文<a href="#">首页</a></p>
-        </div>
-        <div class="artical">
-            <?php if(is_array($Content)): foreach($Content as $key=>$con): ?><p><span><img src="/default/images/span.png"/></span><a href="<?php echo U('About/index/',[ 'id' => $con['id'] ]);?>"><?php echo ($con["title"]); ?></a><span class="date"><?php echo ($con["uptime"]); ?></span></p><?php endforeach; endif; ?>
-        </div>
-        <div class="tab_list">
-            <ul class="tab">
-                <!--<li><a href="#">&lt;</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">...</a></li>
-                <li><a href="#">9</a></li>
-                <li><a href="#">&gt;</a></li>-->
-                <?php echo $page->show();?>
-            </ul>
-
-        </div>
-     </div>
-  </div>
 <div class="footer">
-   <p>主办：淮南师范文化创意与传播学院党员工作站</p>
-   <p>技术支持：淮南师范学院E8网络工作室</p>
+    <p>主办：淮南师范文化创意与传播学院党员工作站</p>
+    <p>技术支持：淮南师范学院E8网络工作室</p>
 </div>
 <script type="text/javascript">
     window.tick();

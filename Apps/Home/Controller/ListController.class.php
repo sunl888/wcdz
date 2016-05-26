@@ -22,7 +22,7 @@ class ListController extends BaseController {
         $texttitle = $Content ->where("classid = $class and status=1")->find();
         $cid = $texttitle['id'];
         $textcontent = $ContentData ->where("id = $cid")->find();
-        //p($contentList);
+//        p($texttitle);
         //浏览量加1
         $views = $texttitle['views'];
         $Content -> where("classid = $class") -> setField('views',$views+1);
@@ -53,12 +53,12 @@ class ListController extends BaseController {
     $where['classid'] = $class;
     $where['status'] = 1;
     $count =$Content ->where($where) ->count();
-    $Page = new\Think\Page($count,10);
+    $Page = new\Think\Page($count,15);
     $show = $Page ->show();
     $contentPage = $Content->where($where)->limit($Page->firstRow.",".$Page->listRows) ->order("addtime desc")->select();
      //图片列表
     $pictureList = $Picture ->where("termid= 39")->select();
-   
+//   p($Page);
     $this->assign("classList",$classList);
     $this->assign("contentList",$contentList);
     $this->assign("navigation",$navigation);

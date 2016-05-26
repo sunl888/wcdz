@@ -11,11 +11,11 @@
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     
-	<link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
     <!-- 颜色选择组件 css -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/Colorpicker/evol.colorpicker.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/Colorpicker/evol.colorpicker.css">
     <!-- 时间选择组件 css -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/Datepicker/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/Datepicker/css/bootstrap-datetimepicker.min.css">
     
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -23,19 +23,19 @@
     <![endif]-->
     
     <!-- e8 style -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
     
     <!-- 加载百度编辑器js -->
-    <script type="text/javascript" charset="utf-8" src="/dygzz/Public/e8admin/default/lib/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/dygzz/Public/e8admin/default/lib/ueditor/ueditor.all.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/dygzz/Public/e8admin/default/lib/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/wcdz/Public/e8admin/default/lib/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/wcdz/Public/e8admin/default/lib/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/wcdz/Public/e8admin/default/lib/ueditor/lang/zh-cn/zh-cn.js"></script>
     
   </head>
   
   <body>
-   <form action="/dygzz/admin.php/Content/edit" method="post"  enctype="multipart/form-data">
+   <form action="/wcdz/admin.php/Content/edit" method="post"  enctype="multipart/form-data">
     <input type="hidden" name="id" value="<?php echo ($id); ?>"/>
     <div class="container-fluid a-con">
         <div class="col-md-10 c-l">
@@ -190,12 +190,12 @@
     <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     
     <!-- 颜色选择组件js -->
-    <script src="/dygzz/Public/e8admin/default/lib/Colorpicker/evol.colorpicker.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/Colorpicker/evol.colorpicker.js"></script>
     <!-- 时间选择组件js -->
-    <script src="/dygzz/Public/e8admin/default/lib/Datepicker/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/Datepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
-	 <script src="/dygzz/Public/e8admin/default/js/fun.js"></script>
-	 <script src="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/Datepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/Datepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+	 <script src="/wcdz/Public/e8admin/default/js/fun.js"></script>
+	 <script src="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
     <!--  -->
    	<script>
 		function quit(){
@@ -205,7 +205,7 @@
 		}
 	</script>
     <script>
-    var APP = "/dygzz/admin.php";
+    var APP = "/wcdz/admin.php";
     
 	$(document).ready(function(){
 			//标题检测是否重复
