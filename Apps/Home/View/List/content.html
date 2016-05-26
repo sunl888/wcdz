@@ -22,9 +22,10 @@
                <span class="newspic">
                    <img class="logo_1" src="__PUBLIC__/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;流动党员之家
                </span>
-                <p class="ctac"><a href="">党员简介</a></p>
-                <p><a href="">党员风采</a></p>
-                <p><a href="">服务交流</a></p>
+               <!--左边导航-->
+               <foreach name="contentList" item="content">
+                   <p class="ctac"><a href="__APP__/List/content/class/{$content.id}">{$content.classname}</a></p>
+               </foreach>
            </div>
            <div class="contentleftBottom">
             <p class="newspic">

@@ -8,18 +8,18 @@
     <title>e8通用后台</title>
     
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
     
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
      <!-- 时间选择组件 css -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/Datepicker/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/Datepicker/css/bootstrap-datetimepicker.min.css">
     <!-- e8 style -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
   </head>
   
   <body>
@@ -29,7 +29,7 @@
         <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -59,15 +59,15 @@
 			<div class="tabbable">
 				<ul class="nav nav-tabs">
 					<li>
-						<a href="/dygzz/admin.php/Content/index/classid/<?php echo ($classid); ?>">文章列表</a>
+						<a href="/wcdz/admin.php/Content/index/classid/<?php echo ($classid); ?>">文章列表</a>
 					</li>
 					
 					<li  class="active">
-						<a href="/dygzz/admin.php/Content/check/classid/<?php echo ($classid); ?>">待审核文章</a>
+						<a href="/wcdz/admin.php/Content/check/classid/<?php echo ($classid); ?>">待审核文章</a>
 					</li>
 					
 					<li>
-						<a href="/dygzz/admin.php/Content/restore/classid/<?php echo ($classid); ?>">回收站文章</a>
+						<a href="/wcdz/admin.php/Content/restore/classid/<?php echo ($classid); ?>">回收站文章</a>
 					</li>
                     
 				</ul>
@@ -76,10 +76,10 @@
 					<div  class="tab-pane in active">
                     <p class="title background-blue">搜索</p>
                     <div style="padding:5px 0;"> 
-							<a href="/dygzz/admin.php/Content/add/classid/<?php echo ($classid); ?>" target="_blank"><button class="btn btn-default btn-sm" >+添加内容</button></a>
+							<a href="/wcdz/admin.php/Content/add/classid/<?php echo ($classid); ?>" target="_blank"><button class="btn btn-default btn-sm" >+添加内容</button></a>
 							<a href="#"><button class="btn btn-default btn-sm" >访问该网站</button></a>
 					</div>
-                     <form action="/dygzz/admin.php/Content/check/classid/<?php echo ($classid); ?>" method="post">
+                     <form action="/wcdz/admin.php/Content/check/classid/<?php echo ($classid); ?>" method="post">
                     	<div>
                             <span>时间:</span><input type="text" id="formtime" name="formtime" class="form-control input-sm wid-2"/> - 
                             				 <input type="text" id="totime" name="totime" class="form-control input-sm wid-2"/>			
@@ -94,7 +94,7 @@
                         </div>
                     </form>
                     
-                      <form action="/dygzz/admin.php/Content/sort" method="post">
+                      <form action="/wcdz/admin.php/Content/sort" method="post">
 						<table class="table table-hover">
                         	<thead>
                             	<tr>
@@ -120,8 +120,8 @@
                                     <td><?php echo ($content["username"]); ?></td>
                                     <td><?php echo ($content["addtime"]); ?></td>
                                     <td class="align-center">
-                                    	<a href="/dygzz/admin.php/Content/edit/id/<?php echo ($content["id"]); ?>" target="_blank">修改</a>  |
-                                        <a href="/dygzz/admin.php/Content/remove/id/<?php echo ($content["id"]); ?>">删除</a>  
+                                    	<a href="/wcdz/admin.php/Content/edit/id/<?php echo ($content["id"]); ?>" target="_blank">修改</a>  |
+                                        <a href="/wcdz/admin.php/Content/remove/id/<?php echo ($content["id"]); ?>">删除</a>  
                                     </td>
                                 </tr><?php endforeach; endif; ?>
                             </tbody>
@@ -130,8 +130,8 @@
                         <div style="width:100%;height:60px;"></div>
                             <div class="admin-add">
                             	<button class="btn btn-primary btn-sm" type="submit">排序</button>
-                            	<button class="btn btn-primary btn-sm"  type="button" onclick="javascript:treatCon('/dygzz/admin.php/Content/checkout')">审核</button>
-                            	<button class="btn btn-primary btn-sm"  type="button" onclick="javascript:treatCon('/dygzz/admin.php/Content/remove')">删除</button>
+                            	<button class="btn btn-primary btn-sm"  type="button" onclick="javascript:treatCon('/wcdz/admin.php/Content/checkout')">审核</button>
+                            	<button class="btn btn-primary btn-sm"  type="button" onclick="javascript:treatCon('/wcdz/admin.php/Content/remove')">删除</button>
                             </div>
                       </form>
 					</div>
@@ -148,12 +148,12 @@
     <!-- jQuery文件 -->
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+	<script src="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
     <!--  -->
-	<script src="/dygzz/Public/e8admin/default/js/e8.js"></script>
+	<script src="/wcdz/Public/e8admin/default/js/e8.js"></script>
     <!-- 时间选择组件js -->
-    <script src="/dygzz/Public/e8admin/default/lib/Datepicker/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/Datepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/Datepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/Datepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
         <script>
 	$(document).ready(function(){
 	

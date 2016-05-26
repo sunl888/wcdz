@@ -22,6 +22,7 @@ class ListController extends BaseController {
         $texttitle = $Content ->where("classid = $class and status=1")->find();
         $cid = $texttitle['id'];
         $textcontent = $ContentData ->where("id = $cid")->find();
+        //p($contentList);
         //浏览量加1
         $views = $texttitle['views'];
         $Content -> where("classid = $class") -> setField('views',$views+1);
