@@ -124,7 +124,7 @@ class ListController extends BaseController {
         }else{ //优秀党员展示，student表
             $type = 1;
             $count =$Student ->count();
-            $Page = new\Think\Page($count,9);
+            $Page = new\Think\Page($count,1);
             $show = $Page ->show();
             $studentList = $Student->limit($Page->firstRow.",".$Page->listRows) ->order('stuid')->select();
             for($j=0;$j<count($studentList);$j++){
