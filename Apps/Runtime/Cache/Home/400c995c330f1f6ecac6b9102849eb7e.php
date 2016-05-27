@@ -9,7 +9,7 @@
     <script type="text/javascript" src="/wcdz/Public/e8home/default/js/index.js"></script>
     <script type="text/javascript" src="/wcdz/Public/e8home/default/js/textScroll.js"></script>
     <script type="text/javascript" src="/wcdz/Public/e8home/default/js/js.js"></script>
-<title><?php echo ($webInfo["sitename"]); ?>--</title>
+<title><?php echo ($webInfo["sitename"]); ?></title>
 <style type="text/css">
 .floatingAd .ad{z-index:100;background:none;position:absolute;display:none;}
 .floatingAd a{color:#000000; display:inline-block;text-decoration:none;}
@@ -101,7 +101,7 @@ $(function(){
                 <div class="slider-extra">
                     <ul class="slider-nav">
                         <!--轮播图的个数-->
-                        <?php $__FOR_START_25541__=1;$__FOR_END_25541__=$imgCount+1;for($i=$__FOR_START_25541__;$i < $__FOR_END_25541__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
+                        <?php $__FOR_START_30529__=1;$__FOR_END_30529__=$imgCount+1;for($i=$__FOR_START_30529__;$i < $__FOR_END_30529__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
                     </ul>
 
                     <div class="slider-page">
@@ -194,10 +194,17 @@ scroll2.LineHeight = 24;
         </div>
 </div>
 </div>
+<!--footer-->
+<!--﻿<div class="footer">
+    <p>主办：淮南师范文化创意与传播学院党员工作站</p>
+    <p>技术支持：<a href="http://www.e8net.cn" target="_blank">淮南师范学院E8网络工作室</a></p>
+    <p></p>
+</div>-->
 <div class="footer">
-   <p>主办：淮南师范文化创意与传播学院党员工作站</p>
-   <p>技术支持：<a href="http://www.e8net.cn" target="_blank">淮南师范学院E8网络工作室</a></p>
-   <p></p>
+    <p>主办：淮南师范文化创意与传播学院党员工作站</p>
+    <p>技术支持：<a href="http://www.e8net.cn" target="_blank">淮南师范学院E8网络工作室</a></p>
+    <p></p>
 </div>
+<!--footer 结束-->
 </body>
 </html>

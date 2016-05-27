@@ -5,7 +5,7 @@
 <link href="/wcdz/Public/e8home/default/style/common.css" rel="stylesheet" type="text/css" />
 <link href="/wcdz/Public/e8home/default/style/about.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/wcdz/Public/e8home/default/js/time.js"></script>
-<title>详情页</title>
+<title><?php echo ($classList["classname"]); ?>--<?php echo ($webInfo["sitename"]); ?></title>
 </head>
 
 <body>

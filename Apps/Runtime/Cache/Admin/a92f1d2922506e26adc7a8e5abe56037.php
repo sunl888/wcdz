@@ -8,9 +8,9 @@
     <title>e8通用后台</title>
     
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
 
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -18,8 +18,8 @@
     <![endif]-->
     
     <!-- e8 style -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
     
   </head>
   
@@ -31,7 +31,7 @@
         <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -60,13 +60,13 @@
         <div class="col-sm-12">
 			<div class="tabbable">
 				<ul class="nav nav-tabs">
-                    <?php if($cancel != 0): ?><li><span><a href="/dygzz/admin.php/Role/index" class="e8-prompt" style="font-size:12px;">&lt;返回角色管理</a></span>&nbsp;&nbsp;&nbsp;</li><?php endif; ?>
+                    <?php if($cancel != 0): ?><li><span><a href="/wcdz/admin.php/Role/index" class="e8-prompt" style="font-size:12px;">&lt;返回角色管理</a></span>&nbsp;&nbsp;&nbsp;</li><?php endif; ?>
 					<li class="active">
 						<a  href="#">管理员管理</a>
 					</li>
 
 					<li>
-						<a  href="/dygzz/admin.php/User/add">添加管理员</a>
+						<a  href="/wcdz/admin.php/User/add">添加管理员</a>
 					</li>
 				</ul>
 				
@@ -97,8 +97,8 @@
                                         <td><?php echo ($user["email"]); ?></td>
                                         <td><?php echo ($user["remark"]); ?></td>
                                         <td class="align-center">
-                                            <a href="/dygzz/admin.php/User/edit/id/<?php echo ($user["id"]); ?>/mw/<?php echo ($user["mw"]); ?>">修改</a>  |
-                                            <a href="javascript:void(0);" onclick="return confirm('/dygzz/admin.php/User/del/id/<?php echo ($user["id"]); ?>/mw/<?php echo ($user["mw"]); ?>','确定删除?');">删除</a>
+                                            <a href="/wcdz/admin.php/User/edit/id/<?php echo ($user["id"]); ?>/mw/<?php echo ($user["mw"]); ?>">修改</a>  |
+                                            <a href="javascript:void(0);" onclick="return confirm('/wcdz/admin.php/User/del/id/<?php echo ($user["id"]); ?>/mw/<?php echo ($user["mw"]); ?>','确定删除?');">删除</a>
                                         </td>
                                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                             </tbody>
@@ -117,10 +117,10 @@
     <!-- jQuery文件 -->
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
+	<script src="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
     <!--  -->
-	<script src="/dygzz/Public/e8admin/default/js/e8.js"></script>
+	<script src="/wcdz/Public/e8admin/default/js/e8.js"></script>
     
   </body>
 </html>

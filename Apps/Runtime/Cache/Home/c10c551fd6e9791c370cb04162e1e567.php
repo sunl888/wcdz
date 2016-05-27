@@ -5,7 +5,7 @@
 <link href="/wcdz/Public/e8home/default/style/common.css" rel="stylesheet" type="text/css" />
 <link href="/wcdz/Public/e8home/default/style/list.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/wcdz/Public/e8home/default/js/time.js"></script>
-<title>文章列表</title>
+<title><?php echo ($classList["classname"]); ?>--<?php echo ($webInfo["sitename"]); ?></title>
 </head>
 
 <body>
@@ -63,7 +63,6 @@
                <div class="tab_list">
                    <ul class="tab">
                        <?php echo ($page); ?>
-
                    </ul>
 
                </div>

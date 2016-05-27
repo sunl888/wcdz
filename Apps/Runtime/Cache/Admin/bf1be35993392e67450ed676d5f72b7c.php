@@ -8,20 +8,20 @@
     <title>e8通用后台</title>
     
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
     
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/zTree/css/zTreeStyle.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/zTree/css/zTreeStyle.css">
 
     <!-- e8 style -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
     
   </head>
   
@@ -33,7 +33,7 @@
         <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -92,17 +92,17 @@
   
     <!-- jQuery文件 -->
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
     <!-- 树形列表支持库文件 -->
-    <script type="text/javascript" src="/dygzz/Public/e8admin/default/lib/zTree/js/jquery.ztree.core-3.5.js"></script>
-    <script type="text/javascript" src="/dygzz/Public/e8admin/default/lib/zTree/js/jquery.ztree.excheck-3.5.js"></script>
+    <script type="text/javascript" src="/wcdz/Public/e8admin/default/lib/zTree/js/jquery.ztree.core-3.5.js"></script>
+    <script type="text/javascript" src="/wcdz/Public/e8admin/default/lib/zTree/js/jquery.ztree.excheck-3.5.js"></script>
     <!--  -->
-    <script src="/dygzz/Public/e8admin/default/js/e8.js"></script>
+    <script src="/wcdz/Public/e8admin/default/js/e8.js"></script>
 
     <script>
         <!--
-        var APP = "/dygzz/admin.php";
+        var APP = "/wcdz/admin.php";
         var setting = {
             check: {
                 enable: true

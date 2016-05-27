@@ -57,31 +57,31 @@ class ShowController extends BaseController{
 
 	public function content(){
 		$Class = D('Class');
-		$Content = D('Content');
-		$Picture = D('Picture');
-		$ContentData = D('Content_data');
-		$pictureList = $Picture ->where("termid = 39")->select();
-		$id = $_GET['id'];
-		$textcontent = $ContentData ->where("id = $id")->getField('content');
-		$classList = $Content ->where("id = $id")->find();
-		$cid = $classList['classid'];
-		$pid = $Class ->where("id = $cid")->getField('parentid');
-		//访问量+1
-		$views = $classList['views'];
-		$Content ->where("id = $id")->setField("views",$views+1);
+		$Content = D("Content");
+		$ContentData = D("Content_data");
+		$Picture =D('Picture');
+		$classid = $_GET['class'];//p($classid);die;
+		$classList = $Class->where("id = $classid")->find();
+		$pictureList = $Picture ->where("termid= 39")->select();
 
-		if($pid !=0){
-			$navigation = $Class ->where("id = $pid")->getField('classname');
-			$contentList = $Class ->where("parentid = $pid")->select();//p();die;
-		}else{
-			$navigation = $Class ->where("id = $cid")->getField('classname');
-		}
-		
-
-		$this->assign("navigation",$navigation);
-		$this->assign("classList",$classList);
-		$this->assign("contentList",$contentList);
+		$class = $Class ->getClass($classid);
+		$navigation = $Class ->getLeftName($classid);
+		$contentList = $Class ->getLeftList($classid);
+		$classname = $Class ->where("id = $class") ->getField("classname");
+		$texttitle = $Content ->where("classid = $class and status=1")->find();
+		$cid = $texttitle['id'];
+		$textcontent = $ContentData ->where("id = $cid")->find();
+//        p($texttitle);
+		//浏览量加1
+		$views = $texttitle['views'];
+		$Content -> where("classid = $class") -> setField('views',$views+1);
+		//echo $Content->getlastsql();die;
+		$this->assign("classname",$classname);
+		$this->assign("texttitle",$texttitle);
 		$this->assign("textcontent",$textcontent);
+		$this->assign("navigation",$navigation);
+		$this->assign("contentList",$contentList);
+		$this->assign("classList",$classList);
 		$this->assign("pictureList",$pictureList);
 		$this->display();
 	}
