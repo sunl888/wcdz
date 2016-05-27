@@ -80,7 +80,7 @@ $(function(){
                                 <?php if(is_array($nav['sub_nav'])): foreach($nav['sub_nav'] as $key=>$sub): ?><li><p><a href="<?php echo ($sub["url"]); ?>"><?php echo ($sub["nav_name"]); ?></a></p></li><?php endforeach; endif; ?>
                             </ul>
                         </li><?php endforeach; endif; ?>
-                      </ul>
+                 </ul>
         </div>
 <!--content_left-->
 
@@ -101,7 +101,7 @@ $(function(){
                 <div class="slider-extra">
                     <ul class="slider-nav">
                         <!--轮播图的个数-->
-                        <?php $__FOR_START_10132__=1;$__FOR_END_10132__=$imgCount+1;for($i=$__FOR_START_10132__;$i < $__FOR_END_10132__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
+                        <?php $__FOR_START_27291__=1;$__FOR_END_27291__=$imgCount+1;for($i=$__FOR_START_27291__;$i < $__FOR_END_27291__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
                     </ul>
 
                     <div class="slider-page">
@@ -125,7 +125,7 @@ $(function(){
             </p>
                 <p class="works"><a href=""><img class="works" src="/wcdz/Public/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
                 <p class="contact"><a href=""><img class="contact" src="/wcdz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
-                <p class="message"><a href=""><img class="message" src="/wcdz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
+                <p class="message"><a href="<?php echo U('Show/leave_word');?>"><img class="message" src="/wcdz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
          </div>
       </div>
         
@@ -137,7 +137,7 @@ $(function(){
    <div class="content_centerTop">
                <span class="newspic">
                    <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;公告栏
-                   <span class="more"><a href="#">more>></a></span>
+                   <span class="more"><a href="/wcdz/index.php/List/article/class/26">more>></a></span>
                </span>
     <div id="breakNews">
     <ul id="breakNewsList" class="list6">
@@ -154,7 +154,7 @@ scroll2.LineHeight = 24;
             <div class="content_centerBottom">
                <span class="newspic">
                    <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;公寓风采
-                    <span class="more"><a href="#">more>></a></span>
+                    <span class="more"><a href="/wcdz/index.php/List/article/class/10s">more>></a></span>
                </span>
                <ul>
                    <?php if(is_array($domitoryList)): foreach($domitoryList as $key=>$domitory): ?><li><a href=""><img src=<?php echo (C("UPLOAD_PATH")); echo ($domitory["image"]); ?> width="100%" height="90" /></a></li><?php endforeach; endif; ?>
@@ -181,13 +181,13 @@ scroll2.LineHeight = 24;
                   </div>
                   <div class="tabCon">
                     <div class="cur">
-                        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><p><a href="/wcdz/index.php/Show/content/id/{content.id}"><?php echo ($content["title"]); ?></a></p><?php endforeach; endif; ?>
+                        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><p><a href="/wcdz/index.php/Show/content/id/<?php echo ($content["id"]); ?>"><?php echo ($content["title"]); ?></a></p><?php endforeach; endif; ?>
                     </div>
                     <div class="cur">
-                        <?php if(is_array($tzList)): foreach($tzList as $key=>$tz): ?><p><a href="/wcdz/index.php/Show/content/id/{tz.id}"><?php echo ($tz["title"]); ?></a></p><?php endforeach; endif; ?>
+                        <?php if(is_array($tzList)): foreach($tzList as $key=>$tz): ?><p><a href="/wcdz/index.php/Show/content/id/<?php echo ($tz["id"]); ?>"><?php echo ($tz["title"]); ?></a></p><?php endforeach; endif; ?>
                     </div>
                     <div class="cur">
-                        <?php if(is_array($newList)): foreach($newList as $key=>$new): ?><p><a href="/wcdz/index.php/Show/content/id/{new.id}"><?php echo ($new["title"]); ?></a></p><?php endforeach; endif; ?>
+                        <?php if(is_array($newList)): foreach($newList as $key=>$new): ?><p><a href="/wcdz/index.php/Show/content/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a></p><?php endforeach; endif; ?>
                     </div>
                   </div>
            </div>
@@ -195,10 +195,9 @@ scroll2.LineHeight = 24;
 </div>
 </div>
 <!--footer-->
-<!--﻿<div class="footer">
+<!--<div class="footer">
     <p>主办：淮南师范文化创意与传播学院党员工作站</p>
     <p>技术支持：<a href="http://www.e8net.cn" target="_blank">淮南师范学院E8网络工作室</a></p>
-    <p></p>
 </div>-->
 <div class="footer">
     <p>主办：淮南师范文化创意与传播学院党员工作站</p>

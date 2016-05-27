@@ -8,9 +8,9 @@
 <title>e8通用后台</title>
 
 <!-- 新 Bootstrap 核心 CSS 文件 -->
-<link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
-<link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
+<link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
 
 <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -18,8 +18,8 @@
     <![endif]-->
 
 <!-- e8 style -->
-<link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-<link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
+<link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+<link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
 
 </head>
 
@@ -31,7 +31,7 @@
         <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -67,7 +67,7 @@
                 <div class="tab-content">                        
                     <div class="tab-pane in active">
                         <p class="title background-blue">搜索</p>
-                         <form action="/dygzz/admin.php/Comment/index" method="post">
+                         <form action="/wcdz/admin.php/Comment/index" method="post">
                             <div style="padding:5px 0;">    
                                 <div style="padding: 5px 0;">    
                                 
@@ -83,7 +83,7 @@
                             </div>
                         </form>
 
-                        <form action="/dygzz/admin.php/Comment/index" method="post">
+                        <form action="/wcdz/admin.php/Comment/index" method="post">
                             <table class="table table-hover">
                                 <tr>
                                     <th width="20">
@@ -111,11 +111,11 @@
                                     <td><?php echo (subtitle($comment["answer"],20,0)); ?></td>
                                     <td><?php echo (date("Y-m-d",$comment["answertime"])); ?></td>
                                     <!-- <td class="align-center">
-                                         <a href="/dygzz/admin.php/Message/view/id/<?php echo ($message["id"]); ?>/mw/<?php echo ($message["mw"]); ?>">查看</a>
+                                         <a href="/wcdz/admin.php/Message/view/id/<?php echo ($message["id"]); ?>/mw/<?php echo ($message["mw"]); ?>">查看</a>
                                     </td> -->
                                     <td class="align-center">
-                                        <a href="/dygzz/admin.php/Comment/reply/id/<?php echo ($comment["id"]); ?>">回复</a>|&nbsp; 
-                                        <a href="javascript:void(0);" onclick="return confirm('/dygzz/admin.php/Comment/del/id/<?php echo ($comment["id"]); ?>','确定删除?');">删除</a>
+                                        <a href="/wcdz/admin.php/Comment/reply/id/<?php echo ($comment["id"]); ?>">回复</a>|&nbsp; 
+                                        <a href="javascript:void(0);" onclick="return confirm('/wcdz/admin.php/Comment/del/id/<?php echo ($comment["id"]); ?>','确定删除?');">删除</a>
                                     </td>
                                 </tr><?php endforeach; endif; ?>
                             </table>
@@ -124,7 +124,7 @@
                     <div class="pageBar"><?php echo ($page); ?></div>
                     <div style="width:100%;height:60px;"></div>
                     <div class="admin-add">
-                        <button class="btn btn-primary btn-sm" type="button" onclick="javascript:treatCon('/dygzz/admin.php/Comment/dels')">删除</button>
+                        <button class="btn btn-primary btn-sm" type="button" onclick="javascript:treatCon('/wcdz/admin.php/Comment/dels')">删除</button>
 
                     </div>
                 </div>
@@ -145,11 +145,11 @@
 
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
     <!--  -->
-    <script src="/dygzz/Public/e8admin/default/js/fun.js"></script>
-    <script src="/dygzz/Public/e8admin/default/js/e8.js"></script>
+    <script src="/wcdz/Public/e8admin/default/js/fun.js"></script>
+    <script src="/wcdz/Public/e8admin/default/js/e8.js"></script>
 
     <script>
     function showphoto(obj){

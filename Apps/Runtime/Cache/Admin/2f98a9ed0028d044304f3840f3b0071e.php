@@ -8,8 +8,8 @@
     <title>e8通用后台</title>
     
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
 
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -17,8 +17,8 @@
     <![endif]-->
     
     <!-- e8 style -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
     
   </head>
   
@@ -30,7 +30,7 @@
         <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -59,17 +59,17 @@
         <div class="col-sm-12">
 			<div class="tabbable">
 				<ul class="nav nav-tabs">
-					<li class="active"><a href="/dygzz/admin.php/Picture/index">图片管理</a></li>
-					<li><a href="/dygzz/admin.php/Picture/add">添加图片</a></li>
-					<li><a href="/dygzz/admin.php/Picture/term">分类管理</a></li>
-					<li><a href="/dygzz/admin.php/Picture/termadd">添加分类</a></li>
+					<li class="active"><a href="/wcdz/admin.php/Picture/index">图片管理</a></li>
+					<li><a href="/wcdz/admin.php/Picture/add">添加图片</a></li>
+					<li><a href="/wcdz/admin.php/Picture/term">分类管理</a></li>
+					<li><a href="/wcdz/admin.php/Picture/termadd">添加分类</a></li>
 				</ul>
 
 				<div class="tab-content">
 					<div  class="tab-pane in active">
                         <p class="title background-blue">搜索</p>
 
-                        <form action="/dygzz/admin.php/Picture/index" method="post">
+                        <form action="/wcdz/admin.php/Picture/index" method="post">
                             <div style="padding:5px 0;">    
                                 <select name="key" class="form-control input-sm wid-2">
                                     <option value="name">名称</option>
@@ -80,13 +80,13 @@
                             </div>
                         </form>
 
-                        <form action="/dygzz/admin.php/Link/linkEdit" method="post">
+                        <form action="/wcdz/admin.php/Link/linkEdit" method="post">
                         	<?php if(is_array($pictureList)): foreach($pictureList as $key=>$picture): ?><div class="e8-pic">
 	                                <img id="photo<?php echo ($picture["id"]); ?>" src="<?php echo (C("UPLOAD_PATH")); echo ($picture["img"]); ?>" class="img-rounded" width="123" height="110">
 	                                <span class="e8-pic-btn">
 	                                    <button type="button" class="btn btn-success btn-xs"  onclick="showphoto('photo<?php echo ($picture["id"]); ?>');">查看</button>
-	                                    <a href="/dygzz/admin.php/Picture/edit/id/<?php echo ($picture["id"]); ?>" class=""><button type="button" class="btn btn-success btn-xs">修改</button></a>
-	                                    <a href="javascript:void(0);" onclick="return confirm('/dygzz/admin.php/Picture/del/id/<?php echo ($picture["id"]); ?>','确定删除?');" class=""><button type="button" class="btn btn-success btn-xs">删除</button></a>
+	                                    <a href="/wcdz/admin.php/Picture/edit/id/<?php echo ($picture["id"]); ?>" class=""><button type="button" class="btn btn-success btn-xs">修改</button></a>
+	                                    <a href="javascript:void(0);" onclick="return confirm('/wcdz/admin.php/Picture/del/id/<?php echo ($picture["id"]); ?>','确定删除?');" class=""><button type="button" class="btn btn-success btn-xs">删除</button></a>
 	                                </span>
                            		</div><?php endforeach; endif; ?>
                         </form>                      
@@ -108,11 +108,11 @@
 
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
+	<script src="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
     <!--  -->
-	<script src="/dygzz/Public/e8admin/default/js/e8.js"></script>
-    <script src="/dygzz/Public/e8admin/default/js/fun.js"></script>
+	<script src="/wcdz/Public/e8admin/default/js/e8.js"></script>
+    <script src="/wcdz/Public/e8admin/default/js/fun.js"></script>
     <script>
     $(document).ready(function(){
         

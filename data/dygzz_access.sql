@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : conn
-Source Server Version : 50524
+Source Server         : localhost
+Source Server Version : 50617
 Source Host           : localhost:3306
 Source Database       : dygzz
 
 Target Server Type    : MYSQL
-Target Server Version : 50524
+Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-04-28 19:15:17
+Date: 2016-05-27 11:45:03
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -191,21 +191,19 @@ CREATE TABLE `dygzz_class` (
   `description` varchar(255) DEFAULT NULL COMMENT '栏目描述',
   `content` mediumtext,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dygzz_class
 -- ----------------------------
-INSERT INTO `dygzz_class` VALUES ('1', '1', '1', '0', '0', '1', '2,3,4', '党站简介', null, '', null, '0', '0', '1', '1', '2', '1', '', '', '', '');
+INSERT INTO `dygzz_class` VALUES ('1', '1', '1', '0', '0', '1', '2,3,4', '党站简介', null, '', null, '0', '0', '1', '1', '2', '1', '', '', '', '<p>cs CDX XC XC CXe8网络工作室</p>');
 INSERT INTO `dygzz_class` VALUES ('2', '0', '1', '1', '0,1', '0', null, '工作站简介', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('3', '0', '1', '1', '0,1', '0', null, '现任站委会', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('4', '0', '1', '1', '0,1', '0', null, '历届站委会', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
-INSERT INTO `dygzz_class` VALUES ('5', '1', '1', '0', '0', '0', null, '理论导航', null, '', null, '0', '0', '1', '1', '2', '3', '', '', '', '');
+INSERT INTO `dygzz_class` VALUES ('5', '1', '1', '0', '0', '1', '25', '理论导航', null, '', null, '0', '0', '1', '1', '2', '3', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('6', '1', '1', '0', '0', '1', '7,8,9', '主题实践', null, '', null, '0', '0', '1', '1', '2', '3', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('7', '1', '1', '6', '0,6', '0', null, '两学一做', null, '', null, '0', '0', '1', '0', '2', '3', '', '', '', '');
-INSERT INTO `dygzz_class` VALUES ('8', '1', '1', '6', '0,6', '0', null, '三严三实', null, '', null, '0', '0', '1', '0', '2', '3', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('9', '1', '1', '6', '0,6', '0', null, '党课培训', null, '', null, '0', '0', '1', '0', '2', '3', '', '', '', '');
-INSERT INTO `dygzz_class` VALUES ('10', '0', '1', '0', '0', '0', null, '公寓风采', null, '', null, '0', '0', '1', '1', '9', '8', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('11', '1', '1', '0', '0', '1', '12,13,14', '示范园地', null, '', null, '0', '0', '1', '1', '2', '10', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('12', '0', '1', '11', '0,11', '0', null, '优秀党员', null, '', null, '0', '0', '1', '0', '9', '10', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('13', '0', '1', '11', '0,11', '0', null, '先进人物', null, '', null, '0', '0', '1', '0', '2', '10', '', '', '', '');
@@ -214,27 +212,11 @@ INSERT INTO `dygzz_class` VALUES ('16', '0', '1', '15', '0,15', '0', null, '基�
 INSERT INTO `dygzz_class` VALUES ('17', '0', '1', '15', '0,15', '0', null, '党员基本信息', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('18', '0', '1', '15', '0,15', '0', null, '党员联系同学', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('19', '1', '1', '0', '0', '1', '23,24', '服务交流', null, '', null, '0', '0', '1', '1', '2', '1', '', '', '', '');
-INSERT INTO `dygzz_class` VALUES ('20', '1', '1', '0', '0', '0', null, '最新公告', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
-INSERT INTO `dygzz_class` VALUES ('21', '1', '1', '0', '0', '0', null, '手拉手心连心', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
-INSERT INTO `dygzz_class` VALUES ('22', '0', '1', '0', '0', '0', null, '图片新闻', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('23', '0', '1', '19', '0,19', '0', null, '值班安排', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('24', '0', '1', '19', '0,19', '0', null, '联系我们', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
-
--- ----------------------------
--- Table structure for `dygzz_class_perm`
--- ----------------------------
-DROP TABLE IF EXISTS `dygzz_class_perm`;
-CREATE TABLE `dygzz_class_perm` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `classid` int(11) DEFAULT NULL,
-  `roleid` int(11) DEFAULT '0' COMMENT '角色或是组id',
-  `action` varchar(255) DEFAULT NULL COMMENT '动作',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of dygzz_class_perm
--- ----------------------------
+INSERT INTO `dygzz_class` VALUES ('26', '1', '1', '0', '0', '0', null, '公告', null, '在这里发布网站的公告', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
+INSERT INTO `dygzz_class` VALUES ('27', '1', '1', '0', '0', '0', null, '通知', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
+INSERT INTO `dygzz_class` VALUES ('28', '1', '1', '0', '0', '0', null, '新闻', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
 
 -- ----------------------------
 -- Table structure for `dygzz_classname`
@@ -258,6 +240,22 @@ INSERT INTO `dygzz_classname` VALUES ('7', '14网工1班');
 INSERT INTO `dygzz_classname` VALUES ('8', '11计科3班');
 
 -- ----------------------------
+-- Table structure for `dygzz_class_perm`
+-- ----------------------------
+DROP TABLE IF EXISTS `dygzz_class_perm`;
+CREATE TABLE `dygzz_class_perm` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `classid` int(11) DEFAULT NULL,
+  `roleid` int(11) DEFAULT '0' COMMENT '角色或是组id',
+  `action` varchar(255) DEFAULT NULL COMMENT '动作',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of dygzz_class_perm
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for `dygzz_comment`
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_comment`;
@@ -271,12 +269,23 @@ CREATE TABLE `dygzz_comment` (
   `answertime` int(20) DEFAULT NULL COMMENT '回复时间',
   `comment` varchar(255) NOT NULL COMMENT '留言内容',
   `email` varchar(50) DEFAULT NULL,
+  `phone` varchar(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dygzz_comment
 -- ----------------------------
+INSERT INTO `dygzz_comment` VALUES ('1', '0.0.0.0', '1121', 'root', '1463478559', '0', null, '24.45.', '11', null);
+INSERT INTO `dygzz_comment` VALUES ('2', '0.0.0.0', 'hello', 'admin', '1464264453', '0', null, '这是一条测试数据,请不要回复,', '2013855675@qq.com', '15705547511');
+INSERT INTO `dygzz_comment` VALUES ('3', '0.0.0.0', 'ads', 'admin', '1464265593', '0', null, 'dfasd', 'asdf', 'asdf');
+INSERT INTO `dygzz_comment` VALUES ('4', '0.0.0.0', 'adsasdfasdf', 'alert', '1464265607', '0', null, 'dfasdsfd', 'asdffaswertvcv', 'asdfbfdgh');
+INSERT INTO `dygzz_comment` VALUES ('5', '0.0.0.0', '1212', 'root', '1464265620', '0', null, 'sdefgasdfgasdfhdgf', '4352435', '456');
+INSERT INTO `dygzz_comment` VALUES ('6', '0.0.0.0', '657', 'admin', '1464265632', '0', null, 'hjklklh', '879', '987yhj');
+INSERT INTO `dygzz_comment` VALUES ('7', '0.0.0.0', '5678fh', 'admin', '1464265758', '0', null, 'hjklklh6754sdfgX', '879fghj', '987yhjhjf');
+INSERT INTO `dygzz_comment` VALUES ('8', '0.0.0.0', '1234', '我回复了你  这是测试数据喔                      ', '1464268368', '1', '1464311154', '1234123', '2341@qq.com', null);
+INSERT INTO `dygzz_comment` VALUES ('9', '0.0.0.0', '123', null, '1464319328', '0', null, 'hello world ', '2013855675@qq.com', null);
+INSERT INTO `dygzz_comment` VALUES ('10', '0.0.0.0', 'hello', null, '1464320113', '0', null, 'hello php', 'ceshi@qq.com', null);
 
 -- ----------------------------
 -- Table structure for `dygzz_config`
@@ -291,7 +300,7 @@ CREATE TABLE `dygzz_config` (
   `type` char(16) NOT NULL DEFAULT 'string' COMMENT '类型',
   PRIMARY KEY (`id`),
   KEY `varname` (`varname`)
-) ENGINE=MyISAM AUTO_INCREMENT=65 DEFAULT CHARSET=utf8 COMMENT='网站配置表';
+) ENGINE=MyISAM AUTO_INCREMENT=67 DEFAULT CHARSET=utf8 COMMENT='网站配置表';
 
 -- ----------------------------
 -- Records of dygzz_config
@@ -337,6 +346,7 @@ INSERT INTO `dygzz_config` VALUES ('39', 'index_urlruleid', '首页URL规则', '
 INSERT INTO `dygzz_config` VALUES ('40', 'indextp', '首页模板', '0', 'index.php', '');
 INSERT INTO `dygzz_config` VALUES ('41', 'tagurl', 'TagURL规则', '0', '8', '');
 INSERT INTO `dygzz_config` VALUES ('61', 'adminurl', '后台url', '1', 'http://211.70.176.141/jxx/admin.php/', 'bool');
+INSERT INTO `dygzz_config` VALUES ('66', 'sitevideo', '视频链接', '0', 'http://lxqncdn.miaopai.com/stream/xRtsRBKH8Tcp-muEidPwNg__.mp4', '');
 
 -- ----------------------------
 -- Table structure for `dygzz_content`
@@ -367,19 +377,15 @@ CREATE TABLE `dygzz_content` (
   `relateid` int(11) DEFAULT NULL,
   `author` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dygzz_content
 -- ----------------------------
-INSERT INTO `dygzz_content` VALUES ('1', '1', '7', '手抄报比赛', null, '手抄党章', ' ', '0', '', '0', '1', '1461544486', '1461587871', '16', '0', '0', '0', '0', '0', '', '计算机学院', null, '许迟');
-INSERT INTO `dygzz_content` VALUES ('2', '1', '21', '手拉手', null, '', '', '0', '', '0', '2', '1461547935', '1461591196', '14', '0', '0', '0', '0', '0', '', '计算机学院', null, '');
-INSERT INTO `dygzz_content` VALUES ('3', '1', '21', 'rew ', null, '', '  ', '0', '', '0', '2', '1461548630', '1461674777', '21', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('4', '1', '20', 'uy eu ', null, '', '', '0', '', '0', '1', '1461629566', '1461672793', '3', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('1', '1', '7', '手抄报比赛', null, '手抄党章', ' ', '0', '', '0', '1', '1461544486', '1461587871', '17', '0', '0', '0', '0', '0', '', '计算机学院', null, '许迟');
 INSERT INTO `dygzz_content` VALUES ('5', '1', '5', '习近平系列讲话', null, '', ' ', '0', '', '0', '2', '1461631377', '1461674673', '7', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('6', '1', '20', '2016年4月26日查寝', null, '', '', '0', '', '0', '1', '1461631671', '1461674899', '2', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('7', '1', '16', '基层组织信息', null, '', '', '0', '', '0', '1', '1461632088', '1461675378', '12', '0', '0', '0', '0', '0', '', '计算机学院', null, '计算机学院');
-INSERT INTO `dygzz_content` VALUES ('8', '1', '24', '计算机学院党站人员联系方式', null, '', '', '0', '', '0', '1', '1461712964', '1461756285', '11', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('7', '1', '16', '基层组织信息', null, '', '', '0', '', '0', '1', '1461632088', '1461675378', '45', '0', '0', '0', '0', '0', '', '计算机学院', null, '计算机学院');
+INSERT INTO `dygzz_content` VALUES ('8', '1', '24', '计算机学院党站人员联系方式', null, '', '', '0', '', '0', '1', '1461712964', '1461756285', '12', '0', '0', '0', '0', '0', '', '', null, '');
 INSERT INTO `dygzz_content` VALUES ('9', '1', '5', '2016年两会十大热点前瞻', null, '', '    ', '0', '', '0', '1', '1461716294', '1461761715', '5', '0', '0', '0', '0', '0', '', 'https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp', null, '施华婷');
 INSERT INTO `dygzz_content` VALUES ('10', '1', '5', '专家两会热点关键词解读:这五大关键字对中国的重要性', null, '', '   ', '0', '', '0', '1', '1461716522', '1461761591', '4', '0', '0', '0', '0', '0', '', 'http://www.zhicheng.com/n/20160314/56816.html', null, '施华婷');
 INSERT INTO `dygzz_content` VALUES ('11', '1', '5', '推动全面从严治党向基层延伸的重大举措', null, '', ' ', '0', '', '0', '1', '1461716747', '1461761487', '2', '0', '0', '0', '0', '0', '', 'http://news.xinhuanet.com/politics/2016-02/29/c_128761102.html', null, '施华婷');
@@ -387,8 +393,23 @@ INSERT INTO `dygzz_content` VALUES ('12', '1', '5', '“两学一做”系列：
 INSERT INTO `dygzz_content` VALUES ('13', '1', '5', '“两学一做”，学什么？做什么？', null, '', '   ', '0', '', '0', '1', '1461717092', '1461767072', '6', '0', '0', '0', '0', '0', '', 'http://www.dangjian.cn/specials/djwwpt/wxgx/201603/t20160301_3180884.shtml', null, '施华婷');
 INSERT INTO `dygzz_content` VALUES ('14', '1', '5', '三严三实”——永恒的从政准则', null, '', '     ', '0', '', '0', '1', '1461717167', '1461766721', '8', '0', '0', '0', '0', '0', '', '新华网', null, '');
 INSERT INTO `dygzz_content` VALUES ('15', '1', '5', '在“三严三实”中实现人生价值', null, '', '    ', '0', '', '0', '1', '1461717319', '1461766327', '6', '0', '0', '0', '0', '0', '', '新华网', null, '施华婷');
-INSERT INTO `dygzz_content` VALUES ('16', '1', '5', '中共中央组织部印发《推进“三严三实”教育的通知》', null, '', '  ', '0', '', '0', '1', '1461717448', '1461766269', '10', '0', '0', '0', '0', '0', '', '新华网', null, '');
-INSERT INTO `dygzz_content` VALUES ('17', '1', '24', '党站人员联系方式', null, '', '       ', '0', '', '0', '1', '1461718700', '1461765337', '23', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('16', '1', '5', '中共中央组织部印发《推进“三严三实”教育的通知》', null, '', '  ', '0', '', '0', '1', '1461717448', '1461766269', '11', '0', '0', '0', '0', '0', '', '新华网', null, '');
+INSERT INTO `dygzz_content` VALUES ('17', '1', '26', '党站人员联系方式', null, '', '       ', '0', '', '0', '1', '1461718700', '1461765337', '12', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('18', '1', '26', '这是一个标题', null, '', '', '0', '', '0', '1', '1463959231', '1464002446', '5', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('19', '1', '26', '这是一个公告1', null, '', '', '0', '', '0', '1', '1463964849', '1464008088', '0', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('20', '1', '27', '这是一个通知1', null, '', '', '0', '', '0', '1', '1464031394', '1464074623', '0', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('21', '1', '27', '这是一个通知2', null, '', '', '0', '', '0', '1', '1464031426', '1464074632', '0', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('22', '1', '28', '这是一个新闻1', null, '', '', '0', '', '0', '1', '1464031450', '1464074662', '0', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('23', '1', '28', '这是一个新闻2', null, '', '', '0', '', '0', '1', '1464031465', '1464074677', '0', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('24', '1', '26', '中华人民共和国到了', null, '', '', '0', '', '0', '1', '1464050876', '1464094097', '0', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('25', '1', '26', '我小时候有一个梦想', null, '', '', '0', '', '0', '1', '1464050901', '1464094118', '0', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('26', '1', '26', '今天我吃了一个西瓜', null, '', '', '0', '', '0', '1', '1464050921', '1464094136', '0', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('27', '1', '26', '很撑的一个晚上  我睡不着', null, '', '', '0', '', '0', '1', '1464050938', '1464094155', '0', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('28', '1', '26', '今天晚上我想回去做', null, '', '', '0', '', '0', '1', '1464050958', '1464094167', '0', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('29', '1', '26', '眼睛很酸啊', null, '', '', '0', '', '0', '1', '1464050969', '1464094175', '0', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('30', '1', '26', '我想睡觉', null, '', '', '0', '', '0', '1', '1464050978', '1464094183', '0', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('31', '1', '26', '内容我也不写了  我好懒', null, '', '', '0', '', '0', '1', '1464050986', '1464094197', '0', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('32', '1', '26', '最后一个', null, '', '', '0', '', '0', '1', '1464051000', '1464094205', '1', '0', '0', '0', '0', '0', '', '', null, '');
 
 -- ----------------------------
 -- Table structure for `dygzz_content_data`
@@ -405,11 +426,7 @@ CREATE TABLE `dygzz_content_data` (
 -- Records of dygzz_content_data
 -- ----------------------------
 INSERT INTO `dygzz_content_data` VALUES ('1', '<p>手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛<img alt=\"zt_1.jpg\" src=\"/mkszyllx/Public/data/upload/image/20160425/1461587788140227.jpg\" title=\"1461587788140227.jpg\"/></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://localhost/dygzz/Public/e8admin/default/lib/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"/mkszyllx/Public/data/upload/file/20160425/1461587865132989.xlsx\" title=\"工作簿1.xlsx\">工作簿1.xlsx</a></p><p><br/></p>', null);
-INSERT INTO `dygzz_content_data` VALUES ('2', '<p>手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手手拉手</p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://localhost/dygzz/Public/e8admin/default/lib/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"/mkszyllx/Public/data/upload/file/20160425/1461591178121478.xls\" title=\"纪如 基本信统计表息.xls\">纪如 基本信统计表息.xls</a></p><p><br/></p>', null);
-INSERT INTO `dygzz_content_data` VALUES ('3', '<p>习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话</p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://localhost/dygzz/Public/e8admin/default/lib/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"/mkszyllx/Public/data/upload/file/20160425/1461591848124383.xls\" title=\"学生党员名单（新）.xls\">学生党员名单（新）.xls</a></p><p><br/></p>', null);
-INSERT INTO `dygzz_content_data` VALUES ('4', '<p>uy eu uy eu uy eu<br/></p>', null);
 INSERT INTO `dygzz_content_data` VALUES ('5', '<p>习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话</p><p><br/></p>', null);
-INSERT INTO `dygzz_content_data` VALUES ('6', '<p>2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝2016年4月26日查寝</p>', null);
 INSERT INTO `dygzz_content_data` VALUES ('7', '<p>计算机学院党员工作站分两个党支部。第一党支部与第二党支部。<br/></p>', null);
 INSERT INTO `dygzz_content_data` VALUES ('8', '<p style=\"line-height: 16px;\"><img style=\"margin-right: 2px; vertical-align: middle;\" src=\"http://localhost/dygzz/Public/e8admin/default/lib/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif\"/><a title=\"计算机学院党站人员名单.docx.xlsx\" style=\"color: rgb(0, 102, 204); font-size: 12px;\" href=\"/mkszyllx/Public/data/upload/file/20160427/1461756277110991.xlsx\">计算机学院党站人员名单.docx.xlsx</a></p><p></p>', null);
 INSERT INTO `dygzz_content_data` VALUES ('9', '<p style=\"background: rgb(255, 255, 255); text-align: justify; line-height: 25px; -ms-text-autospace: ideograph-numeric; -ms-text-justify: inter-ideograph;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">新华社北京<span style=\"font-family: Arial;\">3</span><span style=\"font-family: 宋体;\">月</span><span style=\"font-family: Arial;\">2</span><span style=\"font-family: 宋体;\">日电题</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">吹响决胜全面小康的号角</span><span style=\"font-family: Arial;\">——2016</span><span style=\"font-family: 宋体;\">年两会十大热点前瞻</span></span></p><p style=\"background: rgb(255, 255, 255); text-align: justify; line-height: 25px; -ms-text-autospace: ideograph-numeric; -ms-text-justify: inter-ideograph;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">新华社<span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">新华视点</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">记者</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">2016<span style=\"font-family: 宋体;\">年全国两会</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">是一个在重要历史节点召开的盛会。站在</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">十二五</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">收官、</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">十三五</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">开局的历史关口</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">如何按照中央</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">五位一体</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">总体布局和</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">四个全面</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">战略布局</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">抓住机遇、应对挑战</span><span style=\"font-family: Arial;\">?</span><span style=\"font-family: 宋体;\">如何深入贯彻五大发展理念</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">以供给侧结构性改革为主线</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">挖掘经济发展新动力</span><span style=\"font-family: Arial;\">?</span><span style=\"font-family: 宋体;\">会聚北京共商国是的代表委员们将展开讨论、建言献策</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">制定出行动纲领。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">1</span><span style=\"font-family: 宋体;\">】</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">十三五</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">规划</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">引领新常态开拓新境界</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">到<span style=\"font-family: Arial;\">2020</span><span style=\"font-family: 宋体;\">年全面建成小康社会</span><span style=\"font-family: Arial;\">,“</span><span style=\"font-family: 宋体;\">十三五</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">是冲刺的</span><span style=\"font-family: Arial;\">5</span><span style=\"font-family: 宋体;\">年。</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">四个全面</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">战略布局如何继续推进</span><span style=\"font-family: Arial;\">?</span><span style=\"font-family: 宋体;\">创新、协调、绿色、开放、共享的五大发展理念如何</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">落地</span><span style=\"font-family: Arial;\">”?</span><span style=\"font-family: 宋体;\">作为一份引领国家开创发展新境界的纲领性文件</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">两会审查、讨论的</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">十三五</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">规划草案</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">将回答国内外关注的诸多</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">中国之问</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">2</span><span style=\"font-family: 宋体;\">】供给侧改革</span><span style=\"font-family: Arial;\">:“</span><span style=\"font-family: 宋体;\">高频词</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">化为具体</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">路线图</span><span style=\"font-family: Arial;\">”</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">自去年底的中央经济工作会议后<span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">以去产能、去库存、去杠杆、降成本、补短板五大任务为重点的供给侧结构性改革正式启动。新常态下</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">供给侧改革正从</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">高频词</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">化为政府、企业明晰具体的改革</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">路线图</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">3</span><span style=\"font-family: 宋体;\">】扶贫攻坚战</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">吹响冲锋号立下</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">军令状</span><span style=\"font-family: Arial;\">”</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: 宋体; font-size: 14px;\">“</span><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">小康路上<span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">不让一个困难群众掉队。</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">到</span><span style=\"font-family: Arial;\">2020</span><span style=\"font-family: 宋体;\">年让</span><span style=\"font-family: Arial;\">7000</span><span style=\"font-family: 宋体;\">多万贫困人口全部脱贫</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">贫困县全部摘帽</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">是十八届五中全会既定目标</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">也是我国对全球减贫事业的庄严承诺。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">从层层立下<span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">军令状</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">到</span><span style=\"font-family: Arial;\">22</span><span style=\"font-family: 宋体;\">个中西部省区市考核扶贫成效</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">脱贫攻坚战的冲锋号已经吹响。精准扶贫还有哪些障碍</span><span style=\"font-family: Arial;\">?</span><span style=\"font-family: 宋体;\">哪些政策需要改进完善</span><span style=\"font-family: Arial;\">?</span><span style=\"font-family: 宋体;\">代表委员将带来大量一线情况与真知灼见。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">4</span><span style=\"font-family: 宋体;\">】慈善法审议</span><span style=\"font-family: Arial;\">:“</span><span style=\"font-family: 宋体;\">怀胎</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">十余年有望</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">呱呱落地</span><span style=\"font-family: Arial;\">”</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">慈善法草案将提交十二届全国人大四次会议审议。历经十余年努力<span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">我国关于慈善事业的首部立法将走上前台。草案经过两次审议</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">多处修改</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">此次提交审议后还将有哪些变化</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">将成为今年两会一大看点。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">5</span><span style=\"font-family: 宋体;\">】司法改革</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">为全面小康提供有力法律保障</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">在前两批共<span style=\"font-family: Arial;\">18</span><span style=\"font-family: 宋体;\">个省市司法改革试点基础上</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">今年司法体制改革试点将在全国各地推开</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">成为全面深化司法体制改革的攻坚之年。完善司法人员分类管理制度、完善司法责任制、健全司法人员职业保障制度等司法改革的基础性措施如何深入推进</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">引人关注。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">6</span><span style=\"font-family: 宋体;\">】民生改善</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">共享改革发展成果</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">党的十八届五中全会公报提出<span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">按照人人参与、人人尽力、人人享有的要求</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">坚守底线、突出重点、完善制度、引导预期</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">注重机会公平</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">保障基本民生</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">实现全体人民共同迈入全面小康社会。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">7</span><span style=\"font-family: 宋体;\">】创新驱动</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">社会经济发展新动能</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">创新正被摆在国家发展全局的核心位置。屠呦呦获得诺贝尔科学奖、<span style=\"font-family: Arial;\">C919</span><span style=\"font-family: 宋体;\">大型客机总装下线、</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">悟空</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">卫星升空探索暗物质粒子、科技成果转化法修订实施、新登记企业</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">井喷</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">、创新创业平台到处落地生根、创业投资迅速增长</span><span style=\"font-family: Arial;\">……</span><span style=\"font-family: 宋体;\">一系列创新标志性事件</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">透出中国经济社会发展正发生重大变革。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">8</span><span style=\"font-family: 宋体;\">】绿色环保</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">让执法监督</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">硬起来</span><span style=\"font-family: Arial;\">”</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">从中央提出绿色发展理念<span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">到大气污染治理写入</span><span style=\"font-family: Arial;\">31</span><span style=\"font-family: 宋体;\">个省区市政府工作报告</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">再到</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">十三五</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">规划建议中强调环保</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">社会各界对加快建设美丽中国充满期待。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">9</span><span style=\"font-family: 宋体;\">】拓展空间</span><span style=\"font-family: Arial;\">:“</span><span style=\"font-family: 宋体;\">中国方案</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">潜力巨大</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">“<span style=\"font-family: 宋体;\">一带一路</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">、京津冀协同发展、长江经济带建设三大战略深入推进</span><span style=\"font-family: Arial;\">;“</span><span style=\"font-family: 宋体;\">一带一路</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">战略为经济发展创造了良好的国际环境</span><span style=\"font-family: Arial;\">;</span><span style=\"font-family: 宋体;\">亚投行、金砖国家新开发银行等已经起航</span><span style=\"font-family: Arial;\">,G20</span><span style=\"font-family: 宋体;\">将吸引更多目光。中国推进更高层次的开放发展路线图</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">将在今年两会上更加明晰。此外</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">新一轮的东北振兴也令人期待。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">10</span><span style=\"font-family: 宋体;\">】政府自身改革</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">建设廉洁政府为改革发展添动力</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">党的十八大以来<span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">打造法治政府、创新政府、廉洁政府和服务型政府成效显著。从一批批行政审批事项取消和下放</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">到推行</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">权力清单</span><span style=\"font-family: Arial;\">”“</span><span style=\"font-family: 宋体;\">责任清单</span><span style=\"font-family: Arial;\">”,</span><span style=\"font-family: 宋体;\">政府</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">法无授权不可为</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">的理念日益深入人心。同时反腐倡廉推动市场建立公平公正的秩序</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">提升了政府公信力</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">为改革发展增添动力。</span></span></p><p><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">南开大学周恩来政府管理学院教授徐行表示<span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">近年来的政府工作报告都对政府自身建设提出新要求。人们期待着进一步明确政府权力边界</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">继续加大简政放权力度</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">消除寻租腐败的空间</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">建立政策落实的责任机制和督查问责机制。</span></span></p><p>&nbsp;</p>', null);
@@ -421,6 +438,21 @@ INSERT INTO `dygzz_content_data` VALUES ('14', '<p style=\"margin: 1em 0px 0px; 
 INSERT INTO `dygzz_content_data` VALUES ('15', '<p style=\"margin: 1em 0px 0px; text-align: center; text-indent: 29px;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">&nbsp;&nbsp; <img title=\"1461760584423561.png\" alt=\"图片1.png\" src=\"/mkszyllx/Public/data/upload/image/20160427/1461760584423561.png\"/></span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">9<span style=\"font-family: 微软雅黑;\">月</span><span style=\"font-family: Tahoma;\">1</span><span style=\"font-family: 微软雅黑;\">日，中共中央政治局常委、中央党校校长刘云山在中央党校秋季学期开学典礼讲话中强调，党员干部要认真学习贯彻习近平总书记重要指示精神，深入领会“</span></span><span style=\"font-family: 微软雅黑; font-size: 15px;\">三严三实</span><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">”的深刻内涵和具体要求，切实做到严以修身、严以用权、严以律己，谋事要实、创业要实、做人要实，更好履行共产党人的崇高职责。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">习近平总书记提出的“三严三实”具有很强的针对性，是新时期共产党人加强自身修养的行动指南。每个人都在探寻人生的价值和生命的意义。对于广大党员干部来说，人生的价值就体现在运用人民赋予的权力全心全意为人民服务，而在工作生活中贯彻“三严三实”的要求，正是实现自我人生价值的重要保证和必由之路。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">贯彻“三严三实”的要求，首要的一条是做到“严”字当头。从历史上看，从新近的事例看，很多栽跟头的党员干部有一个共同点，那就是不能做到严以修身、严以用权、严以律己，公德不顾，帷薄不修，似乎头脑中只装满了各种私欲，手中的权力只是实现这各种私欲的工具，结果灵魂掉入黑暗的深渊，同时给党和国家造成重大损失。相反，那些为人民建功立业、做出突出贡献的人，没有一个不对自己要求严格，也没有一个会滥用职权。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">人生在世，无非是做人、做事，党员干部自然是在做人、做事中做官，做官也就是做事、做人。做人不实，无法做人；做事不实，难以成功；做官不实，祸己害民。前人说得好：“板凳要坐十年冷，文章不写一句空。”更何况党员干部的“学问”不是在书斋里做出来的，党员干部的“道德文章”不是写在纸上而是写在大地上、写在人心中，岂能不奉“实”字为金针，时时处处警醒激励自己谋事要实、创业要实、做人要实？练多了“虚”功，做多了“虚”事，则可能无往而不“虚”，心也一天比一天“虚”，又如何能收获实在的人生？</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">“</span><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">三严三实”是一个统一的整体：只有做到了“三严”，才能做到“三实”；同样，只有做到了“三实”，才能做到“三严”。自奉甚俭、自律甚严者鲜不“实”，追求生命有重量、有质感的人鲜不自“严”。如果有党员干部作风飘浮、好大喜功，却宣称自律甚严，我们可以不客气地指出这是一种虚伪；如果有党员干部沉迷于灯红酒绿、夸夸其谈，却宣称自己脚踏实地，我们同样可以不客气地指出这也是一种虚伪。每个党员干部都应当以“吾日三省吾身”的精神对照自己的言行，看看是不是走在“三严三实”的正确道路上；如果偏离了“三严三实”的轨道就要迅速加以纠正，如此才不至于使自己的人生迷失方向。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">对于各级党员领导干部来说，贯彻“三严三实”还有更高的要求。党员领导干部像普通党员干部那样做到“三严三实”，这是起码的要求，但不能也不应满足于此。如果队伍中存在背离“三严三实”的表现甚至消极腐败现象，党员领导干部不去旗帜鲜明地反对、不去积极采取措施加以消除，而是睁一只眼闭一只眼，那么就可以说，这样的党员领导干部离“三严三实”的要求还有不小的差距。因此，“三严三实”不仅是党员干部加强个人修养的行动指南，同时也是加强党的作风建设、队伍建设的根本要求，必须充分体现到党要管党、从严治党的全过程和各方面。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">链接地址：http://news.xinhuanet.com/comments/2014-09/03/c_1112335179.htm</span></p><p>&nbsp;</p>', null);
 INSERT INTO `dygzz_content_data` VALUES ('16', '<p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-layout-grid-mode: char; -ms-text-autospace: ideograph-numeric;\"><span style=\"font-family: 微软雅黑; font-size: 15px;\">近日，中共中央组织部印发通知，对认真学习贯彻习近平总书记重要指示精神、扎实推进“三严三实”专题教育提出要求。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-layout-grid-mode: char; -ms-text-autospace: ideograph-numeric;\"><span style=\"font-family: 微软雅黑; font-size: 15px;\">《通知》指出，习近平总书记在浙江和贵州考察、会见全国优秀县委书记、主持召开中央全面深化改革领导小组第十四次会议时，对开展“三严三实”专题教育、践行“三严三实”要求作出重要指示。习近平总书记强调，在县处级以上领导干部中开展“三严三实”专题教育，是今年党的建设的一项重要任务，要突出问题导向，贯彻从严要求，既巩固和扩大从严治党成果，又有效解决党的建设面临的新问题。习近平总书记的重要指示精神，对于高标准高质量开展专题教育、确保取得实效，具有十分重要的指导意义。各级党委（党组）要认真组织学习，领会精神实质，抓好贯彻落实。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-layout-grid-mode: char; -ms-text-autospace: ideograph-numeric;\"><span style=\"font-family: 微软雅黑; font-size: 15px;\">《通知》强调，认真学习深刻领会习近平总书记重要指示精神。要把学习贯彻习近平总书记重要指示精神作为专题学习研讨的重要内容。通过学习，使领导干部深刻领会习近平总书记关于领导干部要可信、做人干事都让组织放心的要求，努力成为党和人民信赖的好干部；深刻领会习近平总书记关于学习老一辈革命家崇高品德的要求，检身正己、见贤思齐；深刻领会习近平总书记关于把“三严三实”贯穿改革全过程的要求，既当改革的促进派，又当改革的实干家；深刻领会习近平总书记关于领导干部要带头搞好专题教育的要求，清清白白做人、干干净净做事、堂堂正正做官。各级领导干部要在领会核心要义上下功夫，在打牢思想根基上下功夫，在坚持知行合一上下功夫，以思想自觉引领行动自觉。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-layout-grid-mode: char; -ms-text-autospace: ideograph-numeric;\"><span style=\"font-family: 微软雅黑; font-size: 15px;\">链接地址：http://dangjian.people.com.cn/n/2015/0713/c117092-27297917.html</span></p><p>&nbsp;</p>', null);
 INSERT INTO `dygzz_content_data` VALUES ('17', '<p><!--StartFragment --></p><p>计算机学院党员工作站在计算机学院党总支的领导下，协助第一党支部、第二党支部面向公寓开展工作。计算机学院党员工作站指导老师为彭飞老师。&nbsp;为了更好地服务同学，计算机学院党员工作站除了安排党站全天候值班和先锋岗值班外，还可以联系党站内部成员。其内部组织结构包括：站长丁勇杰，副站长王蕾，站务委员七名分别为：丁勇杰，王蕾，邓卉子，汪正亮，刘佳乐，许迟，王巧珍。<br/>&nbsp;&nbsp;&nbsp;&nbsp;在工作中经过不断调整计算机学院党员工作站现设置如下七个部门：生活部&nbsp;、办公室&nbsp;、安全部&nbsp;、组织部&nbsp;、纪检部&nbsp;、宣传部、信息部。其中办公室成员有：韩贵芳、储小琴、闫闫。组织部成员有：王蕾、施华婷、陈浩宁、刘启来。纪检部成员有：王晶、何艳玲、兰天。宣传部成员有：邓卉子、许迟、张国磊、余宙。生活部成员有：王巧珍、陈晚露、靳青青、吴甜。安全部成员有：陶维强、王娟、张煜。信息部成员有：冯程程、谷峰、斯金阳。<br/></p><p>&nbsp;</p><p>&nbsp;</p><p>附件：&nbsp; <img style=\"margin-right: 2px; vertical-align: middle;\" src=\"http://localhost/dygzz/Public/e8admin/default/lib/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif\"/><a title=\"计算机学院党站人员名单.docx.xlsx\" style=\"color: rgb(0, 102, 204); font-size: 12px;\" href=\"/mkszyllx/Public/data/upload/file/20160427/1461764976707872.xlsx\">计算机学院党站人员名单.docx.xlsx</a></p><p>&nbsp;</p>', null);
+INSERT INTO `dygzz_content_data` VALUES ('18', '<p>这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题</p>', null);
+INSERT INTO `dygzz_content_data` VALUES ('19', '<p>公告这呢 &nbsp;这是内容<br/></p>', null);
+INSERT INTO `dygzz_content_data` VALUES ('20', '<p>这是一个通知这是一个通知这是一个通知这是一个通知</p>', null);
+INSERT INTO `dygzz_content_data` VALUES ('21', '<p>2222222222222222222222222</p>', null);
+INSERT INTO `dygzz_content_data` VALUES ('22', '<p>这是一个新闻这是一个新闻</p>', null);
+INSERT INTO `dygzz_content_data` VALUES ('23', '<p>222222222222222222</p>', null);
+INSERT INTO `dygzz_content_data` VALUES ('24', '<p>阿斯顿发送到发送到发</p>', null);
+INSERT INTO `dygzz_content_data` VALUES ('25', '<p>梦想是什么？</p>', null);
+INSERT INTO `dygzz_content_data` VALUES ('26', '<p>西瓜很贵</p>', null);
+INSERT INTO `dygzz_content_data` VALUES ('27', '', null);
+INSERT INTO `dygzz_content_data` VALUES ('28', '', null);
+INSERT INTO `dygzz_content_data` VALUES ('29', null, null);
+INSERT INTO `dygzz_content_data` VALUES ('30', null, null);
+INSERT INTO `dygzz_content_data` VALUES ('31', null, null);
+INSERT INTO `dygzz_content_data` VALUES ('32', null, null);
 
 -- ----------------------------
 -- Table structure for `dygzz_domitory`
@@ -435,14 +467,38 @@ CREATE TABLE `dygzz_domitory` (
   `views` int(11) DEFAULT NULL COMMENT '点击量',
   `classname` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dygzz_domitory
 -- ----------------------------
-INSERT INTO `dygzz_domitory` VALUES ('1', '10A514', 'zhen', 'image/2016-04-24/571b9e67d61fe.jpg', '<p>aafd g<br/></p>', '16', '13网工班1');
+INSERT INTO `dygzz_domitory` VALUES ('1', '10A514', 'zhen', 'image/2016-05-24/57444ecbbf1f6.png', '<p>aafd g<br/></p>', '16', '13网工班1');
 INSERT INTO `dygzz_domitory` VALUES ('3', '10A515', '4et', 'image/2016-04-24/571ccc1a4c642.jpg', '<p>st</p>', '4', '13网工班1');
-INSERT INTO `dygzz_domitory` VALUES ('4', '10A517', '禹', 'image/2016-04-24/571ccc38db9f6.jpg', '<p>sftt</p>', '2', '13网工班1');
+INSERT INTO `dygzz_domitory` VALUES ('4', '10A517', '禹', 'image/2016-04-24/571ccc38db9f6.jpg', '<p>sftt</p>', '3', '13网工班1');
+INSERT INTO `dygzz_domitory` VALUES ('5', '9A410', '张宇', 'image/2016-05-24/57444ec03b9d3.png', '', null, '');
+INSERT INTO `dygzz_domitory` VALUES ('6', '4563', '653', 'image/2016-05-24/57444ede5954d.png', null, null, '');
+INSERT INTO `dygzz_domitory` VALUES ('7', '6+', '3456', 'image/2016-05-24/57444eefb2327.png', '', null, '');
+INSERT INTO `dygzz_domitory` VALUES ('8', '89', '786', 'image/2016-05-24/57444efe221c7.png', null, null, '');
+INSERT INTO `dygzz_domitory` VALUES ('9', '456', '456', 'image/2016-05-24/57444f0b0bd49.png', null, null, '');
+
+-- ----------------------------
+-- Table structure for `dygzz_flowimg`
+-- ----------------------------
+DROP TABLE IF EXISTS `dygzz_flowimg`;
+CREATE TABLE `dygzz_flowimg` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `img` varchar(255) DEFAULT NULL,
+  `URL` varchar(255) DEFAULT NULL,
+  `open` int(1) unsigned DEFAULT '1' COMMENT '1 新页面打开    0 本页面打开',
+  `remark` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of dygzz_flowimg
+-- ----------------------------
+INSERT INTO `dygzz_flowimg` VALUES ('1', '淮南师范学院E8工作室', 'image/2016-05-24/thumb_5744549527b09.jpg', 'http://t.tt', '1', '这是一个神奇的描述阿萨德');
 
 -- ----------------------------
 -- Table structure for `dygzz_link`
@@ -507,7 +563,7 @@ CREATE TABLE `dygzz_log` (
   `info` char(255) NOT NULL COMMENT '其他说明',
   `area` char(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=448 DEFAULT CHARSET=utf8 COMMENT='后台登陆日志表';
+) ENGINE=MyISAM AUTO_INCREMENT=458 DEFAULT CHARSET=utf8 COMMENT='后台登陆日志表';
 
 -- ----------------------------
 -- Records of dygzz_log
@@ -676,6 +732,16 @@ INSERT INTO `dygzz_log` VALUES ('444', 'admin', '1461756053', '127.0.0.1', '1', 
 INSERT INTO `dygzz_log` VALUES ('445', 'admin', '1461760974', '127.0.0.1', '1', '密码保密', '用户名登陆', '本机地址');
 INSERT INTO `dygzz_log` VALUES ('446', 'admin', '1461761876', '127.0.0.1', '1', '密码保密', '用户名登陆', '本机地址');
 INSERT INTO `dygzz_log` VALUES ('447', 'admin', '1461766223', '127.0.0.1', '1', '密码保密', '用户名登陆', '本机地址');
+INSERT INTO `dygzz_log` VALUES ('448', 'admin', '1463571049', '0.0.0.0', '1', '密码保密', '用户名登陆', 'IANA保留地址');
+INSERT INTO `dygzz_log` VALUES ('449', 'admin', '1463572707', '0.0.0.0', '1', '密码保密', '用户名登陆', 'IANA保留地址');
+INSERT INTO `dygzz_log` VALUES ('450', 'admin', '1463572956', '0.0.0.0', '1', '密码保密', '用户名登陆', 'IANA保留地址');
+INSERT INTO `dygzz_log` VALUES ('451', 'admin', '1463625537', '0.0.0.0', '1', '密码保密', '用户名登陆', 'IANA保留地址');
+INSERT INTO `dygzz_log` VALUES ('452', 'admin', '1463906954', '0.0.0.0', '1', '密码保密', '用户名登陆', 'IANA保留地址');
+INSERT INTO `dygzz_log` VALUES ('453', 'admin', '1463910432', '0.0.0.0', '1', '密码保密', '用户名登陆', 'IANA保留地址');
+INSERT INTO `dygzz_log` VALUES ('454', 'admin', '1463999992', '0.0.0.0', '1', '密码保密', '用户名登陆', 'IANA保留地址');
+INSERT INTO `dygzz_log` VALUES ('455', 'admin', '1464074581', '0.0.0.0', '1', '密码保密', '用户名登陆', 'IANA保留地址');
+INSERT INTO `dygzz_log` VALUES ('456', 'admin', '1464178874', '0.0.0.0', '1', '密码保密', '用户名登陆', 'IANA保留地址');
+INSERT INTO `dygzz_log` VALUES ('457', 'admin', '1464256649', '0.0.0.0', '1', '密码保密', '用户名登陆', 'IANA保留地址');
 
 -- ----------------------------
 -- Table structure for `dygzz_menu`
@@ -696,7 +762,7 @@ CREATE TABLE `dygzz_menu` (
   `listorder` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '栏目排序',
   `hidden` tinyint(1) DEFAULT '1' COMMENT '是否隐藏',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=82 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dygzz_menu
@@ -770,6 +836,7 @@ INSERT INTO `dygzz_menu` VALUES ('76', '留言管理', '38', 'Admin', 'comment',
 INSERT INTO `dygzz_menu` VALUES ('78', '寝室管理', '38', 'Admin', 'Domitory', 'index', '', 'Domitory/index', '1', '1', '寝室管理', '0', '0');
 INSERT INTO `dygzz_menu` VALUES ('79', '党员管理', '38', 'Admin', 'Partymember', 'index', '', 'Partymember/index', '1', '1', '党员管理', '0', '0');
 INSERT INTO `dygzz_menu` VALUES ('80', '先进人物', '38', 'Admin', 'Advance', 'index', '', 'Advance/index', '1', '1', '先进人物', '0', '0');
+INSERT INTO `dygzz_menu` VALUES ('81', '漂浮图片', '38', 'Admin', 'Flowimg', 'index', '', 'Flowimg/index', '1', '1', '漂浮图片', '0', '0');
 
 -- ----------------------------
 -- Table structure for `dygzz_model`
@@ -804,7 +871,7 @@ CREATE TABLE `dygzz_operationlog` (
   PRIMARY KEY (`id`),
   KEY `status` (`status`),
   KEY `username` (`uid`)
-) ENGINE=MyISAM AUTO_INCREMENT=322 DEFAULT CHARSET=utf8 COMMENT='后台操作日志表';
+) ENGINE=MyISAM AUTO_INCREMENT=334 DEFAULT CHARSET=utf8 COMMENT='后台操作日志表';
 
 -- ----------------------------
 -- Records of dygzz_operationlog
@@ -891,6 +958,18 @@ INSERT INTO `dygzz_operationlog` VALUES ('318', '1', '1461427829', '127.0.0.1', 
 INSERT INTO `dygzz_operationlog` VALUES ('319', '1', '1461427835', '127.0.0.1', '1', '提示语：删除寝室成功! <br />模块：Admin,控制器：Domitory,方法：Del <br />请求方式：GET', '/dygzz/admin.php/domitory/Del/id/11,12');
 INSERT INTO `dygzz_operationlog` VALUES ('320', '1', '1461427846', '127.0.0.1', '1', '提示语：删除寝室成功! <br />模块：Admin,控制器：Domitory,方法：Del <br />请求方式：GET', '/dygzz/admin.php/domitory/Del/id/7,13');
 INSERT INTO `dygzz_operationlog` VALUES ('321', '1', '1461587974', '127.0.0.1', '1', '提示语：删除寝室成功! <br />模块：Admin,控制器：Domitory,方法：Del <br />请求方式：GET', '/dygzz/admin.php/domitory/Del/id/5,6');
+INSERT INTO `dygzz_operationlog` VALUES ('322', '1', '1464083146', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
+INSERT INTO `dygzz_operationlog` VALUES ('323', '1', '1464083257', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
+INSERT INTO `dygzz_operationlog` VALUES ('324', '1', '1464083443', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
+INSERT INTO `dygzz_operationlog` VALUES ('325', '1', '1464083496', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
+INSERT INTO `dygzz_operationlog` VALUES ('326', '1', '1464083570', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
+INSERT INTO `dygzz_operationlog` VALUES ('327', '1', '1464083584', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
+INSERT INTO `dygzz_operationlog` VALUES ('328', '1', '1464091013', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
+INSERT INTO `dygzz_operationlog` VALUES ('329', '1', '1464091374', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
+INSERT INTO `dygzz_operationlog` VALUES ('330', '1', '1464091390', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
+INSERT INTO `dygzz_operationlog` VALUES ('331', '1', '1464092420', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
+INSERT INTO `dygzz_operationlog` VALUES ('332', '1', '1464092525', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
+INSERT INTO `dygzz_operationlog` VALUES ('333', '1', '1464093578', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
 
 -- ----------------------------
 -- Table structure for `dygzz_picture`
@@ -909,17 +988,16 @@ CREATE TABLE `dygzz_picture` (
   `views` int(11) DEFAULT '0' COMMENT '浏览次数',
   `author` varchar(50) DEFAULT NULL COMMENT '作者',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dygzz_picture
 -- ----------------------------
-INSERT INTO `dygzz_picture` VALUES ('2', '39', '两学一做', 'image/2016-04-22/thumb_5719822da4bde.jpg', '1', '1', '', '1461289518', '<p>学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习</p>', '0', '');
-INSERT INTO `dygzz_picture` VALUES ('3', '39', '学习话', 'image/2016-04-21/thumb_5718dc624f6b3.jpg', '1', '1', '', '1461338913', '<p>学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习</p>', '0', '');
-INSERT INTO `dygzz_picture` VALUES ('4', '40', '两学一做', 'image/2016-04-22/thumb_571a38401e11e.jpg', '1', '1', '', '1461338761', '<p>学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习</p>', '0', '');
-INSERT INTO `dygzz_picture` VALUES ('5', '40', '雪党站党规', 'image/2016-04-22/thumb_571a3861b1c11.jpg', '1', '1', '', '1461336161', '<p>学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习</p>', '0', ' 沟通');
-INSERT INTO `dygzz_picture` VALUES ('6', '40', '学系列讲话', 'image/2016-04-22/thumb_571a38776a371.gif', '1', '1', '', '1461675236', '<p>学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习系列讲话</p>', '0', '');
-INSERT INTO `dygzz_picture` VALUES ('7', '40', '先进人物评选', 'image/2016-04-23/thumb_571ac0c119701.jpg', '1', '1', '', '1461371073', '<p>亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar亲爱让我 台湾啊就qatar<img src=\"http://img.baidu.com/hi/jx2/j_0013.gif\"/><img alt=\"zt_1.jpg\" src=\"/mkszyllx/Public/data/upload/image/20160423/1461371069172987.jpg\" title=\"1461371069172987.jpg\"/></p>', '0', '斯维尔');
+INSERT INTO `dygzz_picture` VALUES ('10', '40', '男人讲话', 'image/2016-05-22/thumb_5741a7cfed2fa.gif', '1', '1', '', '1464002924', '', '0', '');
+INSERT INTO `dygzz_picture` VALUES ('11', '40', '阿斯蒂芬', 'image/2016-05-22/thumb_5741a88eb30f1.jpg', '1', '1', '是大法官撒地方根深蒂固手大热是', '1463920782', '', '0', '阿斯顿法国');
+INSERT INTO `dygzz_picture` VALUES ('16', '39', '联系我们', 'image/2016-05-23/thumb_5742eaeb094ed.jpg', '2', '0', '', '1464003345', '', '0', '');
+INSERT INTO `dygzz_picture` VALUES ('17', '40', '3', 'image/2016-05-24/thumb_57444f8c7277c.jpg', '1', '1', '', '1464094604', '', '0', '');
+INSERT INTO `dygzz_picture` VALUES ('18', '40', '4', 'image/2016-05-24/thumb_57444f97541a2.jpg', '1', '1', '', '1464094615', '', '0', '4');
 
 -- ----------------------------
 -- Table structure for `dygzz_role`
@@ -969,7 +1047,7 @@ CREATE TABLE `dygzz_session` (
   `ip` char(64) NOT NULL,
   `name` char(64) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dygzz_session
@@ -1003,6 +1081,7 @@ INSERT INTO `dygzz_session` VALUES ('27', '117.69.22.30', '3c9285983984122f3203c
 INSERT INTO `dygzz_session` VALUES ('28', '120.210.183.253', '3c9285983984122f3203cd57a43da02c');
 INSERT INTO `dygzz_session` VALUES ('29', '192.168.7.202', '66aa2a4d09a3b203d18202319ff4c112');
 INSERT INTO `dygzz_session` VALUES ('30', '192.168.7.141', '66aa2a4d09a3b203d18202319ff4c112');
+INSERT INTO `dygzz_session` VALUES ('31', '0.0.0.0', '3c9285983984122f3203cd57a43da02c');
 
 -- ----------------------------
 -- Table structure for `dygzz_student`
@@ -1221,7 +1300,7 @@ CREATE TABLE `dygzz_user` (
 -- ----------------------------
 -- Records of dygzz_user
 -- ----------------------------
-INSERT INTO `dygzz_user` VALUES ('1', 'admin', '超级管理员', '81dc9bdb52d04dc20036dbd8313ed055', '', '1461766223', '127.0.0.1', 'BmFZ3p', 'admin@abc3210.com', '', '1408778905', '1418953970', '1', '1', '', 'photo/2014-12-16/54900d897dd25.jpg');
+INSERT INTO `dygzz_user` VALUES ('1', 'admin', '超级管理员', '81dc9bdb52d04dc20036dbd8313ed055', '', '1464256649', '0.0.0.0', 'BmFZ3p', 'admin@abc3210.com', '', '1408778905', '1418953970', '1', '1', '', 'photo/2014-12-16/54900d897dd25.jpg');
 INSERT INTO `dygzz_user` VALUES ('2', 'e8network', '超级管理员', '81dc9bdb52d04dc20036dbd8313ed055', '', '1434088419', '127.0.0.1', '', '', '', '0', '0', '1', '1', '', 'photo/default.jpg');
 
 -- ----------------------------
@@ -1237,7 +1316,7 @@ CREATE TABLE `dygzz_visit` (
   `m` int(11) NOT NULL,
   `d` int(11) NOT NULL,
   PRIMARY KEY (`vid`)
-) ENGINE=InnoDB AUTO_INCREMENT=7229 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7237 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dygzz_visit
@@ -1255,3 +1334,11 @@ INSERT INTO `dygzz_visit` VALUES ('7225', '127.0.0.1', '1461501235', '2', '16', 
 INSERT INTO `dygzz_visit` VALUES ('7226', '127.0.0.1', '1461548321', '14', '16', '4', '25');
 INSERT INTO `dygzz_visit` VALUES ('7227', '127.0.0.1', '1461648136', '5', '16', '4', '26');
 INSERT INTO `dygzz_visit` VALUES ('7228', '127.0.0.1', '1461755273', '5', '16', '4', '27');
+INSERT INTO `dygzz_visit` VALUES ('7229', '0.0.0.0', '1463478218', '1', '16', '5', '17');
+INSERT INTO `dygzz_visit` VALUES ('7230', '0.0.0.0', '1463571013', '3', '16', '5', '18');
+INSERT INTO `dygzz_visit` VALUES ('7231', '0.0.0.0', '1463625365', '1', '16', '5', '19');
+INSERT INTO `dygzz_visit` VALUES ('7232', '0.0.0.0', '1463905205', '4', '16', '5', '22');
+INSERT INTO `dygzz_visit` VALUES ('7233', '0.0.0.0', '1463999186', '1', '16', '5', '23');
+INSERT INTO `dygzz_visit` VALUES ('7234', '0.0.0.0', '1464074429', '4', '16', '5', '24');
+INSERT INTO `dygzz_visit` VALUES ('7235', '0.0.0.0', '1464141628', '3', '16', '5', '25');
+INSERT INTO `dygzz_visit` VALUES ('7236', '0.0.0.0', '1464251569', '1', '16', '5', '26');

@@ -110,7 +110,7 @@ $(function(){
             </p>
                 <p class="works"><a href=""><img class="works" src="__PUBLIC__/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
                 <p class="contact"><a href=""><img class="contact" src="__PUBLIC__/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
-                <p class="message"><a href=""><img class="message" src="__PUBLIC__/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
+                <p class="message"><a href="{:U('Show/leave_word')}"><img class="message" src="__PUBLIC__/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
          </div>
       </div>
         
@@ -122,7 +122,7 @@ $(function(){
    <div class="content_centerTop">
                <span class="newspic">
                    <img class="logo_1" src="__PUBLIC__/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;公告栏
-                   <span class="more"><a href="#">more>></a></span>
+                   <span class="more"><a href="__APP__/List/article/class/26">more>></a></span>
                </span>
     <div id="breakNews">
     <ul id="breakNewsList" class="list6">
@@ -141,7 +141,7 @@ scroll2.LineHeight = 24;
             <div class="content_centerBottom">
                <span class="newspic">
                    <img class="logo_1" src="__PUBLIC__/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;公寓风采
-                    <span class="more"><a href="#">more>></a></span>
+                    <span class="more"><a href="__APP__/List/article/class/10s">more>></a></span>
                </span>
                <ul>
                    <foreach name = "domitoryList" item = "domitory">
@@ -171,17 +171,17 @@ scroll2.LineHeight = 24;
                   <div class="tabCon">
                     <div class="cur">
                         <foreach name = "contentList" item = "content">
-                            <p><a href="__APP__/Show/content/id/{content.id}">{$content.title}</a></p>
+                            <p><a href="__APP__/Show/content/id/{$content.id}">{$content.title}</a></p>
                         </foreach>
                     </div>
                     <div class="cur">
                         <foreach name = "tzList" item = "tz">
-                            <p><a href="__APP__/Show/content/id/{tz.id}">{$tz.title}</a></p>
+                            <p><a href="__APP__/Show/content/id/{$tz.id}">{$tz.title}</a></p>
                         </foreach>
                     </div>
                     <div class="cur">
                         <foreach name = "newList" item = "new">
-                            <p><a href="__APP__/Show/content/id/{new.id}">{$new.title}</a></p>
+                            <p><a href="__APP__/Show/content/id/{$new.id}">{$new.title}</a></p>
                         </foreach>
                     </div>
                   </div>

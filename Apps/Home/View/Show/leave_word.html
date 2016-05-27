@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__PUBLIC__/e8home/default/style/common.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/e8home/default/style/message.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/e8home/default/js/time.js"></script>
+<title>留言板</title>
+</head>
+<body>
+<div class="body_bg"><img src="__PUBLIC__/e8home/default/images/bg.jpg" /></div>
+<!--header-->
+<include file="./Apps/Home/View/Common/header.html"/>
+        <!--time-->
+          <div class="time">
+        <span id="localtime"></span>
+    </div>
+       <!--content_left-->
+  <include file="./Apps/Home/View/Common/left.html"/>
+       <!--content_right-->
+       <div class="contentright">
+           <form method='post' action="{:U('Show/leave_word')}" >
+         <p class="locat">当前位置>>留言板<a href="{:U('Index/index')}">首页</a></p>
+               <h1><img src="__PUBLIC__/e8home/default/images/messages_1.png" width="190" height="70" /></h1>
+               <p class="borders"><span><i><img src="__PUBLIC__/e8home/default/images/b_06_01.png" width="40" height="40" /></i></span><input type="text" name="name" placeholder="Name"  /></p>
+         <p class="borders"><span><i><img src="__PUBLIC__/e8home/default/images/b_06_03.png" width="40" height="40" /></i></span><input type="email" name="email" placeholder="Email" /></p>
+         <p class="borders"><span><i><img src="__PUBLIC__/e8home/default/images/b_06_05.png" width="40" height="40" /></i></span><input  type="text"  id="phone" maxlength="11" onkeyup="this.value=this.value.replace(/\D/g,'')" placeholder="Phone" />
+</p>
+         <p class="borders_a"><span><i><img src="__PUBLIC__/e8home/default/images/msg.png" width="40" height="40" /></i></span><textarea name="comment" placeholder="Contents"></textarea></p>
+               <a href="__APP__/Show/details"><input class="menu menu1" type="button" value="查看留言" /></a>
+               <input class="menu menu2" type="submit" value="提交" />
+           </form>
+       </div>
+</div>
+<include file="./Apps/Home/View/Common/footer.html"/>
+<script type="text/javascript">
+    window.tick();
+</script>
+</body>
+</html>
