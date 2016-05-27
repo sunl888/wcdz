@@ -101,7 +101,7 @@ $(function(){
                 <div class="slider-extra">
                     <ul class="slider-nav">
                         <!--轮播图的个数-->
-                        <?php $__FOR_START_3601__=1;$__FOR_END_3601__=$imgCount+1;for($i=$__FOR_START_3601__;$i < $__FOR_END_3601__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
+                        <?php $__FOR_START_31309__=1;$__FOR_END_31309__=$imgCount+1;for($i=$__FOR_START_31309__;$i < $__FOR_END_31309__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
                     </ul>
 
                     <div class="slider-page">
@@ -124,7 +124,7 @@ $(function(){
 
             </p>
                 <p class="works"><a href=""><img class="works" src="/wcdz/Public/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
-                <p class="contact"><a href=""><img class="contact" src="/wcdz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
+                <p class="contact"><a href="/wcdz/index.php/List/content/class/24"><img class="contact" src="/wcdz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
                 <p class="message"><a href="<?php echo U('Show/leave_word');?>"><img class="message" src="/wcdz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
          </div>
       </div>
@@ -181,13 +181,13 @@ scroll2.LineHeight = 24;
                   </div>
                   <div class="tabCon">
                     <div class="cur">
-                        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><p><a href="/wcdz/index.php/Show/content/id/<?php echo ($content["id"]); ?>"><?php echo ($content["title"]); ?></a></p><?php endforeach; endif; ?>
+                        <?php if(is_array($contentList)): foreach($contentList as $key=>$content1): ?><p><a href="/wcdz/index.php/Show/content/id/<?php echo ($content1["id"]); ?>"><?php echo ($content1["title"]); ?></a></p><?php endforeach; endif; ?>
                     </div>
                     <div class="cur">
-                        <?php if(is_array($tzList)): foreach($tzList as $key=>$tz): ?><p><a href="/wcdz/index.php/Show/content/id/<?php echo ($tz["id"]); ?>"><?php echo ($tz["title"]); ?></a></p><?php endforeach; endif; ?>
+                        <?php if(is_array($tzList)): foreach($tzList as $key=>$tz1): ?><p><a href="/wcdz/index.php/Show/content/id/<?php echo ($tz1["id"]); ?>"><?php echo ($tz1["title"]); ?></a></p><?php endforeach; endif; ?>
                     </div>
                     <div class="cur">
-                        <?php if(is_array($newList)): foreach($newList as $key=>$new): ?><p><a href="/wcdz/index.php/Show/content/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a></p><?php endforeach; endif; ?>
+                        <?php if(is_array($newList)): foreach($newList as $key=>$new1): ?><p><a href="/wcdz/index.php/Show/content/id/<?php echo ($new1["id"]); ?>"><?php echo ($new1["title"]); ?></a></p><?php endforeach; endif; ?>
                     </div>
                   </div>
            </div>

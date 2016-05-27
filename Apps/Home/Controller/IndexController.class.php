@@ -45,22 +45,25 @@ class IndexController extends BaseController {
         //表中轮播图片的数量
         $imgCount = $Picture -> where("termid = 40 and hidden= 1")->count();
         //p($pictureList);die;
-        $this ->assign("imgCount",$imgCount);
-        $this ->assign("pictureList",$pictureList);
-        $this ->assign("linkCompitition",$linkCompitition);
-        $this ->assign("linkDepartment",$linkDepartment);
-        $this ->assign("linkStudy",$linkStudy);
-        $this ->assign("domitoryList",$domitoryList);
-        $this ->assign("heartList",$heartList);
-        $this ->assign("theoryList",$theoryList);
-        $this ->assign("actionList",$actionList);
-        $this ->assign("noticeList",$noticeList);
-        $this ->assign("tzList",$tzList);
-        $this ->assign("newList",$newList);
-        $this ->assign("contentList",$contentList);
-        $this ->assign("configList",$configList);
-        $this ->assign("flowList",$flowList);
 
+
+       // dump($contentList[0]);dump($tzList[0]);dump($newList[0]);die;
+
+                $this ->assign("imgCount",$imgCount);
+                $this ->assign("pictureList",$pictureList);
+                $this ->assign("linkCompitition",$linkCompitition);
+                $this ->assign("linkDepartment",$linkDepartment);
+                $this ->assign("linkStudy",$linkStudy);
+                $this ->assign("domitoryList",$domitoryList);
+                $this ->assign("heartList",$heartList);
+                $this ->assign("theoryList",$theoryList);
+                $this ->assign("actionList",$actionList);
+                $this ->assign("noticeList",$noticeList);
+                $this ->assign("tzList",$tzList);
+                $this ->assign("newList",$newList);
+                $this ->assign("contentList",$contentList);
+                $this ->assign("configList",$configList);
+                $this ->assign("flowList",$flowList);
         $this -> display();
     }
 }

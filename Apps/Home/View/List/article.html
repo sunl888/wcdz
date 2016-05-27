@@ -26,7 +26,7 @@
                </div>
                <div class="artical">
                    <foreach name="contentPage" item = "content">
-                        <p><span><img src="__PUBLIC__/e8home/default/images/span.png"></span><a href="#">{$content.title}</a><span class="date">{$content.addtime|date="Y-m-d",###}</span></p>
+                        <p><span><img src="__PUBLIC__/e8home/default/images/span.png"></span><a href="__APP__/Show/content/id/{$content.id}">{$content.title}</a><span class="date">{$content.addtime|date="Y-m-d",###}</span></p>
                    </foreach>
                </div>
                <div class="tab_list">
