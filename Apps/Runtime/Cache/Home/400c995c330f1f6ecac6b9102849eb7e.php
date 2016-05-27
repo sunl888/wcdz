@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -9,7 +9,7 @@
     <script type="text/javascript" src="/wcdz/Public/e8home/default/js/index.js"></script>
     <script type="text/javascript" src="/wcdz/Public/e8home/default/js/textScroll.js"></script>
     <script type="text/javascript" src="/wcdz/Public/e8home/default/js/js.js"></script>
-<title><?php echo ($webInfo["sitename"]); ?>--</title>
+<title><?php echo ($webInfo["sitename"]); ?></title>
 <style type="text/css">
 .floatingAd .ad{z-index:100;background:none;position:absolute;display:none;}
 .floatingAd a{color:#000000; display:inline-block;text-decoration:none;}
@@ -80,7 +80,7 @@ $(function(){
                                 <?php if(is_array($nav['sub_nav'])): foreach($nav['sub_nav'] as $key=>$sub): ?><li><p><a href="<?php echo ($sub["url"]); ?>"><?php echo ($sub["nav_name"]); ?></a></p></li><?php endforeach; endif; ?>
                             </ul>
                         </li><?php endforeach; endif; ?>
-                      </ul>
+                 </ul>
         </div>
 <!--content_left-->
 
@@ -101,7 +101,7 @@ $(function(){
                 <div class="slider-extra">
                     <ul class="slider-nav">
                         <!--轮播图的个数-->
-                        <?php $__FOR_START_26028__=1;$__FOR_END_26028__=$imgCount+1;for($i=$__FOR_START_26028__;$i < $__FOR_END_26028__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
+                        <?php $__FOR_START_667__=1;$__FOR_END_667__=$imgCount+1;for($i=$__FOR_START_667__;$i < $__FOR_END_667__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
                     </ul>
 
                     <div class="slider-page">
@@ -125,7 +125,7 @@ $(function(){
             </p>
                 <p class="works"><a href=""><img class="works" src="/wcdz/Public/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
                 <p class="contact"><a href=""><img class="contact" src="/wcdz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
-                <p class="message"><a href=""><img class="message" src="/wcdz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
+                <p class="message"><a href="<?php echo U('Show/leave_word');?>"><img class="message" src="/wcdz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
          </div>
       </div>
         
@@ -194,10 +194,16 @@ scroll2.LineHeight = 24;
         </div>
 </div>
 </div>
+<!--footer-->
+<!--<div class="footer">
+    <p>主办：淮南师范文化创意与传播学院党员工作站</p>
+    <p>技术支持：<a href="http://www.e8net.cn" target="_blank">淮南师范学院E8网络工作室</a></p>
+</div>-->
 <div class="footer">
-   <p>主办：淮南师范文化创意与传播学院党员工作站</p>
-   <p>技术支持：<a href="http://www.e8net.cn" target="_blank">淮南师范学院E8网络工作室</a></p>
-   <p></p>
+    <p>主办：淮南师范文化创意与传播学院党员工作站</p>
+    <p>技术支持：<a href="http://www.e8net.cn" target="_blank">淮南师范学院E8网络工作室</a></p>
+    <p></p>
 </div>
+<!--footer 结束-->
 </body>
 </html>
