@@ -11,21 +11,21 @@
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     
-     <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+     <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
     <!-- 颜色选择组件 css -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/Colorpicker/evol.colorpicker.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/Colorpicker/evol.colorpicker.css">
     <!-- 时间选择组件 css -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/Datepicker/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/Datepicker/css/bootstrap-datetimepicker.min.css">
     
    <!-- 加载百度编辑器js -->
-    <script type="text/javascript" charset="utf-8" src="/dygzz/Public/e8admin/default/lib/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/dygzz/Public/e8admin/default/lib/ueditor/ueditor.all.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/dygzz/Public/e8admin/default/lib/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/wcdz/Public/e8admin/default/lib/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/wcdz/Public/e8admin/default/lib/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/wcdz/Public/e8admin/default/lib/ueditor/lang/zh-cn/zh-cn.js"></script>
     <!-- e8 style -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/dygzz/Public/e8admin/default/css/jquery.datetimepicker.css"/>
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/wcdz/Public/e8admin/default/css/jquery.datetimepicker.css"/>
     
     
   </head>
@@ -39,7 +39,7 @@
         <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -68,7 +68,7 @@
         <div class="col-sm-12">
 			<div class="tabbable">
 				<ul class="nav nav-tabs">
-					<li><a href="/dygzz/admin.php/Partymember">党员信息管理</a></li>
+					<li><a href="/wcdz/admin.php/Partymember">党员信息管理</a></li>
                     <li  class="active"><a href="#">添加党员信息</a></li>
                 </ul>
 				</ul>
@@ -77,7 +77,7 @@
 				
 					<div  class="tab-pane in active">
 						<p class="title background-blue">添加党员信息</p>
-                        <form action = "/dygzz/admin.php/Partymember/add" enctype="multipart/form-data"  method = "post">
+                        <form action = "/wcdz/admin.php/Partymember/add" enctype="multipart/form-data"  method = "post">
                         	 <table class="table-form" >
                                 <tr>
                                     <th class = "table-name" width="150" >姓名:</th>
@@ -178,10 +178,10 @@
     <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
    
     <!-- 时间选择组件js -->
-    <script src="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/Datepicker/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/Datepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
-    <script src="/dygzz/Public/e8admin/default/js/jquery.datetimepicker.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/Datepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/Datepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="/wcdz/Public/e8admin/default/js/jquery.datetimepicker.js"></script>
    
     <script>
     //实例化编辑器

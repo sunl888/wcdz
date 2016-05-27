@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost
+Source Server         : E8
 Source Server Version : 50617
 Source Host           : localhost:3306
 Source Database       : dygzz
@@ -10,13 +10,13 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-05-27 11:45:03
+Date: 2016-05-27 16:39:37
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for `dygzz_access`
+-- Table structure for dygzz_access
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_access`;
 CREATE TABLE `dygzz_access` (
@@ -125,7 +125,7 @@ INSERT INTO `dygzz_access` VALUES ('11', 'Admin', 'Person', 'pwd', '1', '36');
 INSERT INTO `dygzz_access` VALUES ('11', 'Admin', 'Person', 'checkpwd', '1', '37');
 
 -- ----------------------------
--- Table structure for `dygzz_admin_menu`
+-- Table structure for dygzz_admin_menu
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_admin_menu`;
 CREATE TABLE `dygzz_admin_menu` (
@@ -141,7 +141,7 @@ CREATE TABLE `dygzz_admin_menu` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for `dygzz_advance`
+-- Table structure for dygzz_advance
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_advance`;
 CREATE TABLE `dygzz_advance` (
@@ -165,7 +165,7 @@ CREATE TABLE `dygzz_advance` (
 INSERT INTO `dygzz_advance` VALUES ('1', '王蕾', '1', '1308020133', '0', '18130157271', '10A515', '党员工作站副站长', '山东滨州', 'image/2016-04-25/571e0ec2140bb.jpg', '手抄报比赛三等奖');
 
 -- ----------------------------
--- Table structure for `dygzz_class`
+-- Table structure for dygzz_class
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_class`;
 CREATE TABLE `dygzz_class` (
@@ -191,7 +191,7 @@ CREATE TABLE `dygzz_class` (
   `description` varchar(255) DEFAULT NULL COMMENT '栏目描述',
   `content` mediumtext,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dygzz_class
@@ -200,10 +200,10 @@ INSERT INTO `dygzz_class` VALUES ('1', '1', '1', '0', '0', '1', '2,3,4', '党站
 INSERT INTO `dygzz_class` VALUES ('2', '0', '1', '1', '0,1', '0', null, '工作站简介', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('3', '0', '1', '1', '0,1', '0', null, '现任站委会', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('4', '0', '1', '1', '0,1', '0', null, '历届站委会', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
-INSERT INTO `dygzz_class` VALUES ('5', '1', '1', '0', '0', '1', '25', '理论导航', null, '', null, '0', '0', '1', '1', '2', '3', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('6', '1', '1', '0', '0', '1', '7,8,9', '主题实践', null, '', null, '0', '0', '1', '1', '2', '3', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('7', '1', '1', '6', '0,6', '0', null, '两学一做', null, '', null, '0', '0', '1', '0', '2', '3', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('9', '1', '1', '6', '0,6', '0', null, '党课培训', null, '', null, '0', '0', '1', '0', '2', '3', '', '', '', '');
+INSERT INTO `dygzz_class` VALUES ('10', '1', '1', '0', '0', '0', null, '公寓风采', null, '', null, '0', '0', '1', '1', '2', '1', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('11', '1', '1', '0', '0', '1', '12,13,14', '示范园地', null, '', null, '0', '0', '1', '1', '2', '10', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('12', '0', '1', '11', '0,11', '0', null, '优秀党员', null, '', null, '0', '0', '1', '0', '9', '10', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('13', '0', '1', '11', '0,11', '0', null, '先进人物', null, '', null, '0', '0', '1', '0', '2', '10', '', '', '', '');
@@ -214,12 +214,12 @@ INSERT INTO `dygzz_class` VALUES ('18', '0', '1', '15', '0,15', '0', null, '党�
 INSERT INTO `dygzz_class` VALUES ('19', '1', '1', '0', '0', '1', '23,24', '服务交流', null, '', null, '0', '0', '1', '1', '2', '1', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('23', '0', '1', '19', '0,19', '0', null, '值班安排', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('24', '0', '1', '19', '0,19', '0', null, '联系我们', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
-INSERT INTO `dygzz_class` VALUES ('26', '1', '1', '0', '0', '0', null, '公告', null, '在这里发布网站的公告', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
+INSERT INTO `dygzz_class` VALUES ('26', '1', '1', '0', '0', '0', '', '公告', null, '在这里发布网站的公告', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('27', '1', '1', '0', '0', '0', null, '通知', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
 INSERT INTO `dygzz_class` VALUES ('28', '1', '1', '0', '0', '0', null, '新闻', null, '', null, '0', '0', '1', '0', '2', '1', '', '', '', '');
 
 -- ----------------------------
--- Table structure for `dygzz_classname`
+-- Table structure for dygzz_classname
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_classname`;
 CREATE TABLE `dygzz_classname` (
@@ -240,7 +240,7 @@ INSERT INTO `dygzz_classname` VALUES ('7', '14网工1班');
 INSERT INTO `dygzz_classname` VALUES ('8', '11计科3班');
 
 -- ----------------------------
--- Table structure for `dygzz_class_perm`
+-- Table structure for dygzz_class_perm
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_class_perm`;
 CREATE TABLE `dygzz_class_perm` (
@@ -256,7 +256,7 @@ CREATE TABLE `dygzz_class_perm` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for `dygzz_comment`
+-- Table structure for dygzz_comment
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_comment`;
 CREATE TABLE `dygzz_comment` (
@@ -271,24 +271,23 @@ CREATE TABLE `dygzz_comment` (
   `email` varchar(50) DEFAULT NULL,
   `phone` varchar(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dygzz_comment
 -- ----------------------------
-INSERT INTO `dygzz_comment` VALUES ('1', '0.0.0.0', '1121', 'root', '1463478559', '0', null, '24.45.', '11', null);
+INSERT INTO `dygzz_comment` VALUES ('1', '0.0.0.0', '1121', 'root', '1463478559', '0', null, '24.45.', '11', '1341234132');
 INSERT INTO `dygzz_comment` VALUES ('2', '0.0.0.0', 'hello', 'admin', '1464264453', '0', null, '这是一条测试数据,请不要回复,', '2013855675@qq.com', '15705547511');
-INSERT INTO `dygzz_comment` VALUES ('3', '0.0.0.0', 'ads', 'admin', '1464265593', '0', null, 'dfasd', 'asdf', 'asdf');
-INSERT INTO `dygzz_comment` VALUES ('4', '0.0.0.0', 'adsasdfasdf', 'alert', '1464265607', '0', null, 'dfasdsfd', 'asdffaswertvcv', 'asdfbfdgh');
-INSERT INTO `dygzz_comment` VALUES ('5', '0.0.0.0', '1212', 'root', '1464265620', '0', null, 'sdefgasdfgasdfhdgf', '4352435', '456');
-INSERT INTO `dygzz_comment` VALUES ('6', '0.0.0.0', '657', 'admin', '1464265632', '0', null, 'hjklklh', '879', '987yhj');
-INSERT INTO `dygzz_comment` VALUES ('7', '0.0.0.0', '5678fh', 'admin', '1464265758', '0', null, 'hjklklh6754sdfgX', '879fghj', '987yhjhjf');
+INSERT INTO `dygzz_comment` VALUES ('7', '0.0.0.0', '5678fh', 'admin', '1464265758', '1', '1464327994', 'hjklklh6754sdfgX', '879fghj', '987yhjhjf');
 INSERT INTO `dygzz_comment` VALUES ('8', '0.0.0.0', '1234', '我回复了你  这是测试数据喔                      ', '1464268368', '1', '1464311154', '1234123', '2341@qq.com', null);
-INSERT INTO `dygzz_comment` VALUES ('9', '0.0.0.0', '123', null, '1464319328', '0', null, 'hello world ', '2013855675@qq.com', null);
+INSERT INTO `dygzz_comment` VALUES ('9', '0.0.0.0', '123', '你好', '1464319328', '1', '1464327260', 'hello world ', '2013855675@qq.com', null);
 INSERT INTO `dygzz_comment` VALUES ('10', '0.0.0.0', 'hello', null, '1464320113', '0', null, 'hello php', 'ceshi@qq.com', null);
+INSERT INTO `dygzz_comment` VALUES ('11', '0.0.0.0', 'dasdf', null, '1464321183', '0', null, '452345234', 'asda@qq.com', null);
+INSERT INTO `dygzz_comment` VALUES ('12', '0.0.0.0', '张宇', 'fv的真实性发货', '1464326966', '1', '1464327963', '这个网站非常好', '291000327@qq.com', null);
+INSERT INTO `dygzz_comment` VALUES ('13', '0.0.0.0', '张宇1', null, '1464328216', '0', null, '杀敌发斯蒂芬', '233@qq.com', null);
 
 -- ----------------------------
--- Table structure for `dygzz_config`
+-- Table structure for dygzz_config
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_config`;
 CREATE TABLE `dygzz_config` (
@@ -305,7 +304,7 @@ CREATE TABLE `dygzz_config` (
 -- ----------------------------
 -- Records of dygzz_config
 -- ----------------------------
-INSERT INTO `dygzz_config` VALUES ('1', 'sitename', '网站名称', '0', '计算机学院党员工作站', '');
+INSERT INTO `dygzz_config` VALUES ('1', 'sitename', '网站名称', '0', '文化创意与传播学院党员工作站', '');
 INSERT INTO `dygzz_config` VALUES ('2', 'siteurl', '网站网址', '0', 'http://www.e8net.cn/mkszyllx', '');
 INSERT INTO `dygzz_config` VALUES ('3', 'sitefileurl', '附件地址', '0', '', '');
 INSERT INTO `dygzz_config` VALUES ('4', 'siteemail', '站点邮箱', '0', '', '');
@@ -349,7 +348,7 @@ INSERT INTO `dygzz_config` VALUES ('61', 'adminurl', '后台url', '1', 'http://2
 INSERT INTO `dygzz_config` VALUES ('66', 'sitevideo', '视频链接', '0', 'http://lxqncdn.miaopai.com/stream/xRtsRBKH8Tcp-muEidPwNg__.mp4', '');
 
 -- ----------------------------
--- Table structure for `dygzz_content`
+-- Table structure for dygzz_content
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_content`;
 CREATE TABLE `dygzz_content` (
@@ -377,42 +376,35 @@ CREATE TABLE `dygzz_content` (
   `relateid` int(11) DEFAULT NULL,
   `author` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dygzz_content
 -- ----------------------------
 INSERT INTO `dygzz_content` VALUES ('1', '1', '7', '手抄报比赛', null, '手抄党章', ' ', '0', '', '0', '1', '1461544486', '1461587871', '17', '0', '0', '0', '0', '0', '', '计算机学院', null, '许迟');
-INSERT INTO `dygzz_content` VALUES ('5', '1', '5', '习近平系列讲话', null, '', ' ', '0', '', '0', '2', '1461631377', '1461674673', '7', '0', '0', '0', '0', '0', '', '', null, '');
 INSERT INTO `dygzz_content` VALUES ('7', '1', '16', '基层组织信息', null, '', '', '0', '', '0', '1', '1461632088', '1461675378', '45', '0', '0', '0', '0', '0', '', '计算机学院', null, '计算机学院');
 INSERT INTO `dygzz_content` VALUES ('8', '1', '24', '计算机学院党站人员联系方式', null, '', '', '0', '', '0', '1', '1461712964', '1461756285', '12', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('9', '1', '5', '2016年两会十大热点前瞻', null, '', '    ', '0', '', '0', '1', '1461716294', '1461761715', '5', '0', '0', '0', '0', '0', '', 'https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp', null, '施华婷');
-INSERT INTO `dygzz_content` VALUES ('10', '1', '5', '专家两会热点关键词解读:这五大关键字对中国的重要性', null, '', '   ', '0', '', '0', '1', '1461716522', '1461761591', '4', '0', '0', '0', '0', '0', '', 'http://www.zhicheng.com/n/20160314/56816.html', null, '施华婷');
-INSERT INTO `dygzz_content` VALUES ('11', '1', '5', '推动全面从严治党向基层延伸的重大举措', null, '', ' ', '0', '', '0', '1', '1461716747', '1461761487', '2', '0', '0', '0', '0', '0', '', 'http://news.xinhuanet.com/politics/2016-02/29/c_128761102.html', null, '施华婷');
-INSERT INTO `dygzz_content` VALUES ('12', '1', '5', '“两学一做”系列：习近平的“创新课”', null, '', '  ', '0', '', '0', '1', '1461716839', '1461761452', '5', '0', '0', '0', '0', '0', '', 'http://news.hainan.net/guonei/guoneiliebiao/2016/04/26/2948529.shtml', null, '施华婷');
-INSERT INTO `dygzz_content` VALUES ('13', '1', '5', '“两学一做”，学什么？做什么？', null, '', '   ', '0', '', '0', '1', '1461717092', '1461767072', '6', '0', '0', '0', '0', '0', '', 'http://www.dangjian.cn/specials/djwwpt/wxgx/201603/t20160301_3180884.shtml', null, '施华婷');
-INSERT INTO `dygzz_content` VALUES ('14', '1', '5', '三严三实”——永恒的从政准则', null, '', '     ', '0', '', '0', '1', '1461717167', '1461766721', '8', '0', '0', '0', '0', '0', '', '新华网', null, '');
-INSERT INTO `dygzz_content` VALUES ('15', '1', '5', '在“三严三实”中实现人生价值', null, '', '    ', '0', '', '0', '1', '1461717319', '1461766327', '6', '0', '0', '0', '0', '0', '', '新华网', null, '施华婷');
-INSERT INTO `dygzz_content` VALUES ('16', '1', '5', '中共中央组织部印发《推进“三严三实”教育的通知》', null, '', '  ', '0', '', '0', '1', '1461717448', '1461766269', '11', '0', '0', '0', '0', '0', '', '新华网', null, '');
-INSERT INTO `dygzz_content` VALUES ('17', '1', '26', '党站人员联系方式', null, '', '       ', '0', '', '0', '1', '1461718700', '1461765337', '12', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('18', '1', '26', '这是一个标题', null, '', '', '0', '', '0', '1', '1463959231', '1464002446', '5', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('19', '1', '26', '这是一个公告1', null, '', '', '0', '', '0', '1', '1463964849', '1464008088', '0', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('20', '1', '27', '这是一个通知1', null, '', '', '0', '', '0', '1', '1464031394', '1464074623', '0', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('21', '1', '27', '这是一个通知2', null, '', '', '0', '', '0', '1', '1464031426', '1464074632', '0', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('22', '1', '28', '这是一个新闻1', null, '', '', '0', '', '0', '1', '1464031450', '1464074662', '0', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('23', '1', '28', '这是一个新闻2', null, '', '', '0', '', '0', '1', '1464031465', '1464074677', '0', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('24', '1', '26', '中华人民共和国到了', null, '', '', '0', '', '0', '1', '1464050876', '1464094097', '0', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('25', '1', '26', '我小时候有一个梦想', null, '', '', '0', '', '0', '1', '1464050901', '1464094118', '0', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('26', '1', '26', '今天我吃了一个西瓜', null, '', '', '0', '', '0', '1', '1464050921', '1464094136', '0', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('27', '1', '26', '很撑的一个晚上  我睡不着', null, '', '', '0', '', '0', '1', '1464050938', '1464094155', '0', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('28', '1', '26', '今天晚上我想回去做', null, '', '', '0', '', '0', '1', '1464050958', '1464094167', '0', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('29', '1', '26', '眼睛很酸啊', null, '', '', '0', '', '0', '1', '1464050969', '1464094175', '0', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('30', '1', '26', '我想睡觉', null, '', '', '0', '', '0', '1', '1464050978', '1464094183', '0', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('31', '1', '26', '内容我也不写了  我好懒', null, '', '', '0', '', '0', '1', '1464050986', '1464094197', '0', '0', '0', '0', '0', '0', '', '', null, '');
-INSERT INTO `dygzz_content` VALUES ('32', '1', '26', '最后一个', null, '', '', '0', '', '0', '1', '1464051000', '1464094205', '1', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('17', '1', '26', '党站人员联系方式', null, '', '       ', '0', '', '0', '1', '1461718700', '1461765337', '75', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('18', '1', '26', '这是一个标题', null, '', '', '0', '', '0', '1', '1463959231', '1464002446', '75', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('19', '1', '26', '这是一个公告1', null, '', '', '0', '', '0', '1', '1463964849', '1464008088', '75', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('20', '1', '27', '这是一个通知1', null, '', '', '0', '', '0', '1', '1464031394', '1464074623', '1', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('21', '1', '27', '这是一个通知2', null, '', '', '0', '', '0', '1', '1464031426', '1464074632', '1', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('22', '1', '28', '这是一个新闻1', null, '', '', '0', '', '0', '1', '1464031450', '1464074662', '3', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('23', '1', '28', '这是一个新闻2', null, '', '', '0', '', '0', '1', '1464031465', '1464074677', '3', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('24', '1', '26', '中华人民共和国到了', null, '', '', '0', '', '0', '1', '1464050876', '1464094097', '75', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('25', '1', '26', '我小时候有一个梦想', null, '', '', '0', '', '0', '1', '1464050901', '1464094118', '75', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('26', '1', '26', '今天我吃了一个西瓜', null, '', '', '0', '', '0', '1', '1464050921', '1464094136', '75', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('27', '1', '26', '很撑的一个晚上  我睡不着', null, '', '', '0', '', '0', '1', '1464050938', '1464094155', '75', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('28', '1', '26', '今天晚上我想回去做', null, '', '', '0', '', '0', '1', '1464050958', '1464094167', '75', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('29', '1', '26', '眼睛很酸啊', null, '', '', '0', '', '0', '1', '1464050969', '1464094175', '75', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('30', '1', '26', '我想睡觉', null, '', '', '0', '', '0', '1', '1464050978', '1464094183', '75', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('31', '1', '26', '内容我也不写了  我好懒', null, '', '', '0', '', '0', '1', '1464050986', '1464094197', '75', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('32', '1', '26', '最后一个', null, '', ' ', '0', '', '0', '1', '1464051000', '1464329115', '75', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('33', '1', '2', '工作站简介', null, '', '', '0', '', '0', '1', '1464289756', '1464333059', '14', '0', '0', '0', '0', '0', '', '', null, '');
+INSERT INTO `dygzz_content` VALUES ('34', '1', '3', '新任委员会', null, '', '', '0', '', '0', '1', '1464290174', '1464333386', '5', '0', '0', '0', '0', '0', '', '', null, '');
 
 -- ----------------------------
--- Table structure for `dygzz_content_data`
+-- Table structure for dygzz_content_data
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_content_data`;
 CREATE TABLE `dygzz_content_data` (
@@ -426,17 +418,8 @@ CREATE TABLE `dygzz_content_data` (
 -- Records of dygzz_content_data
 -- ----------------------------
 INSERT INTO `dygzz_content_data` VALUES ('1', '<p>手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛手抄报比赛<img alt=\"zt_1.jpg\" src=\"/mkszyllx/Public/data/upload/image/20160425/1461587788140227.jpg\" title=\"1461587788140227.jpg\"/></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://localhost/dygzz/Public/e8admin/default/lib/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"/mkszyllx/Public/data/upload/file/20160425/1461587865132989.xlsx\" title=\"工作簿1.xlsx\">工作簿1.xlsx</a></p><p><br/></p>', null);
-INSERT INTO `dygzz_content_data` VALUES ('5', '<p>习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话习近平系列讲话</p><p><br/></p>', null);
 INSERT INTO `dygzz_content_data` VALUES ('7', '<p>计算机学院党员工作站分两个党支部。第一党支部与第二党支部。<br/></p>', null);
 INSERT INTO `dygzz_content_data` VALUES ('8', '<p style=\"line-height: 16px;\"><img style=\"margin-right: 2px; vertical-align: middle;\" src=\"http://localhost/dygzz/Public/e8admin/default/lib/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif\"/><a title=\"计算机学院党站人员名单.docx.xlsx\" style=\"color: rgb(0, 102, 204); font-size: 12px;\" href=\"/mkszyllx/Public/data/upload/file/20160427/1461756277110991.xlsx\">计算机学院党站人员名单.docx.xlsx</a></p><p></p>', null);
-INSERT INTO `dygzz_content_data` VALUES ('9', '<p style=\"background: rgb(255, 255, 255); text-align: justify; line-height: 25px; -ms-text-autospace: ideograph-numeric; -ms-text-justify: inter-ideograph;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">新华社北京<span style=\"font-family: Arial;\">3</span><span style=\"font-family: 宋体;\">月</span><span style=\"font-family: Arial;\">2</span><span style=\"font-family: 宋体;\">日电题</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">吹响决胜全面小康的号角</span><span style=\"font-family: Arial;\">——2016</span><span style=\"font-family: 宋体;\">年两会十大热点前瞻</span></span></p><p style=\"background: rgb(255, 255, 255); text-align: justify; line-height: 25px; -ms-text-autospace: ideograph-numeric; -ms-text-justify: inter-ideograph;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">新华社<span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">新华视点</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">记者</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">2016<span style=\"font-family: 宋体;\">年全国两会</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">是一个在重要历史节点召开的盛会。站在</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">十二五</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">收官、</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">十三五</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">开局的历史关口</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">如何按照中央</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">五位一体</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">总体布局和</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">四个全面</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">战略布局</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">抓住机遇、应对挑战</span><span style=\"font-family: Arial;\">?</span><span style=\"font-family: 宋体;\">如何深入贯彻五大发展理念</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">以供给侧结构性改革为主线</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">挖掘经济发展新动力</span><span style=\"font-family: Arial;\">?</span><span style=\"font-family: 宋体;\">会聚北京共商国是的代表委员们将展开讨论、建言献策</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">制定出行动纲领。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">1</span><span style=\"font-family: 宋体;\">】</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">十三五</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">规划</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">引领新常态开拓新境界</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">到<span style=\"font-family: Arial;\">2020</span><span style=\"font-family: 宋体;\">年全面建成小康社会</span><span style=\"font-family: Arial;\">,“</span><span style=\"font-family: 宋体;\">十三五</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">是冲刺的</span><span style=\"font-family: Arial;\">5</span><span style=\"font-family: 宋体;\">年。</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">四个全面</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">战略布局如何继续推进</span><span style=\"font-family: Arial;\">?</span><span style=\"font-family: 宋体;\">创新、协调、绿色、开放、共享的五大发展理念如何</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">落地</span><span style=\"font-family: Arial;\">”?</span><span style=\"font-family: 宋体;\">作为一份引领国家开创发展新境界的纲领性文件</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">两会审查、讨论的</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">十三五</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">规划草案</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">将回答国内外关注的诸多</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">中国之问</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">2</span><span style=\"font-family: 宋体;\">】供给侧改革</span><span style=\"font-family: Arial;\">:“</span><span style=\"font-family: 宋体;\">高频词</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">化为具体</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">路线图</span><span style=\"font-family: Arial;\">”</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">自去年底的中央经济工作会议后<span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">以去产能、去库存、去杠杆、降成本、补短板五大任务为重点的供给侧结构性改革正式启动。新常态下</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">供给侧改革正从</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">高频词</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">化为政府、企业明晰具体的改革</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">路线图</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">3</span><span style=\"font-family: 宋体;\">】扶贫攻坚战</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">吹响冲锋号立下</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">军令状</span><span style=\"font-family: Arial;\">”</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: 宋体; font-size: 14px;\">“</span><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">小康路上<span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">不让一个困难群众掉队。</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">到</span><span style=\"font-family: Arial;\">2020</span><span style=\"font-family: 宋体;\">年让</span><span style=\"font-family: Arial;\">7000</span><span style=\"font-family: 宋体;\">多万贫困人口全部脱贫</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">贫困县全部摘帽</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">是十八届五中全会既定目标</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">也是我国对全球减贫事业的庄严承诺。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">从层层立下<span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">军令状</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">到</span><span style=\"font-family: Arial;\">22</span><span style=\"font-family: 宋体;\">个中西部省区市考核扶贫成效</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">脱贫攻坚战的冲锋号已经吹响。精准扶贫还有哪些障碍</span><span style=\"font-family: Arial;\">?</span><span style=\"font-family: 宋体;\">哪些政策需要改进完善</span><span style=\"font-family: Arial;\">?</span><span style=\"font-family: 宋体;\">代表委员将带来大量一线情况与真知灼见。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">4</span><span style=\"font-family: 宋体;\">】慈善法审议</span><span style=\"font-family: Arial;\">:“</span><span style=\"font-family: 宋体;\">怀胎</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">十余年有望</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">呱呱落地</span><span style=\"font-family: Arial;\">”</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">慈善法草案将提交十二届全国人大四次会议审议。历经十余年努力<span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">我国关于慈善事业的首部立法将走上前台。草案经过两次审议</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">多处修改</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">此次提交审议后还将有哪些变化</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">将成为今年两会一大看点。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">5</span><span style=\"font-family: 宋体;\">】司法改革</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">为全面小康提供有力法律保障</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">在前两批共<span style=\"font-family: Arial;\">18</span><span style=\"font-family: 宋体;\">个省市司法改革试点基础上</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">今年司法体制改革试点将在全国各地推开</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">成为全面深化司法体制改革的攻坚之年。完善司法人员分类管理制度、完善司法责任制、健全司法人员职业保障制度等司法改革的基础性措施如何深入推进</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">引人关注。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">6</span><span style=\"font-family: 宋体;\">】民生改善</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">共享改革发展成果</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">党的十八届五中全会公报提出<span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">按照人人参与、人人尽力、人人享有的要求</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">坚守底线、突出重点、完善制度、引导预期</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">注重机会公平</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">保障基本民生</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">实现全体人民共同迈入全面小康社会。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">7</span><span style=\"font-family: 宋体;\">】创新驱动</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">社会经济发展新动能</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">创新正被摆在国家发展全局的核心位置。屠呦呦获得诺贝尔科学奖、<span style=\"font-family: Arial;\">C919</span><span style=\"font-family: 宋体;\">大型客机总装下线、</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">悟空</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">卫星升空探索暗物质粒子、科技成果转化法修订实施、新登记企业</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">井喷</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">、创新创业平台到处落地生根、创业投资迅速增长</span><span style=\"font-family: Arial;\">……</span><span style=\"font-family: 宋体;\">一系列创新标志性事件</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">透出中国经济社会发展正发生重大变革。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">8</span><span style=\"font-family: 宋体;\">】绿色环保</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">让执法监督</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">硬起来</span><span style=\"font-family: Arial;\">”</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">从中央提出绿色发展理念<span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">到大气污染治理写入</span><span style=\"font-family: Arial;\">31</span><span style=\"font-family: 宋体;\">个省区市政府工作报告</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">再到</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">十三五</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">规划建议中强调环保</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">社会各界对加快建设美丽中国充满期待。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">9</span><span style=\"font-family: 宋体;\">】拓展空间</span><span style=\"font-family: Arial;\">:“</span><span style=\"font-family: 宋体;\">中国方案</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">潜力巨大</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">“<span style=\"font-family: 宋体;\">一带一路</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">、京津冀协同发展、长江经济带建设三大战略深入推进</span><span style=\"font-family: Arial;\">;“</span><span style=\"font-family: 宋体;\">一带一路</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">战略为经济发展创造了良好的国际环境</span><span style=\"font-family: Arial;\">;</span><span style=\"font-family: 宋体;\">亚投行、金砖国家新开发银行等已经起航</span><span style=\"font-family: Arial;\">,G20</span><span style=\"font-family: 宋体;\">将吸引更多目光。中国推进更高层次的开放发展路线图</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">将在今年两会上更加明晰。此外</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">新一轮的东北振兴也令人期待。</span></span></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; font-weight: bold;\">【热点<span style=\"font-family: Arial;\">10</span><span style=\"font-family: 宋体;\">】政府自身改革</span><span style=\"font-family: Arial;\">:</span><span style=\"font-family: 宋体;\">建设廉洁政府为改革发展添动力</span></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 25px; text-indent: 51px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">党的十八大以来<span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">打造法治政府、创新政府、廉洁政府和服务型政府成效显著。从一批批行政审批事项取消和下放</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">到推行</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">权力清单</span><span style=\"font-family: Arial;\">”“</span><span style=\"font-family: 宋体;\">责任清单</span><span style=\"font-family: Arial;\">”,</span><span style=\"font-family: 宋体;\">政府</span><span style=\"font-family: Arial;\">“</span><span style=\"font-family: 宋体;\">法无授权不可为</span><span style=\"font-family: Arial;\">”</span><span style=\"font-family: 宋体;\">的理念日益深入人心。同时反腐倡廉推动市场建立公平公正的秩序</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">提升了政府公信力</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">为改革发展增添动力。</span></span></p><p><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">南开大学周恩来政府管理学院教授徐行表示<span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">近年来的政府工作报告都对政府自身建设提出新要求。人们期待着进一步明确政府权力边界</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">继续加大简政放权力度</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">消除寻租腐败的空间</span><span style=\"font-family: Arial;\">,</span><span style=\"font-family: 宋体;\">建立政策落实的责任机制和督查问责机制。</span></span></p><p>&nbsp;</p>', null);
-INSERT INTO `dygzz_content_data` VALUES ('10', '<p style=\"background: rgb(255, 255, 255); line-height: 23px; text-indent: 48px; -ms-text-autospace: ideograph-numeric;\"><span style=\"font-family: 微软雅黑; font-size: 14px;\">北京3月12日电 保持勇气、锐气和朝气对改革有何意义中等收入陷阱怎样迈过国际传播力为什么对中国发展越来越重要……今年</span><a href=\"http://www.zhicheng.com/lianghui/\"><span style=\"font-family: 微软雅黑; font-size: 14px; text-decoration: underline; text-underline: single;\">两会</span></a><span style=\"font-family: 微软雅黑; font-size: 14px;\">上，无论是习近平总书记的重要讲话还是政府工作报告、“十三五”规划纲要草案，很多提法、表述令人耳目一新，关系改革、影响发展。新华社记者请来国家高端智库首席专家为大家解读。</span></p><p style=\"background: rgb(255, 255, 255); line-height: 23px; text-indent: 48px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"font-family: 微软雅黑; font-size: 14px; font-weight: bold;\"><br/></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 23px; text-indent: 48px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"font-family: 微软雅黑; font-size: 14px; font-weight: bold;\">【关键词】勇气、锐气和朝气</span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 23px; text-indent: 48px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"font-family: 微软雅黑; font-size: 14px; font-weight: bold;\"><br/></span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 23px; text-indent: 48px; -ms-text-autospace: ideograph-numeric;\"><span style=\"font-family: 微软雅黑; font-size: 14px;\"></span></p><p style=\"background: rgb(255, 255, 255); text-align: left; line-height: 23px; text-indent: 48px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"font-family: 微软雅黑; font-size: 14px; font-weight: bold;\">【关键词】年均增长6.5%以上</span></strong></p><p style=\"background: rgb(255, 255, 255); text-align: left; line-height: 23px; text-indent: 48px; -ms-text-autospace: ideograph-numeric;\"><br/></p><p style=\"background: rgb(255, 255, 255); line-height: 23px; text-indent: 48px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"font-family: 微软雅黑; font-size: 14px; font-weight: bold;\">【关键词】跨越“中等收入陷阱”</span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 23px; text-indent: 48px; -ms-text-autospace: ideograph-numeric;\"><br/></p><p style=\"background: rgb(255, 255, 255); line-height: 23px; text-indent: 48px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"font-family: 微软雅黑; font-size: 14px; font-weight: bold;\">【关键词】加强国际传播</span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 23px; text-indent: 48px; -ms-text-autospace: ideograph-numeric;\"><br/></p><p style=\"background: rgb(255, 255, 255); line-height: 23px; text-indent: 48px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"font-family: 微软雅黑; font-size: 14px; font-weight: bold;\">【关键词】系统集成</span></strong></p><p style=\"background: rgb(255, 255, 255); line-height: 23px; text-indent: 48px; -ms-text-autospace: ideograph-numeric;\"><span style=\"font-family: 微软雅黑; font-size: 14px;\"></span></p>', null);
-INSERT INTO `dygzz_content_data` VALUES ('11', '<p style=\"margin: 1em 0px; text-indent: 28px;\"><span style=\"color: rgb(51, 51, 51); font-family: 宋体; font-size: 14px;\">近日，中央办公厅印发《关于在全体党员中开展“学党章党规、学系列讲话，做合格党员”学习教育方案》并发出通知，对“两学一做”学习教育作出安排。这是新形势下加强党的思想政治建设的一项重大部署。</span></p><p style=\"margin: 1em 0px; text-indent: 28px;\"><span style=\"color: rgb(51, 51, 51); font-family: 宋体; font-size: 14px;\">&nbsp;</span></p><p style=\"margin: 1em 0px; text-indent: 28px;\"><span style=\"color: rgb(51, 51, 51); font-family: 宋体; font-size: 14px;\">习近平总书记在中央纪委六次全会上明确指出，要推动全面从严治党向基层延伸。党员是党的肌体的细胞，党员合格，党的组织才坚强有力。在党的群众路线教育实践活动和“三严三实”专题教育取得明显成效基础上，今年在全体党员中开展“两学一做”学习教育，就是要推动党内教育从“关键少数”向广大党员拓展、从集中性教育向经常性教育延伸，把全面从严治党要求落实到每个支部、落实到每名党员。</span></p><p style=\"margin: 1em 0px; text-indent: 28px;\"><span style=\"color: rgb(51, 51, 51); font-family: 宋体; font-size: 14px;\">&nbsp;</span></p><p style=\"margin: 1em 0px; text-indent: 28px;\"><span style=\"color: rgb(51, 51, 51); font-family: 宋体; font-size: 14px;\">“两学一做”，基础在学。学习党章党规，重在明确基本标准、树立行为规范；学习习近平总书记系列重要讲话，重在加强理论武装、统一思想行动。对一名共产党员来说，自觉尊崇党章、遵守党规，学习领会党的创新理论，是最基本的要求。开展学习教育，须坚持正面教育为主，引导党员通读熟读党章党规，弄清楚该做什么、不该做什么，能做什么、不能做什么，把握共产党员为人做事的基准和底线；引导党员理解掌握习近平总书记系列重要讲话的丰富内涵和核心要义，用以武装头脑、指导实践、推动工作，为党在思想上政治上行动上的团结统一夯实基础。</span></p><p style=\"margin: 1em 0px; text-indent: 28px;\"><span style=\"color: rgb(51, 51, 51); font-family: 宋体; font-size: 14px;\">......</span></p>', null);
-INSERT INTO `dygzz_content_data` VALUES ('12', '<p style=\"margin: 0pt;\"><span style=\"font-family: 宋体; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;\"><img title=\"1461760193121960.png\" alt=\"图片1.png\" src=\"http://localhost/mkszyllx/Public/data/upload/image/20160427/1461760193121960.png\"/></span></p><p style=\"margin: 0pt; text-indent: 21pt;\"><span style=\"font-family: 宋体; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;\">2014<span style=\"font-family: 宋体;\">年</span><span style=\"font-family: Calibri;\">6</span><span style=\"font-family: 宋体;\">月</span><span style=\"font-family: Calibri;\">9</span><span style=\"font-family: 宋体;\">日，中国科学院第十七次院士大会、中国工程院第十二次院士大会在北京人民大会堂隆重开幕。中共中央总书记、国家主席、中央军委主席习近平出席会议并发表重要讲话。新华社记者李学仁摄</span></span></p><p style=\"margin: 0pt;\"><span style=\"font-family: Calibri; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-font-family: 宋体;\">&nbsp;</span></p><p style=\"margin: 0pt;\"><span style=\"font-family: 宋体; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;\">&nbsp;&nbsp;&nbsp;&nbsp;“创新”，是习近平治国理政战略思想的重要关键词。党的十八大以来三年多的时间里，习近平总书记在很多场合的讲话中都讲到创新。今年全国两会期间，习近平“下团组”又多次提到创新，这也是他<span style=\"font-family: Calibri;\">2013</span><span style=\"font-family: 宋体;\">年以来连续四年在两会上谈创新问题。习近平为什么一再强调创新</span><span style=\"font-family: Calibri;\">?</span><span style=\"font-family: 宋体;\">对于创新，他有着怎样的判断和创见</span><span style=\"font-family: Calibri;\">?</span><span style=\"font-family: 宋体;\">又是如何阐述的</span><span style=\"font-family: Calibri;\">?</span><span style=\"font-family: 宋体;\">记者带你一同聆听习近平的“创新课”。</span></span></p><p style=\"margin: 0pt;\"><span style=\"font-family: Calibri; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-font-family: 宋体;\">&nbsp;</span></p><p style=\"margin: 0pt;\"><span style=\"font-family: 宋体; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;\">&nbsp;&nbsp;&nbsp;&nbsp;妙语连珠说“创新”</span></p><p style=\"margin: 0pt;\"><span style=\"font-family: Calibri; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-font-family: 宋体;\">&nbsp;</span></p><p style=\"margin: 0pt;\"><span style=\"font-family: 宋体; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;\">&nbsp;&nbsp;&nbsp;&nbsp;习近平三年来的公开讲话中关于创新的论述分布于十八届五中全会、中央政治局集体学习、中央经济工作会议、全国两会、基层考察调研等很多场合，话语表达也颇具新意。</span></p><p style=\"margin: 0pt;\"><span style=\"font-family: Calibri; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-font-family: 宋体;\">&nbsp;</span></p><p style=\"margin: 0pt;\"><span style=\"font-family: 宋体; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;\">&nbsp;&nbsp;&nbsp;&nbsp;身体力行促“创新”</span></p><p style=\"margin: 0pt;\"><span style=\"font-family: Calibri; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-font-family: 宋体;\">&nbsp;</span></p><p style=\"margin: 0pt;\"><span style=\"font-family: 宋体; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;\">&nbsp;&nbsp;&nbsp;&nbsp;习近平关于创新的系列论述，言之切切，语重心长，为创新中国指明了方向。而从习近平近年的考察出访足迹，我们也可切实感到，习近平推动中国创新发展身体力行。</span></p><p style=\"margin: 0pt;\"><span style=\"font-family: Calibri; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-font-family: 宋体;\">&nbsp;</span></p><p style=\"margin: 0pt;\"><span style=\"font-family: Calibri; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-font-family: 宋体;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style=\"font-family: 宋体; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;\">2013<span style=\"font-family: 宋体;\">年</span><span style=\"font-family: Calibri;\">6</span><span style=\"font-family: 宋体;\">月</span><span style=\"font-family: Calibri;\">11</span><span style=\"font-family: 宋体;\">日，神舟十号飞船成功发射、准确入轨，我国第五次载人航天飞行任务首战告捷。习近平在酒泉卫星发射中心接见天宫一号与神舟十号载人飞行任务参研参试单位代表，勉励航天战线工作者续写航天梦新篇章</span><span style=\"font-family: Calibri;\">;</span></span></p><p style=\"margin: 0pt;\"><span style=\"font-family: Calibri; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-font-family: 宋体;\">&nbsp;</span></p><p style=\"margin: 0pt;\"><span style=\"font-family: 宋体; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;\">&nbsp;&nbsp;&nbsp;&nbsp;2013<span style=\"font-family: 宋体;\">年</span><span style=\"font-family: Calibri;\">7</span><span style=\"font-family: 宋体;\">月</span><span style=\"font-family: Calibri;\">17</span><span style=\"font-family: 宋体;\">日，习近平前往中国科学院，考察我国第一个大科学装置北京正负电子对撞机，了解科研平台建设、国防科技创新情况，勉励科研工作者弘扬“两弹一星”和“载人航天”精神，抢占未来科学技术制高点</span><span style=\"font-family: Calibri;\">;</span></span></p><p style=\"margin: 0pt;\"><span style=\"font-family: Calibri; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-font-family: 宋体;\">&nbsp;</span></p><p style=\"margin: 0pt;\"><span style=\"font-family: 宋体; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;\">&nbsp;&nbsp;&nbsp;&nbsp;2014<span style=\"font-family: 宋体;\">年</span><span style=\"font-family: Calibri;\">5</span><span style=\"font-family: 宋体;\">月</span><span style=\"font-family: Calibri;\">23</span><span style=\"font-family: 宋体;\">日至</span><span style=\"font-family: Calibri;\">24</span><span style=\"font-family: 宋体;\">日，习近平深入上海自由贸易试验区考察调研，强调上海自由贸易试验区是块大试验田，希望试验区“大胆闯、大胆试、自主改”，切实把制度创新作为核心任务，以形成可复制、可推广的制度成果为着力点</span><span style=\"font-family: Calibri;\">;</span></span></p><p style=\"margin: 0pt;\"><span style=\"font-family: Calibri; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-font-family: 宋体;\">&nbsp;</span></p><p style=\"margin: 0pt;\"><span style=\"font-family: 宋体; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;\">&nbsp;&nbsp;&nbsp;&nbsp;2015<span style=\"font-family: 宋体;\">年</span><span style=\"font-family: Calibri;\">9</span><span style=\"font-family: 宋体;\">月</span><span style=\"font-family: Calibri;\">23</span><span style=\"font-family: 宋体;\">日，习近平在访美期间，参观波音公司商用飞机制造厂与美国微软公司总部，了解未来飞机设计理念，观看</span><span style=\"font-family: Calibri;\">3D</span><span style=\"font-family: 宋体;\">“全息眼镜”设计摩托车造型和美国气象数据可视化系统展示，对加强双方合作提出希望。</span></span></p><p style=\"margin: 0pt;\"><span style=\"font-family: Calibri; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-font-family: 宋体;\">&nbsp;</span></p><p style=\"margin: 0pt; text-indent: 24pt;\"><span style=\"font-family: 宋体; font-size: 12pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;\">从精到论述到深入考察调研，习近平不遗余力推动创新中国的建设。适应和引领经济发展新常态，以创新思维武装头脑，践行五大发展理念，为改革创新撑腰，为人才发展护航，勇立潮头，锐意开拓，大胆创新，做创新中国的给力推进者，理应成为每一位领导干部的自觉行动。</span></p><p>&nbsp;</p>', null);
-INSERT INTO `dygzz_content_data` VALUES ('13', '<p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">近日，中共中央办公厅印发了《关于在全体党员中开展<span style=\"font-family: Times New Roman;\">“</span><span style=\"font-family: 宋体;\">学党章党规、学系列讲话，做合格党员</span><span style=\"font-family: Times New Roman;\">”</span><span style=\"font-family: 宋体;\">学习教育方案》，并发出通知，要求各地区各部门认真贯彻执行。</span><span style=\"font-family: Times New Roman;\">&nbsp;</span></span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">&nbsp;</span><span style=\"font-family:;\" new=\"\" times=\"\">1.<span style=\"font-family: 宋体;\">这是</span><span style=\"font-family: Times New Roman;\">“</span><span style=\"font-family: 宋体;\">一项重大政治任务</span><span style=\"font-family: Times New Roman;\">”</span></span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">各地区各部门各单位党委（党组），要将其<span style=\"font-family: Times New Roman;\">“</span></span><strong><span style=\"font-family:;\" new=\"\" times=\"\">作为一项重大政治任务，</span></strong><span style=\"font-family:;\" new=\"\" times=\"\">尽好责、抓到位、见实效<span style=\"font-family: Times New Roman;\">”</span><span style=\"font-family: 宋体;\">。</span></span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">2.<span style=\"font-family: 宋体;\">学习教育的范围</span></span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">通知指出，是<span style=\"font-family: Times New Roman;\">“</span><span style=\"font-family: 宋体;\">面向全体党员深化党内教育的重要实践</span><span style=\"font-family: Times New Roman;\">”</span><span style=\"font-family: 宋体;\">。</span></span><strong><span style=\"font-family:;\" new=\"\" times=\"\">“<span style=\"font-family: 宋体;\">面向全体党员</span><span style=\"font-family: Times New Roman;\">”</span></span></strong><span style=\"font-family:;\" new=\"\" times=\"\">，不管是党员领导干部，还是普通党员。</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">&nbsp;</span><span style=\"font-family: 宋体; font-size: 16px;\">3.学习教育的目的是什么？</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">深入学习贯彻习近平总书记系列重要讲话精神，</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">推动全面从严治党向基层延伸，</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">巩固拓展党的群众路线教育实践活动和<span style=\"font-family: Times New Roman;\">“</span><span style=\"font-family: 宋体;\">三严三实</span><span style=\"font-family: Times New Roman;\">”</span><span style=\"font-family: 宋体;\">专题教育成果，</span></span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">进一步解决党员队伍在思想、组织、作风、纪律等方面存在的问题，</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">保持发展党的先进性和纯洁性。</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">4.<span style=\"font-family: 宋体;\">实现</span><span style=\"font-family: Times New Roman;\">4</span><span style=\"font-family: 宋体;\">个</span><span style=\"font-family: Times New Roman;\">“</span><span style=\"font-family: 宋体;\">进一步</span><span style=\"font-family: Times New Roman;\">”</span></span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">教育引导党员自觉按照党员标准规范言行，</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><strong><span style=\"font-family:;\" new=\"\" times=\"\">进一步</span></strong><span style=\"font-family:;\" new=\"\" times=\"\">坚定理想信念，提高党性觉悟；</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><strong><span style=\"font-family:;\" new=\"\" times=\"\">进一步</span></strong><span style=\"font-family:;\" new=\"\" times=\"\">增强政治意识、大局意识、核心意识、看齐意识，坚定正确政治方向；</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><strong><span style=\"font-family:;\" new=\"\" times=\"\">进一步</span></strong><span style=\"font-family:;\" new=\"\" times=\"\">树立清风正气，严守政治纪律政治规矩；</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><strong><span style=\"font-family:;\" new=\"\" times=\"\">进一步</span></strong><span style=\"font-family:;\" new=\"\" times=\"\">强化宗旨观念，勇于担当作为，在生产、工作、学习和社会生活中起先锋模范作用。</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\"><br/></span><span style=\"font-family:;\" new=\"\" times=\"\">5.<span style=\"font-family: 宋体;\">针对的现实问题是什么？</span></span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">即，</span><strong><span style=\"font-family:;\" new=\"\" times=\"\">5<span style=\"font-family: 宋体;\">个着力解决</span></span></strong></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">着力解决一些党员理想信念模糊动摇的问题，</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">着力解决一些党员党的意识淡化的问题，</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">着力解决一些党员宗旨观念淡薄的问题</span><span style=\"font-family: 宋体; font-size: 16px;\">，</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">着力解决一些党员精神不振的问题，</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">着力解决一些党员道德行为不端的问题。</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">6</span><span style=\"font-family:;\" new=\"\" times=\"\">.<span style=\"font-family: 宋体;\">具体学什么？</span></span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><strong><span style=\"font-family:;\" new=\"\" times=\"\">1<span style=\"font-family: 宋体;\">、学党章党规。</span></span></strong></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><strong><span style=\"font-family:;\" new=\"\" times=\"\">2、<span style=\"font-family: 宋体;\">学系列讲话。</span></span></strong><span style=\"font-family:;\" new=\"\" times=\"\">&nbsp;</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\"><strong>3、做合格党员。</strong></span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">即，</span><strong><span style=\"font-family:;\" new=\"\" times=\"\">“4<span style=\"font-family: 宋体;\">讲</span><span style=\"font-family: Times New Roman;\">4</span><span style=\"font-family: 宋体;\">有</span><span style=\"font-family: Times New Roman;\">”</span></span></strong></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">讲政治、有信念，</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">讲规矩、有纪律，</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">讲道德、有品行，</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; text-indent: 32px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\">讲奉献、有作为。</span></p><p style=\"margin: 1em 0px; padding: 0px; text-align: justify; line-height: 30px; text-indent: 32px; -ms-text-justify: inter-ideograph;\"><span style=\"font-family:;\" new=\"\" times=\"\"><br/></span></p><p>&nbsp;</p>', null);
-INSERT INTO `dygzz_content_data` VALUES ('14', '<p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 25px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: 宋体; font-size: 14px;\">“各级领导干部都要树立和发扬好的作风，既严以修身、严以用权、严以律己，又谋事要实、创业要实、做人要实。”习总书记的谆谆告诫，是对古今正心修身之道的凝炼和提升，是新时期党的作风建设的新坐标，体现了道德与法规制度的统一，体现了做人与做事的统一，体现了谋大事与干实事的统一。我们要坚持用习总书记系列重要讲话精神统一思想、凝聚共识，始终向中央基准看齐，按照中央和省委要求，把“三严三实”作为从政永远的准则。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 25px; -ms-text-autospace: ideograph-numeric;\"><strong><span style=\"color: rgb(0, 0, 0); font-family: 宋体; font-size: 19px; font-weight: bold;\">一、“三严三实”的现实意义</span></strong></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 25px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: 宋体; font-size: 14px;\">“三严三实”是领导干部从政的根本准则。“修身正己立德为人之大本”历来被视为做人处事为官理政的根本。做官先做人，做人先立德；德乃官之本，为官先修德。习总书记多次强调，“为官之本，在于为官一场、造福一方；为官之理，在于讲奉献；为官之德，在于清廉；为官之义，在于明法。”“三严三实”强调修心正身、律己求实，既融合了中华民族传统文化的政治智慧，又把握了思想道德修养的时代脉搏；既强化了领导干部的从政准则，又提升了领导干部的作风标准。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 25px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: 宋体; font-size: 14px;\">二、“三严三实”的科学内涵</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 25px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: 宋体; font-size: 14px;\">“严以修身”，就是要加强党性修养，坚定理想信念，提升道德境界，追求高尚情操，自觉远离低级趣味，自觉抵制歪风邪气。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 25px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: 宋体; font-size: 14px;\">“严以用权”，就是要坚持用权为民，按规则、按制度行使权力，把权力关进制度的笼子里，任何时候都不搞特权、不以权谋私。权力是一把“双刃剑”。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 25px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: 宋体; font-size: 14px;\">“严以律己”，就是要心存敬畏、手握戒尺，慎独慎微、勤于自省，遵守党纪国法，做到为政清廉。“不能胜寸心，安能胜苍穹？”</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 25px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: 宋体; font-size: 14px;\">“谋事要实”，就是要从实际出发谋划事业和工作，使点子、政策、方案符合实际情况、符合客观规律、符合科学精神，不好高骛远，不脱离实际。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 25px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: 宋体; font-size: 14px;\">“创业要实”，就是要脚踏实地、真抓实干，敢于担当责任，勇于直面矛盾，善于解决问题，努力创造出经得起实践、人民、历史检验的实绩。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 25px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: 宋体; font-size: 14px;\">“做人要实”，就是要对党、对组织、对人民、对同志忠诚老实，做老实人、说老实话、干老实事，襟怀坦白，公道正派。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 25px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(0, 0, 0); font-family: 宋体; font-size: 14px;\">“三严”与“三实”相互联系、相辅相成、不可分割。“三严”是根本、是出发点，要守住严、防止松；“三实”是目标、是落脚点，要突出实、防止虚。我们要从严上要求，向实处着力，真正把“三严三实”内化于心、外化于行，使清风正气一点点积聚起来，使党员干部的精气神昂扬起来，以“三严三实”的过硬作风推动党的事业发展。</span></p><p>&nbsp;&nbsp;&nbsp;&nbsp; 链接地址：http://www.qstheory.cn/zywz/201404/t20140425_343824.htm</p>', null);
-INSERT INTO `dygzz_content_data` VALUES ('15', '<p style=\"margin: 1em 0px 0px; text-align: center; text-indent: 29px;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">&nbsp;&nbsp; <img title=\"1461760584423561.png\" alt=\"图片1.png\" src=\"/mkszyllx/Public/data/upload/image/20160427/1461760584423561.png\"/></span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">9<span style=\"font-family: 微软雅黑;\">月</span><span style=\"font-family: Tahoma;\">1</span><span style=\"font-family: 微软雅黑;\">日，中共中央政治局常委、中央党校校长刘云山在中央党校秋季学期开学典礼讲话中强调，党员干部要认真学习贯彻习近平总书记重要指示精神，深入领会“</span></span><span style=\"font-family: 微软雅黑; font-size: 15px;\">三严三实</span><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">”的深刻内涵和具体要求，切实做到严以修身、严以用权、严以律己，谋事要实、创业要实、做人要实，更好履行共产党人的崇高职责。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">习近平总书记提出的“三严三实”具有很强的针对性，是新时期共产党人加强自身修养的行动指南。每个人都在探寻人生的价值和生命的意义。对于广大党员干部来说，人生的价值就体现在运用人民赋予的权力全心全意为人民服务，而在工作生活中贯彻“三严三实”的要求，正是实现自我人生价值的重要保证和必由之路。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">贯彻“三严三实”的要求，首要的一条是做到“严”字当头。从历史上看，从新近的事例看，很多栽跟头的党员干部有一个共同点，那就是不能做到严以修身、严以用权、严以律己，公德不顾，帷薄不修，似乎头脑中只装满了各种私欲，手中的权力只是实现这各种私欲的工具，结果灵魂掉入黑暗的深渊，同时给党和国家造成重大损失。相反，那些为人民建功立业、做出突出贡献的人，没有一个不对自己要求严格，也没有一个会滥用职权。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">人生在世，无非是做人、做事，党员干部自然是在做人、做事中做官，做官也就是做事、做人。做人不实，无法做人；做事不实，难以成功；做官不实，祸己害民。前人说得好：“板凳要坐十年冷，文章不写一句空。”更何况党员干部的“学问”不是在书斋里做出来的，党员干部的“道德文章”不是写在纸上而是写在大地上、写在人心中，岂能不奉“实”字为金针，时时处处警醒激励自己谋事要实、创业要实、做人要实？练多了“虚”功，做多了“虚”事，则可能无往而不“虚”，心也一天比一天“虚”，又如何能收获实在的人生？</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">“</span><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">三严三实”是一个统一的整体：只有做到了“三严”，才能做到“三实”；同样，只有做到了“三实”，才能做到“三严”。自奉甚俭、自律甚严者鲜不“实”，追求生命有重量、有质感的人鲜不自“严”。如果有党员干部作风飘浮、好大喜功，却宣称自律甚严，我们可以不客气地指出这是一种虚伪；如果有党员干部沉迷于灯红酒绿、夸夸其谈，却宣称自己脚踏实地，我们同样可以不客气地指出这也是一种虚伪。每个党员干部都应当以“吾日三省吾身”的精神对照自己的言行，看看是不是走在“三严三实”的正确道路上；如果偏离了“三严三实”的轨道就要迅速加以纠正，如此才不至于使自己的人生迷失方向。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">对于各级党员领导干部来说，贯彻“三严三实”还有更高的要求。党员领导干部像普通党员干部那样做到“三严三实”，这是起码的要求，但不能也不应满足于此。如果队伍中存在背离“三严三实”的表现甚至消极腐败现象，党员领导干部不去旗帜鲜明地反对、不去积极采取措施加以消除，而是睁一只眼闭一只眼，那么就可以说，这样的党员领导干部离“三严三实”的要求还有不小的差距。因此，“三严三实”不仅是党员干部加强个人修养的行动指南，同时也是加强党的作风建设、队伍建设的根本要求，必须充分体现到党要管党、从严治党的全过程和各方面。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-text-autospace: ideograph-numeric;\"><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 15px;\">链接地址：http://news.xinhuanet.com/comments/2014-09/03/c_1112335179.htm</span></p><p>&nbsp;</p>', null);
-INSERT INTO `dygzz_content_data` VALUES ('16', '<p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-layout-grid-mode: char; -ms-text-autospace: ideograph-numeric;\"><span style=\"font-family: 微软雅黑; font-size: 15px;\">近日，中共中央组织部印发通知，对认真学习贯彻习近平总书记重要指示精神、扎实推进“三严三实”专题教育提出要求。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-layout-grid-mode: char; -ms-text-autospace: ideograph-numeric;\"><span style=\"font-family: 微软雅黑; font-size: 15px;\">《通知》指出，习近平总书记在浙江和贵州考察、会见全国优秀县委书记、主持召开中央全面深化改革领导小组第十四次会议时，对开展“三严三实”专题教育、践行“三严三实”要求作出重要指示。习近平总书记强调，在县处级以上领导干部中开展“三严三实”专题教育，是今年党的建设的一项重要任务，要突出问题导向，贯彻从严要求，既巩固和扩大从严治党成果，又有效解决党的建设面临的新问题。习近平总书记的重要指示精神，对于高标准高质量开展专题教育、确保取得实效，具有十分重要的指导意义。各级党委（党组）要认真组织学习，领会精神实质，抓好贯彻落实。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-layout-grid-mode: char; -ms-text-autospace: ideograph-numeric;\"><span style=\"font-family: 微软雅黑; font-size: 15px;\">《通知》强调，认真学习深刻领会习近平总书记重要指示精神。要把学习贯彻习近平总书记重要指示精神作为专题学习研讨的重要内容。通过学习，使领导干部深刻领会习近平总书记关于领导干部要可信、做人干事都让组织放心的要求，努力成为党和人民信赖的好干部；深刻领会习近平总书记关于学习老一辈革命家崇高品德的要求，检身正己、见贤思齐；深刻领会习近平总书记关于把“三严三实”贯穿改革全过程的要求，既当改革的促进派，又当改革的实干家；深刻领会习近平总书记关于领导干部要带头搞好专题教育的要求，清清白白做人、干干净净做事、堂堂正正做官。各级领导干部要在领会核心要义上下功夫，在打牢思想根基上下功夫，在坚持知行合一上下功夫，以思想自觉引领行动自觉。</span></p><p style=\"margin: 1em 0px 0px; text-align: left; text-indent: 29px; -ms-layout-grid-mode: char; -ms-text-autospace: ideograph-numeric;\"><span style=\"font-family: 微软雅黑; font-size: 15px;\">链接地址：http://dangjian.people.com.cn/n/2015/0713/c117092-27297917.html</span></p><p>&nbsp;</p>', null);
 INSERT INTO `dygzz_content_data` VALUES ('17', '<p><!--StartFragment --></p><p>计算机学院党员工作站在计算机学院党总支的领导下，协助第一党支部、第二党支部面向公寓开展工作。计算机学院党员工作站指导老师为彭飞老师。&nbsp;为了更好地服务同学，计算机学院党员工作站除了安排党站全天候值班和先锋岗值班外，还可以联系党站内部成员。其内部组织结构包括：站长丁勇杰，副站长王蕾，站务委员七名分别为：丁勇杰，王蕾，邓卉子，汪正亮，刘佳乐，许迟，王巧珍。<br/>&nbsp;&nbsp;&nbsp;&nbsp;在工作中经过不断调整计算机学院党员工作站现设置如下七个部门：生活部&nbsp;、办公室&nbsp;、安全部&nbsp;、组织部&nbsp;、纪检部&nbsp;、宣传部、信息部。其中办公室成员有：韩贵芳、储小琴、闫闫。组织部成员有：王蕾、施华婷、陈浩宁、刘启来。纪检部成员有：王晶、何艳玲、兰天。宣传部成员有：邓卉子、许迟、张国磊、余宙。生活部成员有：王巧珍、陈晚露、靳青青、吴甜。安全部成员有：陶维强、王娟、张煜。信息部成员有：冯程程、谷峰、斯金阳。<br/></p><p>&nbsp;</p><p>&nbsp;</p><p>附件：&nbsp; <img style=\"margin-right: 2px; vertical-align: middle;\" src=\"http://localhost/dygzz/Public/e8admin/default/lib/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif\"/><a title=\"计算机学院党站人员名单.docx.xlsx\" style=\"color: rgb(0, 102, 204); font-size: 12px;\" href=\"/mkszyllx/Public/data/upload/file/20160427/1461764976707872.xlsx\">计算机学院党站人员名单.docx.xlsx</a></p><p>&nbsp;</p>', null);
 INSERT INTO `dygzz_content_data` VALUES ('18', '<p>这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题</p>', null);
 INSERT INTO `dygzz_content_data` VALUES ('19', '<p>公告这呢 &nbsp;这是内容<br/></p>', null);
@@ -452,10 +435,12 @@ INSERT INTO `dygzz_content_data` VALUES ('28', '', null);
 INSERT INTO `dygzz_content_data` VALUES ('29', null, null);
 INSERT INTO `dygzz_content_data` VALUES ('30', null, null);
 INSERT INTO `dygzz_content_data` VALUES ('31', null, null);
-INSERT INTO `dygzz_content_data` VALUES ('32', null, null);
+INSERT INTO `dygzz_content_data` VALUES ('32', '<p>最后一个最后一个最后一个最后一个最后一个最后一个最后一个最后一个最后一个最后一个最后一个最后一个最后一个最后一个最后一个最后一个最后一个</p>', null);
+INSERT INTO `dygzz_content_data` VALUES ('33', '<p>&nbsp; 百度，全球最大的中文搜索引擎、最大的中文网站。2000年1月创立于北京中关村。</p><p>1999年底，身在美国硅谷的李彦宏看到了中国互联网及中文搜索引擎服务的巨大发展潜力，抱着技术改变世界的梦想，他毅然辞掉硅谷的高薪工作，携搜索引擎专利技术，于2000年1月1日在中关村创建了百度公司。如今的百度，已成为中国最受欢迎、影响力最大的中文网站。</p><p>百度拥有数千名研发工程师，这是中国乃至全球最为优秀的技术团队，这支队伍掌握着世界上最为先进的搜索引擎技术，使百度成为中国掌握世界尖端科学核心技术的中国高科技企业，也使中国成为美国、俄罗斯、和韩国之外，全球仅有的4个拥有搜索引擎核心技术的国家之一。</p><p>从创立之初，百度便将“让人们最便捷地获取信息，找到所求”作为自己的使命，成立以来，公司秉承“以用户为导向”的理念，不断坚持技术创新，致力于为用户提供“简单，可依赖”的互联网搜索产品及服务，其中包括：以网络搜索为主的功能性搜索，以贴吧为主的社区搜索，针对各区域、行业所需的垂直搜索，Mp3搜索，以及门户频道、IM等，全面覆盖了中文网络世界所有的搜索需求，根据第三方权威数据，百度在中国的搜索份额超过80%。</p><p>在面对用户的搜索产品不断丰富的同时，百度还创新性地推出了基于搜索的营销推广服务，并成为最受企业青睐的互联网营销推广平台。目前，中国已有数十万家企业使用了百度的搜索推广服务，不断提升着企业自身的品牌及运营效率。通过持续的商业模式创新，百度正进一步带动整个互联网行业和中小企业的经济增长，推动社会经济的发展和转型。</p><p>为推动中国数百万中小网站的发展，百度借助超大流量的平台优势，联合所有优质的各类网站，建立了世界上最大的网络联盟，使各类企业的搜索推广、品牌营销的价值、覆盖面均大面积提升。与此同时，各网站也在联盟大家庭的互助下，获得最大的生存与发展机会。</p><p>作为国内的一家知名企业，百度也一直秉承“弥合信息鸿沟，共享知识社会”的责任理念，坚持履行企业公民的社会责任。成立来，百度利用自身优势积极投身公益事业，先后投入巨大资源，为盲人、少儿、老年人群体打造专门的搜索产品，解决了特殊群体上网难问题,极大地弥补了社会信息鸿沟问题。此外，在加速推动中国信息化进程、净化网络环境、搜索引擎教育及提升大学生就业率等方面，百度也一直走在行业领先的地位。2011年初，百度还特别成立了百度基金会，围绕知识教育、环境保护、灾难救助等领域，更加系统规范地管理和践行公益事业。</p><p>2005年，百度在美国纳斯达克上市，一举打破首日涨幅最高等多项纪录，并成为首家进入纳斯达克成分股的中国公司。通过数年来的市场表现，百度优异的业绩与值得依赖的回报，使之成为中国企业价值的代表，傲然屹立于全球资本市场。</p><p>2009年，百度更是推出全新的框计算技术概念，并基于此理念推出百度开放平台，帮助更多优秀的第三方开发者利用互联网平台自主创新、自主创业，在大幅提升网民互联网使用体验的同时，带动起围绕用户需求进行研发的产业创新热潮，对中国互联网产业的升级和发展产生巨大的拉动效应。</p><p>今天，百度已经成为中国最具价值的品牌之一，英国《金融时报》将百度列为“中国十大世界级品牌”，成为这个榜单中最年轻的一家公司，也是唯一一家互联网公司。而“亚洲最受尊敬企业”、“全球最具创新力企业”、“中国互联网力量之星”等一系列荣誉称号的获得，也无一不向外界展示着百度成立数年来的成就。</p><p>多年来，百度董事长兼CEO李彦宏，率领百度人所形成的“简单可依赖”的核心文化，深深地植根于百度。这是一个充满朝气、求实坦诚的公司，以搜索改变生活，推动人类的文明与进步，促进中国经济的发展为己任，正朝着更为远大的目标而迈进。</p><p><br/></p>', null);
+INSERT INTO `dygzz_content_data` VALUES ('34', '<p>很好很强阿达</p>', null);
 
 -- ----------------------------
--- Table structure for `dygzz_domitory`
+-- Table structure for dygzz_domitory
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_domitory`;
 CREATE TABLE `dygzz_domitory` (
@@ -482,7 +467,7 @@ INSERT INTO `dygzz_domitory` VALUES ('8', '89', '786', 'image/2016-05-24/57444ef
 INSERT INTO `dygzz_domitory` VALUES ('9', '456', '456', 'image/2016-05-24/57444f0b0bd49.png', null, null, '');
 
 -- ----------------------------
--- Table structure for `dygzz_flowimg`
+-- Table structure for dygzz_flowimg
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_flowimg`;
 CREATE TABLE `dygzz_flowimg` (
@@ -501,7 +486,7 @@ CREATE TABLE `dygzz_flowimg` (
 INSERT INTO `dygzz_flowimg` VALUES ('1', '淮南师范学院E8工作室', 'image/2016-05-24/thumb_5744549527b09.jpg', 'http://t.tt', '1', '这是一个神奇的描述阿萨德');
 
 -- ----------------------------
--- Table structure for `dygzz_link`
+-- Table structure for dygzz_link
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_link`;
 CREATE TABLE `dygzz_link` (
@@ -550,7 +535,7 @@ INSERT INTO `dygzz_link` VALUES ('67', 'http://www.apkbus.com/', '移动开发�
 INSERT INTO `dygzz_link` VALUES ('68', 'http://211.70.176.141/jxx/index.php/Show/content/id/1081', '合财杯', 'image/2015-03-12/5501459308d49.jpg', '图片大小为250*200', '1', '0', '1460966332', '', '', '37', '1');
 
 -- ----------------------------
--- Table structure for `dygzz_log`
+-- Table structure for dygzz_log
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_log`;
 CREATE TABLE `dygzz_log` (
@@ -744,7 +729,7 @@ INSERT INTO `dygzz_log` VALUES ('456', 'admin', '1464178874', '0.0.0.0', '1', '�
 INSERT INTO `dygzz_log` VALUES ('457', 'admin', '1464256649', '0.0.0.0', '1', '密码保密', '用户名登陆', 'IANA保留地址');
 
 -- ----------------------------
--- Table structure for `dygzz_menu`
+-- Table structure for dygzz_menu
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_menu`;
 CREATE TABLE `dygzz_menu` (
@@ -839,7 +824,7 @@ INSERT INTO `dygzz_menu` VALUES ('80', '先进人物', '38', 'Admin', 'Advance',
 INSERT INTO `dygzz_menu` VALUES ('81', '漂浮图片', '38', 'Admin', 'Flowimg', 'index', '', 'Flowimg/index', '1', '1', '漂浮图片', '0', '0');
 
 -- ----------------------------
--- Table structure for `dygzz_model`
+-- Table structure for dygzz_model
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_model`;
 CREATE TABLE `dygzz_model` (
@@ -857,7 +842,7 @@ CREATE TABLE `dygzz_model` (
 INSERT INTO `dygzz_model` VALUES ('1', '文章模型', null, null, '1');
 
 -- ----------------------------
--- Table structure for `dygzz_operationlog`
+-- Table structure for dygzz_operationlog
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_operationlog`;
 CREATE TABLE `dygzz_operationlog` (
@@ -871,7 +856,7 @@ CREATE TABLE `dygzz_operationlog` (
   PRIMARY KEY (`id`),
   KEY `status` (`status`),
   KEY `username` (`uid`)
-) ENGINE=MyISAM AUTO_INCREMENT=334 DEFAULT CHARSET=utf8 COMMENT='后台操作日志表';
+) ENGINE=MyISAM AUTO_INCREMENT=336 DEFAULT CHARSET=utf8 COMMENT='后台操作日志表';
 
 -- ----------------------------
 -- Records of dygzz_operationlog
@@ -970,9 +955,11 @@ INSERT INTO `dygzz_operationlog` VALUES ('330', '1', '1464091390', '0.0.0.0', '1
 INSERT INTO `dygzz_operationlog` VALUES ('331', '1', '1464092420', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
 INSERT INTO `dygzz_operationlog` VALUES ('332', '1', '1464092525', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
 INSERT INTO `dygzz_operationlog` VALUES ('333', '1', '1464093578', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/dygzz/admin.php/Config/index');
+INSERT INTO `dygzz_operationlog` VALUES ('334', '1', '1464326916', '0.0.0.0', '1', '提示语：修改站点配置成功! <br />模块：Admin,控制器：Config,方法：index <br />请求方式：POST', '/wcdz/admin.php/Config/index');
+INSERT INTO `dygzz_operationlog` VALUES ('335', '1', '1464328006', '0.0.0.0', '1', '提示语：删除留言成功! <br />模块：Admin,控制器：Comment,方法：dels <br />请求方式：GET', '/wcdz/admin.php/Comment/dels/id/6,5,4,3');
 
 -- ----------------------------
--- Table structure for `dygzz_picture`
+-- Table structure for dygzz_picture
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_picture`;
 CREATE TABLE `dygzz_picture` (
@@ -1000,7 +987,7 @@ INSERT INTO `dygzz_picture` VALUES ('17', '40', '3', 'image/2016-05-24/thumb_574
 INSERT INTO `dygzz_picture` VALUES ('18', '40', '4', 'image/2016-05-24/thumb_57444f97541a2.jpg', '1', '1', '', '1464094615', '', '0', '4');
 
 -- ----------------------------
--- Table structure for `dygzz_role`
+-- Table structure for dygzz_role
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_role`;
 CREATE TABLE `dygzz_role` (
@@ -1024,7 +1011,7 @@ INSERT INTO `dygzz_role` VALUES ('1', '超级管理员', '0', '1', '拥有网站
 INSERT INTO `dygzz_role` VALUES ('11', '文章发布员', '1', '1', '文章发布员', '1409668026', '0', '0');
 
 -- ----------------------------
--- Table structure for `dygzz_send`
+-- Table structure for dygzz_send
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_send`;
 CREATE TABLE `dygzz_send` (
@@ -1039,7 +1026,7 @@ CREATE TABLE `dygzz_send` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for `dygzz_session`
+-- Table structure for dygzz_session
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_session`;
 CREATE TABLE `dygzz_session` (
@@ -1084,7 +1071,7 @@ INSERT INTO `dygzz_session` VALUES ('30', '192.168.7.141', '66aa2a4d09a3b203d182
 INSERT INTO `dygzz_session` VALUES ('31', '0.0.0.0', '3c9285983984122f3203cd57a43da02c');
 
 -- ----------------------------
--- Table structure for `dygzz_student`
+-- Table structure for dygzz_student
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_student`;
 CREATE TABLE `dygzz_student` (
@@ -1178,7 +1165,7 @@ INSERT INTO `dygzz_student` VALUES ('67', '24', '张妮', '1408210247', '1', nul
 INSERT INTO `dygzz_student` VALUES ('68', '3', '汪正亮', '1308010132', '0', null, '15357996915', null, '2014-2015年度第二学期   参加万人诵读活动，“八个一”活动 党站表现：作为计算机学院党员工作站站委会成员之一，有较强的责任心，工作认真负责，脚踏实地，关心党站事务，严格用党员的标准要求自己，有较高的思想觉悟。', '安徽安庆', null, '9A119', null, '1', '励志奖学金获得者，机器人团队，RobCup中国公开赛一等奖');
 
 -- ----------------------------
--- Table structure for `dygzz_student_copy`
+-- Table structure for dygzz_student_copy
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_student_copy`;
 CREATE TABLE `dygzz_student_copy` (
@@ -1207,7 +1194,7 @@ CREATE TABLE `dygzz_student_copy` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for `dygzz_teacher`
+-- Table structure for dygzz_teacher
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_teacher`;
 CREATE TABLE `dygzz_teacher` (
@@ -1227,7 +1214,7 @@ CREATE TABLE `dygzz_teacher` (
 INSERT INTO `dygzz_teacher` VALUES ('2', 'et', '0', 'er', 'image/2016-04-12/570ca3134d645.jpg', '<p>rt</p>', '0');
 
 -- ----------------------------
--- Table structure for `dygzz_template`
+-- Table structure for dygzz_template
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_template`;
 CREATE TABLE `dygzz_template` (
@@ -1249,7 +1236,7 @@ INSERT INTO `dygzz_template` VALUES ('9', '教师详细信息模板', 'index.php
 INSERT INTO `dygzz_template` VALUES ('10', '教师列表内容模板', 'index.php/List/teacher/class', '0');
 
 -- ----------------------------
--- Table structure for `dygzz_term`
+-- Table structure for dygzz_term
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_term`;
 CREATE TABLE `dygzz_term` (
@@ -1273,7 +1260,7 @@ INSERT INTO `dygzz_term` VALUES ('37', '0', '比赛链接', 'Link');
 INSERT INTO `dygzz_term` VALUES ('39', '0', '新闻', 'Picture');
 
 -- ----------------------------
--- Table structure for `dygzz_user`
+-- Table structure for dygzz_user
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_user`;
 CREATE TABLE `dygzz_user` (
@@ -1304,7 +1291,7 @@ INSERT INTO `dygzz_user` VALUES ('1', 'admin', '超级管理员', '81dc9bdb52d04
 INSERT INTO `dygzz_user` VALUES ('2', 'e8network', '超级管理员', '81dc9bdb52d04dc20036dbd8313ed055', '', '1434088419', '127.0.0.1', '', '', '', '0', '0', '1', '1', '', 'photo/default.jpg');
 
 -- ----------------------------
--- Table structure for `dygzz_visit`
+-- Table structure for dygzz_visit
 -- ----------------------------
 DROP TABLE IF EXISTS `dygzz_visit`;
 CREATE TABLE `dygzz_visit` (
