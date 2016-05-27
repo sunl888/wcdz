@@ -104,8 +104,7 @@
                                  <tr>
                                     <th>回复内容:</th>
                                      <td>
-                                         <textarea  c style="height:90px;width:282px; "name="answer"  ><?php echo ($comment["answer"]); ?>
-                                         </textarea>
+                                         <textarea  c style="height:90px;width:282px; "name="answer"  ><?php echo ($comment["answer"]); ?></textarea>
                                     </td>                                
                                 </tr><?php endforeach; endif; ?>
                                 

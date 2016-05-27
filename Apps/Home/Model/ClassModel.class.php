@@ -97,11 +97,14 @@ class ClassModel extends Model {
 	    }else if($classList['parentid'] !=0){//不存在子栏目且不是一级栏目
 	         
 	          $class = $classid;
+
 	         //p($navigation);die;
 	         //$this ->assign("navigation",$navigation);
 	        }else{ //一级栏目且没有子栏目
 	              $class = $classid;
+
 	        }
+
 	        return $class;
 	}
 	/**
@@ -112,12 +115,12 @@ class ClassModel extends Model {
 			$classList =$this ->where("id = $classid")->find();
 		    if($classList['child'] == 1  && $classList['parentid'] == 0){//存在子栏目
 		        $contentList = $this ->where("parentid = $classid")->select();
+
 		    }else if($classList['parentid'] !=0){//不存在子栏目
 		         $pidResult = $this->find($classid);
 		         $pid = $pidResult['parentid'];
 		         $contentList = $this ->where("parentid = $pid")->select();
 		        }else{
-		             
 		        }
 
 	        return $contentList;

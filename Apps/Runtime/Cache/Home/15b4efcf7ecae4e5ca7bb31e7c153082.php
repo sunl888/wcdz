@@ -57,14 +57,14 @@
          
          <?php if(is_array($commentList)): foreach($commentList as $key=>$vo): ?><div class="messages_list">
                 <p class="photo"><img src="/wcdz/Public/e8admin/upload/<?php echo ($pictureList[0]['img']); ?>" width="50px" height="50px" /></p>
-                <p class="reply"><?php echo ($vo['name']); ?>发表时间<?php echo (date("Y-m-d",$vo["stutime"])); ?></p>
+                <p class="reply"><?php echo ($vo['name']); ?>发表时间<?php echo (date("Y-m-d H:m:s",$vo["stutime"])); ?></p>
                 <p class="ContentS"><?php echo ($vo['comment']); ?></p>
                 
             </div><?php endforeach; endif; ?>
          <?php if(is_array($commentList)): foreach($commentList as $key=>$vo): ?><!--如果回复不为空则显示-->
              <?php if($vo["answer"] != NULL): ?><div class="messages_list">
                  <p class="photo"><img src="/wcdz/Public/e8admin/upload/<?php echo ($pictureList[0]['img']); ?>" width="50px" height="50px" /></p>
-                 <p class="reply"><span class="reply1">回复</span><?php echo ($vo['name']); ?>时间<?php echo (date("Y-m-d",$vo["answertime"])); ?></p>
+                 <p class="reply"><span class="reply1">回复</span><?php echo ($vo['name']); ?>时间:<?php echo (date("Y-m-d H:m:s",$vo["answertime"])); ?></p>
                  <p class="ContentS"><?php echo ($vo["answer"]); ?></p>
              </div><?php endif; endforeach; endif; ?>
          

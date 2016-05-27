@@ -60,8 +60,8 @@
          <p class="borders"><span><i><img src="/wcdz/Public/e8home/default/images/b_06_05.png" width="40" height="40" /></i></span><input  type="text"  id="phone" maxlength="11" onkeyup="this.value=this.value.replace(/\D/g,'')" placeholder="Phone" />
 </p>
          <p class="borders_a"><span><i><img src="/wcdz/Public/e8home/default/images/msg.png" width="40" height="40" /></i></span><textarea name="comment" placeholder="Contents"></textarea></p>
-         <input class="menu menu1" type="submit" value="查看留言" />
-         <input class="menu menu2" type="submit" value="提交" />
+               <a href="/wcdz/index.php/Show/details"><input class="menu menu1" type="button" value="查看留言" /></a>>
+               <input class="menu menu2" type="submit" value="提交" />
            </form>
        </div>
 </div>

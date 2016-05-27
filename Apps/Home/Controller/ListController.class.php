@@ -99,9 +99,11 @@ class ListController extends BaseController {
         $Class = D("Class","Model");
         $Picture = D("Picture");
         $Classname = D('Classname');
+        
         $classid = $_GET['class'];
         $pictureList = $Picture ->where("termid = 39")->select();
         $classnameList = $Classname ->select();
+        //p($classnameList);
         $navigation = $Class ->getLeftName($classid);
         $class = $Class ->getClass($classid);//p($navigation);die;
         $contentList = $Class ->getLeftList($classid);//p($contentList);die;

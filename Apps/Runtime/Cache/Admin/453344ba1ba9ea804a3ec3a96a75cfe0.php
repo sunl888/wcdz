@@ -8,9 +8,9 @@
 <title>e8通用后台</title>
 
 <!-- 新 Bootstrap 核心 CSS 文件 -->
-<link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
-<link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
+<link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
 
 <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -18,8 +18,8 @@
     <![endif]-->
 
 <!-- e8 style -->
-<link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-<link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
+<link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+<link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
 
 </head>
 
@@ -31,7 +31,7 @@
         <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -61,14 +61,14 @@
         <div class="col-sm-12">
             <div class="tabbable">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="/dygzz/admin.php/Domitory">寝室管理</a></li>
-                    <li><a href="/dygzz/admin.php/Domitory/add">添加寝室</a></li>
+                    <li class="active"><a href="/wcdz/admin.php/Domitory">寝室管理</a></li>
+                    <li><a href="/wcdz/admin.php/Domitory/add">添加寝室</a></li>
                 </ul>
 
                 <div class="tab-content">
                     <div class="tab-pane in active">
                         <p class="title background-blue">搜索</p>
-                         <form action="/dygzz/admin.php/Domitory/index" method="post">
+                         <form action="/wcdz/admin.php/Domitory/index" method="post">
                             <div style="padding:5px 0;">    
                                 <div style="padding: 5px 0;">    
                                 <span>关键字：</span><input type="text" name="keywords" class="form-control input-sm wid-2" value="点击输入宿舍号"onfocus="if (value =='点击输入宿舍号'){value =''}"onblur="if (value ==''){value='点击输入宿舍号'}"/>
@@ -76,7 +76,7 @@
                             </div>
                         </form>
 
-                        <form action="/dygzz/admin.php/domitory/editdomitory" method="post">
+                        <form action="/wcdz/admin.php/domitory/editdomitory" method="post">
                             <table class="table table-hover">
                                 <tr>
                                     <th width="20">
@@ -98,12 +98,12 @@
                                             <?php echo (subtitle($domitory["introduction"],10,0)); ?>
                                         </td>
                                         <td>
-                                            <img class="img-thumbnail" id="photo<?php echo ($domitory["id"]); ?>" src="/dygzz/Public/e8admin/upload/<?php echo ($domitory["image"]); ?>" alt="<?php echo ($domitory["name"]); ?>" width="30px" height="30px" onclick="showphoto('photo<?php echo ($domitory["id"]); ?>');">
+                                            <img class="img-thumbnail" id="photo<?php echo ($domitory["id"]); ?>" src="/wcdz/Public/e8admin/upload/<?php echo ($domitory["image"]); ?>" alt="<?php echo ($domitory["name"]); ?>" width="30px" height="30px" onclick="showphoto('photo<?php echo ($domitory["id"]); ?>');">
                                         </td>
                                         <td class="align-center">
-                                             <a href="/dygzz/admin.php/Domitory/view/id/<?php echo ($domitory["id"]); ?>">查看</a>|&nbsp;
-                                            <a href="/dygzz/admin.php/Domitory/edit/id/<?php echo ($domitory["id"]); ?>/mw/<?php echo ($domitory["mw"]); ?>">修改</a>|&nbsp; 
-                                            <a href="javascript:void(0);" onclick="return confirm('/dygzz/admin.php/Domitory/del/id/<?php echo ($domitory["id"]); ?>','确定删除?');">删除</a>
+                                             <a href="/wcdz/admin.php/Domitory/view/id/<?php echo ($domitory["id"]); ?>">查看</a>|&nbsp;
+                                            <a href="/wcdz/admin.php/Domitory/edit/id/<?php echo ($domitory["id"]); ?>/mw/<?php echo ($domitory["mw"]); ?>">修改</a>|&nbsp; 
+                                            <a href="javascript:void(0);" onclick="return confirm('/wcdz/admin.php/Domitory/del/id/<?php echo ($domitory["id"]); ?>','确定删除?');">删除</a>
                                         </td>
                                     </tr><?php endforeach; endif; ?>
                             </table>
@@ -112,7 +112,7 @@
                     <div class="pageBar"><?php echo ($page); ?></div>
                     <div style="width:100%;height:60px;"></div>
                     <div class="admin-add">
-                        <button class="btn btn-primary btn-sm" type="button" onclick="javascript:treatCon('/dygzz/admin.php/domitory/Del')">删除</button>
+                        <button class="btn btn-primary btn-sm" type="button" onclick="javascript:treatCon('/wcdz/admin.php/domitory/Del')">删除</button>
                     </div>
                 </div>
             </div>
@@ -132,11 +132,11 @@
 
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
     <!--  -->
-    <script src="/dygzz/Public/e8admin/default/js/fun.js"></script>
-    <script src="/dygzz/Public/e8admin/default/js/e8.js"></script>
+    <script src="/wcdz/Public/e8admin/default/js/fun.js"></script>
+    <script src="/wcdz/Public/e8admin/default/js/e8.js"></script>
 
     <script>
     function showphoto(obj){

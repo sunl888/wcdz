@@ -54,18 +54,18 @@ class ShowController extends BaseController{
 		$Content = D("Content");
 		$ContentData = D("Content_data");
 		$Picture =D('Picture');
-		$classid = $_GET['class'];//p($classid);die;
-		$classList = $Class->where("id = $classid")->find();
+		$contentid = $_GET['id'];	//获取文章ID
+		$classid = $Content->where("id = $contentid")->getField("classid");    //获取栏目id
+		$classList = $Class->where("id = $classid")->find();	//栏目信息
+		//p($classList);
 		$pictureList = $Picture ->where("termid= 39")->select();
-
 		$class = $Class ->getClass($classid);
-		$navigation = $Class ->getLeftName($classid);
+		$navigation = $Class ->getLeftName($classid);  //栏目名称
 		$contentList = $Class ->getLeftList($classid);
 		$classname = $Class ->where("id = $class") ->getField("classname");
-		$texttitle = $Content ->where("classid = $class and status=1")->find();
+		$texttitle = $Content ->where("id = $contentid and status=1")->find();
 		$cid = $texttitle['id'];
 		$textcontent = $ContentData ->where("id = $cid")->find();
-//        p($texttitle);
 		//浏览量加1
 		$views = $texttitle['views'];
 		$Content -> where("classid = $class") -> setField('views',$views+1);
