@@ -1,19 +1,19 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>留言板查看</title>
-<link href="/wcdz/Public/e8home/default/style/common.css" rel="stylesheet" type="text/css" />
-<link href="/wcdz/Public/e8home/default/style/messages_list.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/wcdz/Public/e8home/default/js/time.js"></script>
+<link href="__PUBLIC__/e8home/default/style/common.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/e8home/default/style/message.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/e8home/default/js/time.js"></script>
+<title>留言板</title>
 </head>
 
 <body>
-<div class="body_bg"><img src="/wcdz/Public/e8home/default/images/bg.jpg" /></div>
+<div class="body_bg"><img src="__PUBLIC__/e8home/default/images/bg.jpg" /></div>
 <!--header-->
 <div class="header">
-     <img class="dzlogo" src="/wcdz/Public/e8home/default/images/dzlogo.png" />
-     <span><img  class="title" src="/wcdz/Public/e8home/default/images/title.png" /></span>
+     <img class="dzlogo" src="__PUBLIC__/e8home/default/images/dzlogo.png" />
+     <span><img  class="title" src="__PUBLIC__/e8home/default/images/title.png" /></span>
 </div>
 <!--content-->
 <div class="content">
@@ -73,7 +73,7 @@
   <div class="contentleft">
            <div class="contentleftTop">
                <span class="newspic">
-                   <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;流动党员之家
+                   <img class="logo_1" src="__PUBLIC__/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;流动党员之家
                </span>
                 <p class="ctac"><a href="">党员简介</a></p>
                 <p><a href="">党员风采</a></p>
@@ -81,32 +81,26 @@
            </div>
            <div class="contentleftBottom">
             <p class="newspic">
-                   <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;交流园地
+                   <img class="logo_1" src="__PUBLIC__/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;交流园地
             </p>
-                <p class="works"><a href=""><img class="works" src="/wcdz/Public/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
-                <p class="contact"><a href=""><img class="contact" src="/wcdz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
-                <p class="message"><a href=""><img class="message" src="/wcdz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
+                <p class="works"><a href=""><img class="works" src="__PUBLIC__/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
+                <p class="contact"><a href=""><img class="contact" src="__PUBLIC__/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
+                <p class="message"><a href=""><img class="message" src="__PUBLIC__/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
            </div>
        </div>
        <!--content_right-->
        <div class="contentright">
-         <p class="locat">当前位置>>留言列表<a href="<?php echo U('Index/index');?>">首页</a></p>
-         
-         <?php if(is_array($commentList)): foreach($commentList as $key=>$vo): ?><div class="messages_list">
-                <p class="photo"><img src="/wcdz/Public/e8admin/upload/<?php echo ($pictureList[0]['img']); ?>" width="50px" height="50px" /></p>
-                <p class="reply"><?php echo ($vo['name']); ?>发表时间<?php echo (date("Y-m-d",$vo["stutime"])); ?></p>
-                <p class="ContentS"><?php echo ($vo['comment']); ?></p>
-                <!--BUG:此处需要加个显示回复内容的p-->
-            </div><?php endforeach; endif; ?>
-         <?php if(is_array($commentList)): foreach($commentList as $key=>$vo): ?><div class="messages_list">
-                 <p class="photo"><img src="/wcdz/Public/e8admin/upload/<?php echo ($pictureList[0]['img']); ?>" width="50px" height="50px" /></p>
-                 <p class="reply"><span class="reply1">回复</span><?php echo ($vo['name']); ?>时间<?php echo (date("Y-m-d",$vo["answertime"])); ?></p>
-                 <p class="ContentS"><?php echo ($vo["answer"]); ?></p>
-             </div><?php endforeach; endif; ?>
-         
-         <div class="articleRig_Page">
-             <?php echo ($page); ?>
-          </div>
+           <form method='post' action="{:U('Show/leave_word')}" >
+         <p class="locat">当前位置>>留言板<a href="{:U('Index/index')}">首页</a></p>
+               <h1><img src="__PUBLIC__/e8home/default/images/messages_1.png" width="190" height="70" /></h1>
+               <p class="borders"><span><i><img src="__PUBLIC__/e8home/default/images/b_06_01.png" width="40" height="40" /></i></span><input type="text" name="name" placeholder="Name"  /></p>
+         <p class="borders"><span><i><img src="__PUBLIC__/e8home/default/images/b_06_03.png" width="40" height="40" /></i></span><input type="email" name="email" placeholder="Email" /></p>
+         <p class="borders"><span><i><img src="__PUBLIC__/e8home/default/images/b_06_05.png" width="40" height="40" /></i></span><input  type="text"  id="phone" maxlength="11" onkeyup="this.value=this.value.replace(/\D/g,'')" placeholder="Phone" />
+</p>
+         <p class="borders_a"><span><i><img src="__PUBLIC__/e8home/default/images/msg.png" width="40" height="40" /></i></span><textarea name="comment" placeholder="Contents"></textarea></p>
+         <input class="menu menu1" type="submit" value="查看留言" />
+         <input class="menu menu2" type="submit" value="提交" />
+           </form>
        </div>
 </div>
 <div class="footer">

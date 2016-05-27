@@ -14,13 +14,13 @@ class ShowController extends BaseController{
 			}else{
 				$data['name'] = $_POST['name'];
 				$data['email'] = $_POST['email'];
+                                $data['phone'] = $_POST['phone'];
 				$data['comment'] = $_POST['comment'];
 				$data['ip'] = get_client_ip();
 				$data['stutime'] = time();
-
 				$addResult = $Comment ->add($data); 
 				if($addResult){
-					$this->success("添加留言成功！！！",__APP__."/Show/details/id/3");
+					$this->success("添加留言成功！！！",U('Show/details'));
 				}else{
 					$this->success("添加留言失败！！！");
 				}
@@ -42,18 +42,12 @@ class ShowController extends BaseController{
 		$id = $_GET['id'];
 		$pictureList = $Picture ->where("termid = 39")->select();
 		$contentList = $Picture ->where("id = $id")->find();
-
-		
 		$this -> assign("pictureList",$pictureList);
-        $this -> assign("contentList",$contentList);
-        $this -> assign("classList",$classList);
+                $this -> assign("contentList",$contentList);
+                $this -> assign("classList",$classList);
 		$this -> display();
 	}
 
-
-
-
-	
 
 	public function content(){
 		$Class = D('Class');
@@ -76,8 +70,6 @@ class ShowController extends BaseController{
 		}else{
 			$navigation = $Class ->where("id = $cid")->getField('classname');
 		}
-		
-
 		$this->assign("navigation",$navigation);
 		$this->assign("classList",$classList);
 		$this->assign("contentList",$contentList);
@@ -90,18 +82,20 @@ class ShowController extends BaseController{
 	**留言详情页
 	*/
 	public function details(){
-		$Comment = D('Comment');
-		$Picture = D('Picture');
+		$Comment = M('Comment');
+		$Picture = M('Picture');
 		$pictureList = $Picture ->where("termid = 39")->select();
 		//分页
 		$count = $Comment ->count();
-		$Page = new\Think\Page($count,3);
+		$Page = new\Think\Page($count,4);
 		$show = $Page ->show();
 		$commentList = $Comment->order("stutime desc") ->limit($Page->firstRow.','.$Page->listRows)->select();
-		//p($commentList);die;
+		//p($commentList);
 		$this->assign("page",$show);
+                //p($show);
 		$this->assign("commentList",$commentList);
 		$this->assign("pictureList",$pictureList);
+                
 		$this->display();
 	}
 
