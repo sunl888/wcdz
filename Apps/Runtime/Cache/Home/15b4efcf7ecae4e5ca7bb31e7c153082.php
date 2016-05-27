@@ -74,8 +74,8 @@
        </div>
 </div>
 <div class="footer">
-   <p>主办：淮南师范文化创意与传播学院党员工作站</p>
-   <p>技术支持：淮南师范学院E8网络工作室</p>
+    <p>主办：淮南师范文化创意与传播学院党员工作站</p>
+    <p>技术支持：<a href="http://www.e8net.cn" target="_blank">淮南师范学院E8网络工作室</a></p>
 </div>
 <script type="text/javascript">
     window.tick();

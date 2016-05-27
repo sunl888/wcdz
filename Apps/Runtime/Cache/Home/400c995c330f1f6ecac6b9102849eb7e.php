@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -101,7 +101,7 @@ $(function(){
                 <div class="slider-extra">
                     <ul class="slider-nav">
                         <!--轮播图的个数-->
-                        <?php $__FOR_START_667__=1;$__FOR_END_667__=$imgCount+1;for($i=$__FOR_START_667__;$i < $__FOR_END_667__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
+                        <?php $__FOR_START_19940__=1;$__FOR_END_19940__=$imgCount+1;for($i=$__FOR_START_19940__;$i < $__FOR_END_19940__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
                     </ul>
 
                     <div class="slider-page">

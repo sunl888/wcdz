@@ -69,7 +69,7 @@ class ListController extends BaseController {
     $this->display();
   }
 
-/*
+
 //宿舍列表页面
     public function domitory(){
         $Domitory = D("Domitory");
@@ -89,11 +89,11 @@ class ListController extends BaseController {
         $this->assign("domitoryList",$domitoryList);
         $this->assign("page",$show);
         $this->display();
-    }*/
+    }
     /**
     *   党员及先进人物列表页
     **/
-   /* public function teacher(){
+    public function teacher(){
         $Advance = D("Advance");
         $Student = D('Student');
         $Class = D("Class","Model");
@@ -143,5 +143,5 @@ class ListController extends BaseController {
         $this->assign("pictureList",$pictureList);
         $this->display();
     }
-     */
+     
 }
