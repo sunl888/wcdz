@@ -100,7 +100,7 @@ $(function(){
                 <div class="slider-extra">
                     <ul class="slider-nav">
                         <!--轮播图的个数-->
-                        <?php $__FOR_START_22991__=1;$__FOR_END_22991__=$imgCount+1;for($i=$__FOR_START_22991__;$i < $__FOR_END_22991__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
+                        <?php $__FOR_START_14195__=1;$__FOR_END_14195__=$imgCount+1;for($i=$__FOR_START_14195__;$i < $__FOR_END_14195__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
                     </ul>
 
                     <div class="slider-page">
@@ -136,7 +136,7 @@ $(function(){
    <div class="content_centerTop">
                <span class="newspic">
                    <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;公告栏
-                   <span class="more"><a href="/wcdz/index.php/List/article/class/gonggao">more>></a></span>
+                   <span class="more"><a href="/wcdz/index.php/List/Gonggao">more>></a></span>
                </span>
     <div id="breakNews">
     <ul id="breakNewsList" class="list6">

@@ -149,5 +149,15 @@ class ListController extends BaseController {
         $this->assign("pictureList",$pictureList);
         $this->display();
     }
+
+    public function Gonggao(){
+        $Content = D('Content');
+        $noticeList = $Content -> where("( classid = 27 or classid = 28 ) and status = 1") -> order("addtime desc") -> select();
+//        p($noticeList);
+        $this ->assign("noticeList",$noticeList);
+        $this->display();
+    }
+
+
      
 }
