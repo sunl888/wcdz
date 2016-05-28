@@ -19,14 +19,15 @@ class IndexController extends BaseController {
         $configList = $config -> where("varname = 'sitevideo'") -> find();
         //p($configList);
         //最新公告
-        $noticeList = $Content -> where("classid = 26 and status = 1") -> order("addtime desc") -> select();
-        //dump($Content->getLastsql());
+        $noticeList = $Content -> where("( classid = 27 or classid = 28 ) and status = 1") -> order("addtime desc") -> select();
+        //echo($Content->getLastSql());
+//       p($noticeList);
         //通知
-        $tzList = $Content -> where("classid = 27 and status = 1") -> order("addtime desc") -> limit(12) -> select();
+        $tzList = $Content -> where("classid = 27 and status = 1") -> order("addtime desc") -> limit(9) -> select();
         //新闻
-        $newList = $Content -> where("classid = 28 and status = 1") -> order("addtime desc") -> limit(12) -> select();
+        $newList = $Content -> where("classid = 28 and status = 1") -> order("addtime desc") -> limit(9) -> select();
         //最新内容
-        $contentList = $Content -> where("status = 1") -> order("addtime desc")->limit(12) -> select();
+        $contentList = $Content -> where("status = 1") -> order("addtime desc")->limit(9) -> select();
        // p($contentList);
         //主题实践
         $actionList = $Content->where("(classid = 7 and status = 1) or (classid = 8 and status = 1) or (classid = 9 and status = 1)")->order("addtime desc")->select();

@@ -100,7 +100,7 @@ $(function(){
                 <div class="slider-extra">
                     <ul class="slider-nav">
                         <!--轮播图的个数-->
-                        <?php $__FOR_START_11520__=1;$__FOR_END_11520__=$imgCount+1;for($i=$__FOR_START_11520__;$i < $__FOR_END_11520__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
+                        <?php $__FOR_START_3763__=1;$__FOR_END_3763__=$imgCount+1;for($i=$__FOR_START_3763__;$i < $__FOR_END_3763__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
                     </ul>
 
                     <div class="slider-page">
@@ -136,7 +136,7 @@ $(function(){
    <div class="content_centerTop">
                <span class="newspic">
                    <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;公告栏
-                   <span class="more"><a href="/wcdz/index.php/List/article/class/26">more>></a></span>
+                   <span class="more"><a href="/wcdz/index.php/List/article/class/gonggao">more>></a></span>
                </span>
     <div id="breakNews">
     <ul id="breakNewsList" class="list6">
@@ -169,28 +169,47 @@ scroll2.LineHeight = 24;
                 您的浏览器版本过低暂不支持播放视频
                 </video>
             </div>
-            <div class="content_rightBottom">
-               <div id="tab">
-                  <div class="tabList">
+
+            <div id="tab">
+
+                <h3 class="up" id="two1" onmouseover="setContentTab('two',1,4)">最新</h3>
+                <div class="block" id="con_two_1">
                     <ul>
-                        <li class="cur">最新</li>
-                        <li class="cur">通知</li>
-                        <li class="cur">新闻</li>
+                        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><li><a class="tab_menu">[最新]</a><a class="tab_title" href="/wcdz/index.php/Show/content/id/<?php echo ($content["id"]); ?>"><?php echo ($content["title"]); ?></a><span><?php echo (date( "Y-m-d",$content["addtime"])); ?></span></li><?php endforeach; endif; ?>
                     </ul>
-                  </div>
-                  <div class="tabCon">
-                    <div class="cur">
-                        <?php if(is_array($contentList)): foreach($contentList as $key=>$content1): ?><p><a href="/wcdz/index.php/Show/content/id/<?php echo ($content1["id"]); ?>"><?php echo ($content1["title"]); ?></a></p><?php endforeach; endif; ?>
-                    </div>
-                    <div class="cur">
-                        <?php if(is_array($tzList)): foreach($tzList as $key=>$tz1): ?><p><a href="/wcdz/index.php/Show/content/id/<?php echo ($tz1["id"]); ?>"><?php echo ($tz1["title"]); ?></a></p><?php endforeach; endif; ?>
-                    </div>
-                    <div class="cur">
-                        <?php if(is_array($newList)): foreach($newList as $key=>$new1): ?><p><a href="/wcdz/index.php/Show/content/id/<?php echo ($new1["id"]); ?>"><?php echo ($new1["title"]); ?></a></p><?php endforeach; endif; ?>
-                    </div>
-                  </div>
-           </div>
-        </div>
+                </div>
+
+                <h3 id="two2" onmouseover="setContentTab('two',2,4)" href="/wcdz/index.php/List/article/class/28">通知</h3>
+                <div  id="con_two_2">
+                    <ul>
+                        <?php if(is_array($tzList)): foreach($tzList as $key=>$tz): ?><li><a class="tab_menu" href="/wcdz/index.php/List/article/class/27">[通知]</a><a class="tab_title" href="/wcdz/index.php/Show/content/id/<?php echo ($tz["id"]); ?>"><?php echo ($tz["title"]); ?></a><span><?php echo (date( "Y-m-d",$tz["addtime"])); ?></span></li><?php endforeach; endif; ?>
+                    </ul>
+                </div>
+
+                <h3 id="two3" onmouseover="setContentTab('two',3,4)" href="/wcdz/index.php/List/article/class/28">新闻</h3>
+                <div id="con_two_3">
+                    <ul>
+                        <?php if(is_array($newList)): foreach($newList as $key=>$new): ?><li><a class="tab_menu" href="/wcdz/index.php/List/article/class/28">[新闻]</a><a class="tab_title" href="/wcdz/index.php/Show/content/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a><span><?php echo (date( "Y-m-d",$new["addtime"])); ?></span></li><?php endforeach; endif; ?>
+                    </ul>
+                </div>
+
+            </div>
+
+            <script type="text/javascript">
+                function setContentTab(name, curr, n) {
+                    for (i = 1; i <= n; i++) {
+                        var menu = document.getElementById(name + i);
+                        var cont = document.getElementById("con_" + name + "_" + i);
+                        menu.className = i == curr ? "up" : "";
+                        if (i == curr) {
+                            cont.style.display = "block";
+                        } else {
+                            cont.style.display = "none";
+                        }
+                    }
+                }
+            </script>
+
 </div>
 </div>
 <!--footer-->

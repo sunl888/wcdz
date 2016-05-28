@@ -250,7 +250,7 @@
     margin-top:0px;
     width:100%;
 	padding-top:20px;
-	/*background:url(../images/new_bg01.jpg) no-repeat bottom;*/
+	background:url(../images/new_bg01.jpg) no-repeat bottom;
     }
 #breakNews .list6 {
 	padding:0;
@@ -312,71 +312,32 @@
     border: 1px solid orange;
 	
 	}
-.content_rightBottom ul li a{
-	color:#333;
-	}
-.content_rightBottom ul li:hover a{
-	display:block;
-	width:100%;
-	height:100%;
-	color:#e71f19;
-	background:#f9e99f;
-	}
-.content_rightBottom #tab{
-	width:100%;
-	height:100%;
-	}
-.content_rightBottom #tab .tabList{
-	width:100%;
-	height:40px;
-	}
-.content_rightBottom #tab .tabList ul{
-	width:100%;
-	height:30px;
-	background:#f1c4a0;
-	}
-.content_rightBottom #tab .tabList ul li{
-	width:32.6%;
-	height:28px;
-	border:1px solid #dfa020;
-	text-align:center;
-	font-size:14px;
-	line-height:28px;
-	color:#333;
-	}
-.content_rightBottom #tab .tabList ul li:hover{
-	color:#c00;
-	background:#F96;
-    }
-.content_rightBottom #tab .tabCon{
-	width:90%;
-	height:80%;
-	font-size:12px;
-	padding:10px;
-	overflow:hidden;
-	position: relative;
-	}
-.content_rightBottom #tab .tabCon div:first-child{
-	opacity: 0;
-}
-.content_rightBottom #tab .tabCon div:nth-child(2){
-	opacity: 0;
-}	
-.content_rightBottom #tab .tabCon div a{
-	width:100%;
-	height:30px;
-	line-height:30px;
-	color:#333;
-	}
-.content_rightBottom #tab .tabCon div a:hover{
-	color:#c00;
-}
-#tab .tabCon div{
-	width:100%;
-	height:100%;
-	padding:10px;
-	position:absolute;
-	overflow: hidden;
-	
-	
-}
+#tab { width:440px; height:216px; position:relative;margin:0px auto 0 auto;}
+/*设置容器高宽等*/
+html > body #tab { width:440px;}
+/*兼容IE6:IE6下宽度不够*/
+#tab div { position:absolute; top:30px; left:0; width:440px; height:186px;}
+/*设置容器高宽等*/
+#tab div { display:none;}
+/*设置容器默认隐藏:不用ID是因为下面将利用class来控制容器显示,而class优先级低于id选择器*/
+#tab .block { display:block;}
+/*选中的容器*/
+#tab h3 { float:left; width:32.33%; height:30px; line-height:30px; margin:0 0 0 0; font-size:12px; cursor:pointer; background-color:#f1c5a0; text-align:center; color:#5a5a5a; font-family:Microsoft YaHei;font-weight:normal;}
+/*默认标题样式*/
+#tab .up { background:#e39238;color:#fff;}
+/*选中的标题样式*/
+/*修饰列表内容*/
+#tab ul { list-style:none; padding:0; height:186px; margin-top:0px; width:440px;}
+#tab li { margin-left:10px; margin-right:10px; border-bottom:1px dotted #c6c6c6; height:22px; padding-top:23px; overflow:hidden; font-size:12px; width:400px;}
+#tab li a { display:inline; font-size:12px; text-decoration:none; text-indent:10px; margin-right:10px;width:350px;}
+#tab li span{ display:block; float:right; margin-right:5px; color: #bdacb3;}
+a.tab_title:link { color: #5a5a5a; text-decoration:none;}
+a.tab_title:visited { color:#5a5a5a; text-decoration:none;}
+a.tab_title:hover { color:#5a5a5a; text-decoration:none;}
+a.tab_title:active { color:#5a5a5a; text-decoration:none;}
+a.tab_menu:link { color:#f00; text-decoration:none;}
+a.tab_menu:hover { color:#8888e0; text-decoration:underline;}
+
+
+
+
