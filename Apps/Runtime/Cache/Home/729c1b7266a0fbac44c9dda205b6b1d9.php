@@ -9,7 +9,6 @@
 </head>
 
 <body>
-<div class="body_bg"><img src="/wcdz/Public/e8home/default/images/bg.jpg" /></div>
 <!--header-->
 ﻿ <div class="header">
      <img class="dzlogo" src="/wcdz/Public/e8home/default/images/dzlogo.png" />
@@ -34,6 +33,7 @@
         <span id="localtime"></span>
     </div>
        <!--content_left-->
+
 <div class="contentleft">
     <div class="contentleftTop">
                <span class="newspic">
@@ -51,6 +51,7 @@
         <p class="message"><a href="<?php echo U('Show/leave_word');?>"><img class="message" src="/wcdz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
     </div>
 </div>
+
        <!--content_right-->
       <div class="content_right">
         <div class="top">
@@ -66,8 +67,8 @@
                 <p><?php echo ($textcontent["content"]); ?></p>
             </div>
             <p class="writer">责任编辑:<?php echo ($texttitle["author"]); ?></p>
-        </div> 
-        
+        </div>
+
     </div>
 </div>
 <div class="footer">
