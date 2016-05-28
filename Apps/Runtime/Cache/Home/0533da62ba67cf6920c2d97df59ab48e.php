@@ -71,7 +71,7 @@
                 <?php if(is_array($domitoryList)): foreach($domitoryList as $key=>$vo): ?><div class="box">
                         <img src="/wcdz/Public\e8admin\upload\<?php echo ($vo['image']); ?>">
                             <!--type=1表示优秀党员  -->
-                            <a href="<?php echo U( 'Show/viewteacher',array('id'=>$vo['id'],'type'=>$type) );?>">
+                            <a href="<?php echo U( 'Show/domitory',array('id'=>$vo['id']) );?>">
                             <div class="animated">
                                 <p class="college"><?php echo ($vo['did']); ?></p>
                                 <p class="profession"><?php echo ($vo['leader']); ?></p>

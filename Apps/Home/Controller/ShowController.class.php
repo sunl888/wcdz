@@ -113,7 +113,7 @@ class ShowController extends BaseController{
 		//访问量+1
 		$views = $domitoryList['views'];
 		$Domitory ->where("id = $id")->setField("views",$views+1);
-
+                //p($domitoryList);
 		$this->assign("navigation",$navigation);
 		$this->assign("pictureList",$pictureList);
 		$this->assign("domitoryList",$domitoryList);

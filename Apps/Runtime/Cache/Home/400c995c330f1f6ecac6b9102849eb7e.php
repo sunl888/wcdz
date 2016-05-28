@@ -100,7 +100,7 @@ $(function(){
                 <div class="slider-extra">
                     <ul class="slider-nav">
                         <!--轮播图的个数-->
-                        <?php $__FOR_START_22991__=1;$__FOR_END_22991__=$imgCount+1;for($i=$__FOR_START_22991__;$i < $__FOR_END_22991__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
+                        <?php $__FOR_START_29285__=1;$__FOR_END_29285__=$imgCount+1;for($i=$__FOR_START_29285__;$i < $__FOR_END_29285__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
                     </ul>
 
                     <div class="slider-page">
