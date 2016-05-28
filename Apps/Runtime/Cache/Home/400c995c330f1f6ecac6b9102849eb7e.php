@@ -62,7 +62,6 @@ $(function(){
 </script>
 </head>
 <body>
-<div class="body_bg"><img src="/wcdz/Public/e8home/default/images/bg.jpg" /></div>
 <!--header-->
 ﻿ <div class="header">
      <img class="dzlogo" src="/wcdz/Public/e8home/default/images/dzlogo.png" />
@@ -101,7 +100,11 @@ $(function(){
                 <div class="slider-extra">
                     <ul class="slider-nav">
                         <!--轮播图的个数-->
+<<<<<<< HEAD
                         <?php $__FOR_START_6702__=1;$__FOR_END_6702__=$imgCount+1;for($i=$__FOR_START_6702__;$i < $__FOR_END_6702__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
+=======
+                        <?php $__FOR_START_11520__=1;$__FOR_END_11520__=$imgCount+1;for($i=$__FOR_START_11520__;$i < $__FOR_END_11520__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
+>>>>>>> f202ef032673c748c40a907ef82d831001979efd
                     </ul>
 
                     <div class="slider-page">

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<div class="body_bg"><img src="/wcdz/Public/e8home/default/images/bg.jpg" /></div>
+
 <!--header-->
 ﻿ <div class="header">
      <img class="dzlogo" src="/wcdz/Public/e8home/default/images/dzlogo.png" />
