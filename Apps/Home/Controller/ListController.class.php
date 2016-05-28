@@ -150,6 +150,7 @@ class ListController extends BaseController {
         $this->display();
     }
 
+    // 公告列表页面
     public function Gonggao(){
         $Content = D('Content');
         $noticeList = $Content -> where("( classid = 27 or classid = 28 ) and status = 1") -> order("addtime desc") -> select();
@@ -158,6 +159,13 @@ class ListController extends BaseController {
         $this->display();
     }
 
-
+    // 最新列表页面
+    public function Zuixin(){
+        $Content = D('Content');
+        $zuixinList = $Content -> where("status = 1") -> order("addtime desc") -> select();
+//        p($noticeList);
+        $this ->assign("zuixinList",$zuixinList);
+        $this->display();
+    }
      
 }

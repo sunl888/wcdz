@@ -22,13 +22,20 @@ class IndexController extends BaseController {
         $noticeList = $Content -> where("( classid = 27 or classid = 28 ) and status = 1") -> order("addtime desc") -> select();
         //echo($Content->getLastSql());
 //       p($noticeList);
+
         //通知
         $tzList = $Content -> where("classid = 27 and status = 1") -> order("addtime desc") -> limit(9) -> select();
         //新闻
         $newList = $Content -> where("classid = 28 and status = 1") -> order("addtime desc") -> limit(9) -> select();
         //最新内容
         $contentList = $Content -> where("status = 1") -> order("addtime desc")->limit(9) -> select();
-       // p($contentList);
+        //获取：“最新”  所属栏目名称
+        foreach($contentList as $k => $c){
+            $cid = $c['classid'];
+            $contentList[$k]['cname'] = $Class ->where("id = $cid") -> getField("classname");
+        }
+//        p($contentList);
+
         //主题实践
         $actionList = $Content->where("(classid = 7 and status = 1) or (classid = 8 and status = 1) or (classid = 9 and status = 1)")->order("addtime desc")->select();
         //理论导航
@@ -46,6 +53,7 @@ class IndexController extends BaseController {
         //表中轮播图片的数量
         $imgCount = $Picture -> where("termid = 40 and hidden= 1")->count();
                 $this ->assign("imgCount",$imgCount);
+                $this ->assign("classname",$classname);
                 $this ->assign("pictureList",$pictureList);
                 $this ->assign("linkCompitition",$linkCompitition);
                 $this ->assign("linkDepartment",$linkDepartment);

@@ -100,11 +100,7 @@ $(function(){
                 <div class="slider-extra">
                     <ul class="slider-nav">
                         <!--轮播图的个数-->
-<<<<<<< HEAD
-                        <?php $__FOR_START_14195__=1;$__FOR_END_14195__=$imgCount+1;for($i=$__FOR_START_14195__;$i < $__FOR_END_14195__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
-=======
-                        <?php $__FOR_START_29285__=1;$__FOR_END_29285__=$imgCount+1;for($i=$__FOR_START_29285__;$i < $__FOR_END_29285__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
->>>>>>> db581a23d50cd79f9edaf325f6a8172e2999d277
+                        <?php $__FOR_START_8293__=1;$__FOR_END_8293__=$imgCount+1;for($i=$__FOR_START_8293__;$i < $__FOR_END_8293__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
                     </ul>
 
                     <div class="slider-page">
@@ -176,21 +172,21 @@ scroll2.LineHeight = 24;
 
             <div id="tab">
 
-                <h3 class="up" id="two1" onmouseover="setContentTab('two',1,4)">最新</h3>
+                <h3 class="up" id="two1" onmouseover="setContentTab('two',1,4)"><a  href="/wcdz/index.php/List/Zuixin">最新</a></h3>
                 <div class="block" id="con_two_1">
                     <ul>
-                        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><li><a class="tab_menu">[最新]</a><a class="tab_title" href="/wcdz/index.php/Show/content/id/<?php echo ($content["id"]); ?>"><?php echo ($content["title"]); ?></a><span><?php echo (date( "Y-m-d",$content["addtime"])); ?></span></li><?php endforeach; endif; ?>
+                        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><li><a class="tab_menu" href="/wcdz/index.php/List/article/class/<?php echo ($content["classid"]); ?>">[<?php echo ($content["cname"]); ?>]</a><a class="tab_title" href="/wcdz/index.php/Show/content/id/<?php echo ($content["id"]); ?>"><?php echo ($content["title"]); ?></a><span><?php echo (date( "Y-m-d",$content["addtime"])); ?></span></li><?php endforeach; endif; ?>
                     </ul>
                 </div>
 
-                <h3 id="two2" onmouseover="setContentTab('two',2,4)">通知</h3>
+                <h3 id="two2" onmouseover="setContentTab('two',2,4)"><a href="/wcdz/index.php/List/article/class/27">通知</a></h3>
                 <div  id="con_two_2">
                     <ul>
                         <?php if(is_array($tzList)): foreach($tzList as $key=>$tz): ?><li><a class="tab_menu" href="/wcdz/index.php/List/article/class/27">[通知]</a><a class="tab_title" href="/wcdz/index.php/Show/content/id/<?php echo ($tz["id"]); ?>"><?php echo ($tz["title"]); ?></a><span><?php echo (date( "Y-m-d",$tz["addtime"])); ?></span></li><?php endforeach; endif; ?>
                     </ul>
                 </div>
 
-                <h3 id="two3" onmouseover="setContentTab('two',3,4)">新闻</h3>
+                <h3 id="two3" onmouseover="setContentTab('two',3,4)"><a href="/wcdz/index.php/List/article/class/28">新闻</a></h3>
                 <div id="con_two_3">
                     <ul>
                         <?php if(is_array($newList)): foreach($newList as $key=>$new): ?><li><a class="tab_menu" href="/wcdz/index.php/List/article/class/28">[新闻]</a><a class="tab_title" href="/wcdz/index.php/Show/content/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a><span><?php echo (date( "Y-m-d",$new["addtime"])); ?></span></li><?php endforeach; endif; ?>

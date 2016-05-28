@@ -107,7 +107,7 @@ $(function(){
                    <img class="logo_1" src="__PUBLIC__/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;交流园地
 
             </p>
-                <p class="works"><a href=""><img class="works" src="__PUBLIC__/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
+                <p class="works"><a href="__APP__/List/content/class/15"><img class="works" src="__PUBLIC__/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
                 <p class="contact"><a href="__APP__/List/content/class/24"><img class="contact" src="__PUBLIC__/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
                 <p class="message"><a href="{:U('Show/leave_word')}"><img class="message" src="__PUBLIC__/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
          </div>
@@ -161,16 +161,16 @@ scroll2.LineHeight = 24;
 
             <div id="tab">
 
-                <h3 class="up" id="two1" onmouseover="setContentTab('two',1,4)">最新</h3>
+                <h3 class="up" id="two1" onmouseover="setContentTab('two',1,4)"><a  href="__APP__/List/Zuixin">最新</a></h3>
                 <div class="block" id="con_two_1">
                     <ul>
                         <foreach name = "contentList" item = "content">
-                        <li><a class="tab_menu">[最新]</a><a class="tab_title" href="__APP__/Show/content/id/{$content.id}">{$content.title}</a><span>{$content.addtime|date = "Y-m-d",###}</span></li>
+                        <li><a class="tab_menu" href="__APP__/List/article/class/{$content.classid}">[{$content.cname}]</a><a class="tab_title" href="__APP__/Show/content/id/{$content.id}">{$content.title}</a><span>{$content.addtime|date = "Y-m-d",###}</span></li>
                         </foreach>
                     </ul>
                 </div>
 
-                <h3 id="two2" onmouseover="setContentTab('two',2,4)">通知</h3>
+                <h3 id="two2" onmouseover="setContentTab('two',2,4)"><a href="__APP__/List/article/class/27">通知</a></h3>
                 <div  id="con_two_2">
                     <ul>
                         <foreach name = "tzList" item = "tz">
@@ -179,7 +179,7 @@ scroll2.LineHeight = 24;
                     </ul>
                 </div>
 
-                <h3 id="two3" onmouseover="setContentTab('two',3,4)">新闻</h3>
+                <h3 id="two3" onmouseover="setContentTab('two',3,4)"><a href="__APP__/List/article/class/28">新闻</a></h3>
                 <div id="con_two_3">
                     <ul>
                         <foreach name = "newList" item = "new">
