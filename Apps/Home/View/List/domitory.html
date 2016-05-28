@@ -31,19 +31,19 @@
        <div class="content_right">
         <div class="top">
             <img src="__PUBLIC__\e8home\default\images/posi_bg.gif">
-            <p>当前位置：{$title}>>正文<a href="#">首页</a></p>
+            <p>当前位置：{$navigation}>>正文<a href="#">首页</a></p>
         </div>
         <div class="dataImg">
             <div class="Row_first">
-                <foreach name="studentList" item="vo">
+                <foreach name="domitoryList" item="vo">
                     <div class="box">
-                        <img src="__PUBLIC__\e8admin\upload\{$vo['photo']}">
+                        <img src="__PUBLIC__\e8admin\upload\{$vo['image']}">
                             <!--type=1表示优秀党员  -->
                             <a href="{:U( 'Show/viewteacher',array('id'=>$vo['id'],'type'=>$type) )}">
                             <div class="animated">
-                                <p class="college">{$vo['stuid']}</p>
-                                <p class="profession">{$vo['classname']}</p>
-                                <p class="name">{$vo['name']}</p>
+                                <p class="college">{$vo['did']}</p>
+                                <p class="profession">{$vo['leader']}</p>
+                                <p class="name">{$vo['classname']}</p>
                             </div>
                         </a>
                     </div>

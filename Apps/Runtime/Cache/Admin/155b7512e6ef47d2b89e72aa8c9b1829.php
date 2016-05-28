@@ -8,9 +8,9 @@
     <title>e8通用后台</title>
     
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
 
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -18,8 +18,8 @@
     <![endif]-->
     
     <!-- e8 style -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
     
   </head>
   
@@ -31,7 +31,7 @@
         <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -60,18 +60,18 @@
         <div class="col-sm-12">
 			<div class="tabbable">
 				<ul class="nav nav-tabs">
-                    <?php if($cancel != 0): ?><li><span><a href="/dygzz/admin.php/Link/term" class="e8-prompt" style="font-size:12px;">&lt;返回角色管理</a></span>&nbsp;&nbsp;&nbsp;</li><?php endif; ?>
+                    <?php if($cancel != 0): ?><li><span><a href="/wcdz/admin.php/Link/term" class="e8-prompt" style="font-size:12px;">&lt;返回角色管理</a></span>&nbsp;&nbsp;&nbsp;</li><?php endif; ?>
 					<li class="active"><a href="#">友情链接</a></li>
-					<li><a href="/dygzz/admin.php/Link/add">添加友情链接</a></li>
-                    <li><a href="/dygzz/admin.php/Link/term">分类管理</a></li>
-                    <li><a href="/dygzz/admin.php/Link/termadd">添加分类</a></li>
+					<li><a href="/wcdz/admin.php/Link/add">添加友情链接</a></li>
+                    <li><a href="/wcdz/admin.php/Link/term">分类管理</a></li>
+                    <li><a href="/wcdz/admin.php/Link/termadd">添加分类</a></li>
 				</ul>
 
 				<div class="tab-content">
 					<div  class="tab-pane in active">
                         <p class="title background-blue">搜索</p>
 							
-                        <form action="/dygzz/admin.php/Link/index" method="post">
+                        <form action="/wcdz/admin.php/Link/index" method="post">
                             <div style="padding:5px 0;">    
                                 <select name="term" class="form-control input-sm wid-2">
                                     <option value="null">请选择链接分组</option>
@@ -82,7 +82,7 @@
                             </div>
                         </form>
 
-                        <form action="/dygzz/admin.php/Link/linkEdit" method="post" >
+                        <form action="/wcdz/admin.php/Link/linkEdit" method="post" >
                             <table class="table table-hover">
                             	<tr>
                                 	<th width="20">
@@ -103,15 +103,15 @@
 	                                    <td><?php echo ($link["description"]); ?></td>
 	                                    <td><?php echo ($link["termname"]); ?></td>                                                                	
 	                                	<td class="align-center">
-	                                		<a href="/dygzz/admin.php/Link/edit/id/<?php echo ($link["id"]); ?>/mw/<?php echo ($link["mw"]); ?>">修改</a>|&nbsp;
-											<a href="javascript:void(0);" onclick="return confirm('/dygzz/admin.php/Link/del/id/<?php echo ($link["id"]); ?>','确定删除?');">删除</a>
+	                                		<a href="/wcdz/admin.php/Link/edit/id/<?php echo ($link["id"]); ?>/mw/<?php echo ($link["mw"]); ?>">修改</a>|&nbsp;
+											<a href="javascript:void(0);" onclick="return confirm('/wcdz/admin.php/Link/del/id/<?php echo ($link["id"]); ?>','确定删除?');">删除</a>
 	                                	</td>
 	                            	</tr><?php endforeach; endif; ?>
 							</table>
                             <div class="pageBar"><?php echo ($page); ?></div>
                             <div style="width:100%;height:60px;"></div>
                             <div class="admin-add">
-                            	<button class="btn btn-primary btn-sm" type="button" onclick="javascript:treatCon('/dygzz/admin.php/Link/Del')">删除</button>
+                            	<button class="btn btn-primary btn-sm" type="button" onclick="javascript:treatCon('/wcdz/admin.php/Link/Del')">删除</button>
                             </div>
                         </form>                      
 					</div>
@@ -131,11 +131,11 @@
 
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
+	<script src="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
     <!--  -->
-    <script src="/dygzz/Public/e8admin/default/js/fun.js"></script>
-	<script src="/dygzz/Public/e8admin/default/js/e8.js"></script>
+    <script src="/wcdz/Public/e8admin/default/js/fun.js"></script>
+	<script src="/wcdz/Public/e8admin/default/js/e8.js"></script>
     
     <script>
     function showphoto(obj){

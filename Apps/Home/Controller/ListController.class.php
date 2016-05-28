@@ -69,7 +69,6 @@ class ListController extends BaseController {
     $this->display();
   }
 
-
 //宿舍列表页面
     public function domitory(){
         $Domitory = D("Domitory");
@@ -82,7 +81,7 @@ class ListController extends BaseController {
             $Page =new \Think \Page($count,9);
             $show = $Page ->show();
             $domitoryList = $Domitory->limit($Page ->firstRow . ',' . $Page ->listRows )->select();
-       
+       //p($domitoryList);
         $this->assign("navigation",$navigation);
         $this->assign("pictureList",$pictureList);
         $this -> assign("contentList",$contentList);
@@ -120,11 +119,13 @@ class ListController extends BaseController {
                         $studentList[$j]['class'] = $classnameList[$i]['classname'];
                     }
                 }
+                $person = $studentList[$j]['cid'];
+                $studentList[$j]['classname'] = $Classname->where("id = $person")->getField('classname');
             }
         }else{ //优秀党员展示，student表
             $type = 1;
             $count =$Student ->count();
-            $Page = new\Think\Page($count,1);
+            $Page = new\Think\Page($count,9);
             $show = $Page ->show();
             $studentList = $Student->limit($Page->firstRow.",".$Page->listRows) ->order('stuid')->select();
             for($j=0;$j<count($studentList);$j++){
@@ -137,7 +138,8 @@ class ListController extends BaseController {
                 $studentList[$j]['classname'] = $Classname->where("id = $person")->getField('classname');
             }
         }
-        //p($studentList);die;
+        
+        //p($show);
         $this->assign("studentList",$studentList);
         $this->assign("navigation",$navigation);
         $this->assign("title",$title);

@@ -17,7 +17,7 @@
     </div>
        <!--content_left-->
 
-<include file = "./Apps/Home/View/Common/leftc.html"/>
+<include file = "./Apps/Home/View/Common/leftt.html"/>
 
        <!--content_right-->
       <div class="content_right">
@@ -26,14 +26,11 @@
             <p>当前位置：{$classList.classname}>>正文<a href="{:U('Index/index')}">首页</a></p>
         </div>
         <div class="bottom">
-            <h2>{$texttitle.title}</h2>
-            <p class="time"><span>发布时间：{$texttitle.addtime|date="Y-m-d H:m",###}</span>
-                <span>访问量:<i>{$texttitle.views}</i></span>
-                <span>来源：{$texttitle.source}</span></p>
+            <h2>{$studentList.name}的个人信息</h2>
+            
             <div class="cont">
-                <p>{$textcontent.content}</p>
+                <p>{$studentList.introduction}</p>
             </div>
-            <p class="writer">责任编辑:{$texttitle.author}</p>
         </div>
 
     </div>

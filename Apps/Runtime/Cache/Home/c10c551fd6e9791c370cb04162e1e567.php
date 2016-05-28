@@ -63,16 +63,13 @@
                    <?php if(is_array($contentPage)): foreach($contentPage as $key=>$content): ?><p><span><img src="/wcdz/Public/e8home/default/images/span.png"></span><a href="/wcdz/index.php/Show/content/id/<?php echo ($content["id"]); ?>"><?php echo ($content["title"]); ?></a><span class="date"><?php echo (date("Y-m-d",$content["addtime"])); ?></span></p><?php endforeach; endif; ?>
                </div>
                <div class="tab_list">
-                   <ul class="tab">
-                       <?php echo ($page); ?>
-                   </ul>
-
+                   <?php echo ($page); ?>
                </div>
            </div>
        </div>
 <div class="footer">
     <p>主办：淮南师范文化创意与传播学院党员工作站</p>
-    <p>技术支持：淮南师范学院E8网络工作室</p>
+    <p>技术支持：<a href="http://www.e8net.cn" target="_blank">淮南师范学院E8网络工作室</a></p>
 </div>
 <script type="text/javascript">
     window.tick();
