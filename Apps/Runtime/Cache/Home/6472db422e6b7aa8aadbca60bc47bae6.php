@@ -83,10 +83,7 @@
         </div>
         
            <div class="tab_list">
-               <ul class="tab">
-                       
-                </ul>
-<?php echo ($page); ?>
+               <?php echo ($page); ?>
            </div>
 
      </div>
