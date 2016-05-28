@@ -12,10 +12,10 @@ class ShowController extends BaseController{
 			if(empty($_POST['name']) || empty($_POST['comment'])){
 				$this->error("姓名和留言内容不能为空！！！");
 			}else{
-				$data['name'] = $_POST['name'];
-				$data['email'] = $_POST['email'];
-                                $data['phone'] = $_POST['phone'];
-				$data['comment'] = $_POST['comment'];
+				$data['name'] = htmlspecialchars($_POST['name']);
+				$data['email'] = htmlspecialchars($_POST['email']);
+                                $data['phone'] = htmlspecialchars($_POST['phone']);
+				$data['comment'] = htmlspecialchars($_POST['comment']);
 				$data['ip'] = get_client_ip();
 				$data['stutime'] = time();
 				$addResult = $Comment ->add($data); 
