@@ -100,11 +100,7 @@ $(function(){
                 <div class="slider-extra">
                     <ul class="slider-nav">
                         <!--轮播图的个数-->
-<<<<<<< HEAD
-                        <?php $__FOR_START_3763__=1;$__FOR_END_3763__=$imgCount+1;for($i=$__FOR_START_3763__;$i < $__FOR_END_3763__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
-=======
-                        <?php $__FOR_START_30477__=1;$__FOR_END_30477__=$imgCount+1;for($i=$__FOR_START_30477__;$i < $__FOR_END_30477__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
->>>>>>> c378e02fd9fd0d6a4f6081e2fdfc8e0e03f9591c
+                        <?php $__FOR_START_22991__=1;$__FOR_END_22991__=$imgCount+1;for($i=$__FOR_START_22991__;$i < $__FOR_END_22991__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
                     </ul>
 
                     <div class="slider-page">
@@ -183,14 +179,14 @@ scroll2.LineHeight = 24;
                     </ul>
                 </div>
 
-                <h3 id="two2" onmouseover="setContentTab('two',2,4)" href="/wcdz/index.php/List/article/class/28">通知</h3>
+                <h3 id="two2" onmouseover="setContentTab('two',2,4)">通知</h3>
                 <div  id="con_two_2">
                     <ul>
                         <?php if(is_array($tzList)): foreach($tzList as $key=>$tz): ?><li><a class="tab_menu" href="/wcdz/index.php/List/article/class/27">[通知]</a><a class="tab_title" href="/wcdz/index.php/Show/content/id/<?php echo ($tz["id"]); ?>"><?php echo ($tz["title"]); ?></a><span><?php echo (date( "Y-m-d",$tz["addtime"])); ?></span></li><?php endforeach; endif; ?>
                     </ul>
                 </div>
 
-                <h3 id="two3" onmouseover="setContentTab('two',3,4)" href="/wcdz/index.php/List/article/class/28">新闻</h3>
+                <h3 id="two3" onmouseover="setContentTab('two',3,4)">新闻</h3>
                 <div id="con_two_3">
                     <ul>
                         <?php if(is_array($newList)): foreach($newList as $key=>$new): ?><li><a class="tab_menu" href="/wcdz/index.php/List/article/class/28">[新闻]</a><a class="tab_title" href="/wcdz/index.php/Show/content/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a><span><?php echo (date( "Y-m-d",$new["addtime"])); ?></span></li><?php endforeach; endif; ?>
