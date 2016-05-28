@@ -38,8 +38,8 @@
                 <foreach name="studentList" item="vo">
                     <div class="box">
                         <img src="__PUBLIC__\e8admin\upload\{$vo['photo']}">
-                            <!--type=1表示优秀党员-->
-                            <a href="{:U('Show/viewteacher/type/1',['id'=>$vo['id']])}">
+                            <!--type=1表示优秀党员  -->
+                            <a href="{:U( 'Show/viewteacher',array('id'=>$vo['id'],'type'=>$type) )}">
                             <div class="animated">
                                 <p class="college">{$vo['stuid']}</p>
                                 <p class="profession">{$vo['classname']}</p>
@@ -53,17 +53,9 @@
         
            <div class="tab_list">
                <ul class="tab">
-                   <li><a href="#">&lt;</a></li>
-                   <li><a href="#">1</a></li>
-                   <li><a href="#">2</a></li>
-                   <li><a href="#">3</a></li>
-                   <li><a href="#">...</a></li>
-                   <li><a href="#">9</a></li>
-                   <li><a href="#">&gt;</a></li>
-               </ul>
-
+                       {$page}
+                </ul>
            </div>
-
      </div>
   </div>
 <include file="./Apps/Home/View/Common/footer.html"/>

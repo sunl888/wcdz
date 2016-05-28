@@ -40,7 +40,7 @@
                    <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;流动党员之家
                </span>
         <!--左边导航-->
-        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><p class="ctac"><a href="/wcdz/index.php/List/content/class/<?php echo ($content["id"]); ?>"><?php echo ($content["classname"]); ?></a></p><?php endforeach; endif; ?>
+        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><p class="ctac"><a href="/wcdz/index.php/List/teacher/class/<?php echo ($content["id"]); ?>"><?php echo ($content["classname"]); ?></a></p><?php endforeach; endif; ?>
     </div>
     <div class="contentleftBottom">
         <p class="newspic">
@@ -69,8 +69,8 @@
     </div>
 </div>
 <div class="footer">
-   <p>主办：淮南师范文化创意与传播学院党员工作站</p>
-   <p>技术支持：淮南师范学院E8网络工作室</p>
+    <p>主办：淮南师范文化创意与传播学院党员工作站</p>
+    <p>技术支持：<a href="http://www.e8net.cn" target="_blank">淮南师范学院E8网络工作室</a></p>
 </div>
 <script type="text/javascript">
     window.tick();

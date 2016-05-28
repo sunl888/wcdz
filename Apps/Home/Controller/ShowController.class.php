@@ -130,7 +130,7 @@ class ShowController extends BaseController{
     	$Classname = D('Classname');
     	$Advance = D('Advance');
     	$Student = D('Student');
-		$pictureList = $Picture ->where("termid = 39")->select();
+	$pictureList = $Picture ->where("termid = 39")->select();
         $contentList = $Class ->getLeftList('13');//p($contentList);die;
         $classnameList = $Classname ->select();
         $type = $_GET['type'];
@@ -139,6 +139,7 @@ class ShowController extends BaseController{
         if($type == 2){//先进人物详情页
         	$title = "先进人物";
         	$studentList = $Advance ->find($id);
+                //p($studentList);
         
         }else{
         	$title = "优秀党员";

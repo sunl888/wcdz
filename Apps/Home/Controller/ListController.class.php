@@ -139,7 +139,7 @@ class ListController extends BaseController {
             }
         }
         
-        //p($studentList);die;
+        //p($show);
         $this->assign("studentList",$studentList);
         $this->assign("navigation",$navigation);
         $this->assign("title",$title);

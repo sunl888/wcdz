@@ -70,8 +70,8 @@
             <div class="Row_first">
                 <?php if(is_array($studentList)): foreach($studentList as $key=>$vo): ?><div class="box">
                         <img src="/wcdz/Public\e8admin\upload\<?php echo ($vo['photo']); ?>">
-                            <!--type=1表示优秀党员-->
-                            <a href="<?php echo U('Show/viewteacher/type/1',['id'=>$vo['id']]);?>">
+                            <!--type=1表示优秀党员  -->
+                            <a href="<?php echo U( 'Show/viewteacher',array('id'=>$vo['id'],'type'=>$type) );?>">
                             <div class="animated">
                                 <p class="college"><?php echo ($vo['stuid']); ?></p>
                                 <p class="profession"><?php echo ($vo['classname']); ?></p>
@@ -84,22 +84,16 @@
         
            <div class="tab_list">
                <ul class="tab">
-                   <li><a href="#">&lt;</a></li>
-                   <li><a href="#">1</a></li>
-                   <li><a href="#">2</a></li>
-                   <li><a href="#">3</a></li>
-                   <li><a href="#">...</a></li>
-                   <li><a href="#">9</a></li>
-                   <li><a href="#">&gt;</a></li>
-               </ul>
-
+                       
+                </ul>
+<?php echo ($page); ?>
            </div>
 
      </div>
   </div>
 <div class="footer">
-   <p>主办：淮南师范文化创意与传播学院党员工作站</p>
-   <p>技术支持：淮南师范学院E8网络工作室</p>
+    <p>主办：淮南师范文化创意与传播学院党员工作站</p>
+    <p>技术支持：<a href="http://www.e8net.cn" target="_blank">淮南师范学院E8网络工作室</a></p>
 </div>
 <script type="text/javascript">
     window.tick();
