@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__PUBLIC__/e8home/default/style/common.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/e8home/default/style/about.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/e8home/default/js/time.js"></script>
+<title>新闻图片--{$webInfo.sitename}</title>
+</head>
+
+<body>
+
+<!--header-->
+<include file="./Apps/Home/View/Common/header.html"/>
+        <!--time-->
+        <div class="time">
+        <span id="localtime"></span>
+    </div>
+       <!--content_left-->
+<include file="./Apps/Home/View/Common/left.html"/>
+       <!--content_right-->
+      <div class="content_right">
+        <div class="top">
+            <img src="__PUBLIC__/e8home/default/images/posi_bg.gif">
+            <p>当前位置：新闻图片>>正文<a href="{:U('Index/index')}">首页</a></p>
+        </div>
+        <div class="bottom">
+            <h2>{$pictureList.name}</h2>
+            <p class="time"><span>发布时间：{$pictureList.addtime|date="Y-m-d H:m",###}</span>
+                <span>访问量:<i>{$pictureList.views}</i></span>
+                <!--<span>来源：{$contentList.source}</span>--></p>
+            <div class="cont">
+                <p>{$pictureList.content}</p>
+            </div>
+            <p class="writer">责任编辑:{$pictureList.author}</p>
+        </div> 
+        
+    </div>
+</div>
+<include file="./Apps/Home/View/Common/footer.html"/>
+<script type="text/javascript">
+    window.tick();
+</script>
+</body>
+</html>

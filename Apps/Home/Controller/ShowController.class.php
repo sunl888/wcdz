@@ -12,10 +12,10 @@ class ShowController extends BaseController{
 			if(empty($_POST['name']) || empty($_POST['comment'])){
 				$this->error("姓名和留言内容不能为空！！！");
 			}else{
-				$data['name'] = $_POST['name'];
-				$data['email'] = $_POST['email'];
-                                $data['phone'] = $_POST['phone'];
-				$data['comment'] = $_POST['comment'];
+				$data['name'] = htmlspecialchars($_POST['name']);
+				$data['email'] = htmlspecialchars($_POST['email']);
+                                $data['phone'] = htmlspecialchars($_POST['phone']);
+				$data['comment'] = htmlspecialchars($_POST['comment']);
 				$data['ip'] = get_client_ip();
 				$data['stutime'] = time();
 				$addResult = $Comment ->add($data); 
@@ -40,11 +40,13 @@ class ShowController extends BaseController{
 	public function picture(){
 		$Picture = D("Picture");
 		$id = $_GET['id'];
-		$pictureList = $Picture ->where("termid = 39")->select();
-		$contentList = $Picture ->where("id = $id")->find();
+		$pictureList = $Picture ->where("id = $id")->find();
+
+		//浏览量+1
+		$views = $pictureList['views'];
+		$Picture ->where("id = $id")->setField('views',$views+1);
+
 		$this -> assign("pictureList",$pictureList);
-                $this -> assign("contentList",$contentList);
-                $this -> assign("classList",$classList);
 		$this -> display();
 	}
 

@@ -8,7 +8,7 @@
     <title>e8通用后台</title>
     
      <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
 
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -16,14 +16,14 @@
     <![endif]-->
     
     <!-- e8 style -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
     
     
     <!-- 加载百度编辑器js -->
-    <script type="text/javascript" charset="utf-8" src="/dygzz/Public/e8admin/default/lib/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/dygzz/Public/e8admin/default/lib/ueditor/ueditor.all.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/dygzz/Public/e8admin/default/lib/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/wcdz/Public/e8admin/default/lib/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/wcdz/Public/e8admin/default/lib/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/wcdz/Public/e8admin/default/lib/ueditor/lang/zh-cn/zh-cn.js"></script>
     
   </head>
   
@@ -35,7 +35,7 @@
         <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -64,10 +64,10 @@
         <div class="col-sm-12">
 			<div class="tabbable">
 				<ul class="nav nav-tabs">
-					<li><a href="/dygzz/admin.php/Picture/index">图片管理</a></li>
-                    <li><a href="/dygzz/admin.php/Picture/add">添加图片</a></li>
-                    <li><a href="/dygzz/admin.php/Picture/term">分类管理</a></li>
-					<li><a href="/dygzz/admin.php/Picture/termadd">添加分类</a></li>
+					<li><a href="/wcdz/admin.php/Picture/index">图片管理</a></li>
+                    <li><a href="/wcdz/admin.php/Picture/add">添加图片</a></li>
+                    <li><a href="/wcdz/admin.php/Picture/term">分类管理</a></li>
+					<li><a href="/wcdz/admin.php/Picture/termadd">添加分类</a></li>
 				</ul>
 
 				<div class="tab-content">
@@ -82,7 +82,7 @@
                                 <a data-toggle="tab" href="#content">图片内容</a>
                             </li>
                         </ul>
-                       <form action = "/dygzz/admin.php/Picture/edit" enctype="multipart/form-data"  method = "post">
+                       <form action = "/wcdz/admin.php/Picture/edit" enctype="multipart/form-data"  method = "post">
                        
                         <div class="tab-content">
                       	<!-- 基本属性开始 -->
@@ -213,8 +213,8 @@
   	
   	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
-	<script src="/dygzz/Public/e8admin/default/js/fun.js"></script>
+	<script src="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+	<script src="/wcdz/Public/e8admin/default/js/fun.js"></script>
     <script>
     $(document).ready(function() { 
         $("#photo").click(function(){
