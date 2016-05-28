@@ -44,11 +44,6 @@ class IndexController extends BaseController {
         $pictureList = $Picture -> where ("termid = 40 and hidden= 1") -> order( "addtime desc") -> select();
         //表中轮播图片的数量
         $imgCount = $Picture -> where("termid = 40 and hidden= 1")->count();
-        //p($pictureList);die;
-
-
-       // dump($contentList[0]);dump($tzList[0]);dump($newList[0]);die;
-
                 $this ->assign("imgCount",$imgCount);
                 $this ->assign("pictureList",$pictureList);
                 $this ->assign("linkCompitition",$linkCompitition);

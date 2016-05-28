@@ -63,10 +63,7 @@
                    <?php if(is_array($contentPage)): foreach($contentPage as $key=>$content): ?><p><span><img src="/wcdz/Public/e8home/default/images/span.png"></span><a href="/wcdz/index.php/Show/content/id/<?php echo ($content["id"]); ?>"><?php echo ($content["title"]); ?></a><span class="date"><?php echo (date("Y-m-d",$content["addtime"])); ?></span></p><?php endforeach; endif; ?>
                </div>
                <div class="tab_list">
-                   <ul class="tab">
-                       <?php echo ($page); ?>
-                   </ul>
-
+                   <?php echo ($page); ?>
                </div>
            </div>
        </div>

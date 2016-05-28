@@ -81,7 +81,7 @@ class ListController extends BaseController {
             $Page =new \Think \Page($count,9);
             $show = $Page ->show();
             $domitoryList = $Domitory->limit($Page ->firstRow . ',' . $Page ->listRows )->select();
-       
+       //p($domitoryList);
         $this->assign("navigation",$navigation);
         $this->assign("pictureList",$pictureList);
         $this -> assign("contentList",$contentList);
