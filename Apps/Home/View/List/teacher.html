@@ -31,11 +31,11 @@
        <div class="content_right">
         <div class="top">
             <img src="__PUBLIC__/e8home/default/images/posi_bg.gif">
-            <p>当前位置：{$navigation}>>正文<a href="{:U('Index/index')}">首页</a></p>
+            <p>当前位置：{$title}>>正文<a href="{:U('Index/index')}">首页</a></p>
         </div>
         <div class="dataImg">
             <div class="Row_first">
-                <foreach name='studentList' item='student'>
+                <volist name="studentList" id='vo' offset="1" length='3'>
                     <div class="box">
                         <img src="__PUBLIC__/e8admin/upload/{$student['photo']}">
                         <a href="#">
@@ -46,8 +46,7 @@
                             </div>
                         </a>
                     </div>
-                </foreach>
-                
+                </volist>
             </div>
         </div>
            <div class="tab_list">

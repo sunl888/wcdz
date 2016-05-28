@@ -56,7 +56,7 @@
             <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;交流园地
         </p>
         <p class="works"><a href=""><img class="works" src="/wcdz/Public/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
-        <p class="contact"><a href=""><img class="contact" src="/wcdz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
+        <p class="contact"><a href="/wcdz/index.php/List/content/class/24"><img class="contact" src="/wcdz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
         <p class="message"><a href="<?php echo U('Show/leave_word');?>"><img class="message" src="/wcdz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
     </div>
 </div>
@@ -64,120 +64,27 @@
        <div class="content_right">
         <div class="top">
             <img src="/wcdz/Public/e8home/default/images/posi_bg.gif">
-            <p>当前位置：<?php echo ($navigation); ?>>>正文<a href="<?php echo U('Index/index');?>">首页</a></p>
+            <p>当前位置：<?php echo ($title); ?>>>正文<a href="<?php echo U('Index/index');?>">首页</a></p>
         </div>
         <div class="dataImg">
             <div class="Row_first">
-                <div class="box">
-                    <img src="/wcdz/Public/e8home/default/images/people.jpg">
-                    <a href="#">
-                        <div class="animated">
-                            <p class="college">某学院</p>
-                            <p class="profession">某专业</p>
-                            <p class="name">某某</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="box">
-                    <img src="/wcdz/Public/e8home/default/images/people.jpg">
-                    <a href="#">
-                        <div class="animated">
-                            <p class="college">某学院</p>
-                            <p class="profession">某专业</p>
-                            <p class="name">某某</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="box">
-                    <img src="/wcdz/Public/e8home/default/images/people.jpg">
-                    <a href="#">
-                        <div class="animated">
-                            <p class="college">某学院</p>
-                            <p class="profession">某专业</p>
-                            <p class="name">某某</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="Row_second">
-                <div class="box">
-                    <img src="/wcdz/Public/e8home/default/images/people.jpg">
-                    <a href="#">
-                        <div class="animated">
-                            <p class="college">某学院</p>
-                            <p class="profession">某专业</p>
-                            <p class="name">某某</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="box">
-                    <img src="/wcdz/Public/e8home/default/images/people.jpg">
-                    <a href="#">
-                        <div class="animated">
-                            <p class="college">某学院</p>
-                            <p class="profession">某专业</p>
-                            <p class="name">某某</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="box">
-                    <img src="/wcdz/Public/e8home/default/images/people.jpg">
-                    <a href="#">
-                        <div class="animated">
-                            <p class="college">某学院</p>
-                            <p class="profession">某专业</p>
-                            <p class="name">某某</p>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-            <div class="Row_thred">
-                <div class="box">
-                    <img src="/wcdz/Public/e8home/default/images/people.jpg">
-                    <a href="#">
-                        <div class="animated">
-                            <p class="college">某学院</p>
-                            <p class="profession">某专业</p>
-                            <p class="name">某某</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="box">
-                    <img src="/wcdz/Public/e8home/default/images/people.jpg">
-                    <a href="#">
-                        <div class="animated">
-                            <p class="college">某学院</p>
-                            <p class="profession">某专业</p>
-                            <p class="name">某某</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="box">
-                    <img src="/wcdz/Public/e8home/default/images/people.jpg">
-                    <a href="#">
-                        <div class="animated">
-                            <p class="college">某学院</p>
-                            <p class="profession">某专业</p>
-                            <p class="name">某某</p>
-                        </div>
-                    </a>
-                </div>
+                <?php if(is_array($studentList)): $i = 0; $__LIST__ = array_slice($studentList,1,3,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="box">
+                        <img src="/wcdz/Public/e8admin/upload/<?php echo ($student['photo']); ?>">
+                        <a href="#">
+                            <div class="animated">
+                                <p class="college"><?php echo ($student['stuid']); ?></p>
+                                <p class="profession"><?php echo ($student['classname']); ?></p>
+                                <p class="name"><?php echo ($student['name']); ?></p>
+                            </div>
+                        </a>
+                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
             </div>
         </div>
            <div class="tab_list">
                <ul class="tab">
-                   <li><a href="#">&lt;</a></li>
-                   <li><a href="#">1</a></li>
-                   <li><a href="#">2</a></li>
-                   <li><a href="#">3</a></li>
-                   <li><a href="#">...</a></li>
-                   <li><a href="#">9</a></li>
-                   <li><a href="#">&gt;</a></li>
+                   <?php echo ($page); ?>
                </ul>
-
            </div>
-
      </div>
   </div>
 <div class="footer">

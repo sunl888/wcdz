@@ -133,6 +133,8 @@ class ListController extends BaseController {
                         $studentList[$j]['class'] = $classnameList[$i]['classname'];
                     }
                 }
+                $person = $studentList[$j]['cid'];
+                $studentList[$j]['classname'] = $Classname->where("id = $person")->getField('classname');
             }
         }
         //p($studentList);die;
