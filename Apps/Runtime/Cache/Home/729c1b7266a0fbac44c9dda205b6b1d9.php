@@ -9,7 +9,6 @@
 </head>
 
 <body>
-<div class="body_bg"><img src="/wcdz/Public/e8home/default/images/bg.jpg" /></div>
 <!--header-->
 ﻿ <div class="header">
      <img class="dzlogo" src="/wcdz/Public/e8home/default/images/dzlogo.png" />
@@ -68,8 +67,8 @@
                 <p><?php echo ($textcontent["content"]); ?></p>
             </div>
             <p class="writer">责任编辑:<?php echo ($texttitle["author"]); ?></p>
-        </div> 
-        
+        </div>
+
     </div>
 </div>
 <div class="footer">
