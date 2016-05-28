@@ -40,14 +40,14 @@
                    <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;流动党员之家
                </span>
         <!--左边导航-->
-        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><p class="ctac"><a href="/wcdz/index.php/List/content/class/<?php echo ($content["id"]); ?>"><?php echo ($content["classname"]); ?></a></p><?php endforeach; endif; ?>
+        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><p class="ctac"><a href="/wcdz/index.php/List/article/class/<?php echo ($content["id"]); ?>"><?php echo ($content["classname"]); ?></a></p><?php endforeach; endif; ?>
     </div>
     <div class="contentleftBottom">
         <p class="newspic">
             <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;交流园地
         </p>
         <p class="works"><a href=""><img class="works" src="/wcdz/Public/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
-        <p class="contact"><a href=""><img class="contact" src="/wcdz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
+        <p class="contact"><a href="/wcdz/index.php/List/content/class/24"><img class="contact" src="/wcdz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
         <p class="message"><a href="<?php echo U('Show/leave_word');?>"><img class="message" src="/wcdz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
     </div>
 </div>

@@ -18,7 +18,7 @@
         })
     </script>
 <body>
-<div class="body_bg"><img src="/wcdz/Public/e8home/default/images/bg.jpg" /></div>
+
 <!--header-->
 ﻿ <div class="header">
      <img class="dzlogo" src="/wcdz/Public/e8home/default/images/dzlogo.png" />
@@ -49,7 +49,7 @@
                    <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;流动党员之家
                </span>
         <!--左边导航-->
-        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><p class="ctac"><a href="/wcdz/index.php/List/content/class/<?php echo ($content["id"]); ?>"><?php echo ($content["classname"]); ?></a></p><?php endforeach; endif; ?>
+        <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><p class="ctac"><a href="/wcdz/index.php/List/article/class/<?php echo ($content["id"]); ?>"><?php echo ($content["classname"]); ?></a></p><?php endforeach; endif; ?>
     </div>
     <div class="contentleftBottom">
         <p class="newspic">

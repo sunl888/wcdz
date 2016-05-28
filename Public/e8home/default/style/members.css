@@ -131,14 +131,14 @@ div.content_right div.top p a:hover{
 /*党员信息图片区域*/
 div.dataImg{
     width:100%;
-    height: 75%;
+    height: 80%;
     position: relative;
 }
 div.dataImg>div{
     width: 100%;
     height: 25%;
     position: relative;
-    margin-top:45px;
+    margin-top: 5%;
 }
 div.dataImg>div>div{
     width: 28%;
@@ -195,6 +195,7 @@ div.tab_list{
 div.tab_list ul{
     height:35px;
     width: 100%;
+	margin-top:-10px;
 
 }
 div.tab_list ul li{
@@ -213,4 +214,8 @@ div.tab_list ul li a{
 }
 div.tab_list ul li:hover a{
     color:#c00;
+}
+
+.box{
+	margin-top: 25px;
 }
