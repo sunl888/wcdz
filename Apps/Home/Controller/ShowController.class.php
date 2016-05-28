@@ -158,7 +158,7 @@ class ShowController extends BaseController{
         		$studentList['class']= $classnameList[$i]['classname'];
         	}
         }
-        
+        //p($studentList);
         $this->assign("navigation",$navigation);
         $this->assign("title",$title);
         $this->assign("pictureList",$pictureList);
