@@ -40,11 +40,13 @@ class ShowController extends BaseController{
 	public function picture(){
 		$Picture = D("Picture");
 		$id = $_GET['id'];
-		$pictureList = $Picture ->where("termid = 39")->select();
-		$contentList = $Picture ->where("id = $id")->find();
+		$pictureList = $Picture ->where("id = $id")->find();
+
+		//浏览量+1
+		$views = $pictureList['views'];
+		$Picture ->where("id = $id")->setField('views',$views+1);
+
 		$this -> assign("pictureList",$pictureList);
-                $this -> assign("contentList",$contentList);
-                $this -> assign("classList",$classList);
 		$this -> display();
 	}
 
