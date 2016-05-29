@@ -7,9 +7,9 @@
     
     <title>e8通用后台</title>
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
 
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -17,8 +17,8 @@
     <![endif]-->
     
     <!-- e8 style -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
     
   </head>
   
@@ -30,7 +30,7 @@
         <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -60,18 +60,18 @@
 			<div class="tabbable">
 				<ul class="nav nav-tabs">
 					<li class="active">
-						<a data-toggle="tab" href="/dygzz/admin.php/Log/index">后台登录日志</a>
+						<a data-toggle="tab" href="/wcdz/admin.php/Log/index">后台登录日志</a>
 					</li>
 
 					<li>
-					<a data-toggle="tab" href="javascript:void(0);" onclick="return confirm('/dygzz/admin.php/Log/del','确定删除?');">删除一个月前的登录日志</a>
+					<a data-toggle="tab" href="javascript:void(0);" onclick="return confirm('/wcdz/admin.php/Log/del','确定删除?');">删除一个月前的登录日志</a>
 					</li>
 				</ul>
 
 				<div class="tab-content">
 					<div id="log" class="tab-pane in active">
 						<p class="title background-blue">搜索</p>
-                        <form action = "/dygzz/admin.php/Log/index" method="post">
+                        <form action = "/wcdz/admin.php/Log/index" method="post">
                             <div class="search search-bar">
                                 <div class="mb">
 	                                 <span>搜索类型:</span>
@@ -119,10 +119,10 @@
   
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
+	<script src="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
     <!--  -->
-	<script src="/dygzz/Public/e8admin/default/js/e8.js"></script>
+	<script src="/wcdz/Public/e8admin/default/js/e8.js"></script>
     
   </body>
 </html>

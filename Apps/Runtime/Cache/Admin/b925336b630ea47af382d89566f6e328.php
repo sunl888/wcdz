@@ -8,7 +8,7 @@
     <title>e8通用后台</title>
     
      <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
 
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -16,13 +16,13 @@
     <![endif]-->
     
     <!-- e8 style -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
     
     <!-- 加载百度编辑器js -->
-    <script type="text/javascript" charset="utf-8" src="/dygzz/Public/e8admin/default/lib/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/dygzz/Public/e8admin/default/lib/ueditor/ueditor.all.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/dygzz/Public/e8admin/default/lib/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/wcdz/Public/e8admin/default/lib/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/wcdz/Public/e8admin/default/lib/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/wcdz/Public/e8admin/default/lib/ueditor/lang/zh-cn/zh-cn.js"></script>
     
   </head>
   
@@ -34,7 +34,7 @@
         <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -71,7 +71,7 @@
                                 <a data-toggle="tab" href="#base">基本属性</a>
                             </li>
                          </ul>
-                      <form action = "/dygzz/admin.php/Flowimg/edit" enctype="multipart/form-data"  method = "post">
+                      <form action = "/wcdz/admin.php/Flowimg/edit" enctype="multipart/form-data"  method = "post">
                       
                       <div class="tab-content">
                       	<!-- 基本属性开始 -->
@@ -93,7 +93,7 @@
                                  <tr>
                                      <th class = "table-name">图片预览:</th>
                                      <td>
-                                     <img class="img-thumbnail" id="photo<?php echo ($flowList["id"]); ?>" src="/dygzz/Public/e8admin/upload/<?php echo ($flowList["img"]); ?>" alt="<?php echo ($flowList["name"]); ?>" width="100px" height="65px" onclick="showphoto('photo<?php echo ($flowList["id"]); ?>');">
+                                     <img class="img-thumbnail" id="photo<?php echo ($flowList["id"]); ?>" src="/wcdz/Public/e8admin/upload/<?php echo ($flowList["img"]); ?>" alt="<?php echo ($flowList["name"]); ?>" width="100px" height="65px" onclick="showphoto('photo<?php echo ($flowList["id"]); ?>');">
                                      </td>
                                  </tr>
                                 <tr>
@@ -153,7 +153,7 @@
   	</script>
   	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+	<script src="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
 
   </body>
 </html>

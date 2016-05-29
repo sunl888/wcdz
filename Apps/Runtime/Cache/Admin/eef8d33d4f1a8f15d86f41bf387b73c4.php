@@ -8,9 +8,9 @@
     <title>e8通用后台</title>
     
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
-	  <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
+	  <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
 
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -18,8 +18,8 @@
     <![endif]-->
     
     <!-- e8 style -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
     
   </head>
   
@@ -32,7 +32,7 @@
       <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -61,18 +61,18 @@
 			<div class="tabbable">
 				<ul class="nav nav-tabs">
 					<li >
-						<a href="/dygzz/admin.php/Config/index">站点配置</a>
+						<a href="/wcdz/admin.php/Config/index">站点配置</a>
 					</li>
 
 					<li>
-						<a  href="/dygzz/admin.php/Config/email">邮箱配置</a>
+						<a  href="/wcdz/admin.php/Config/email">邮箱配置</a>
 					</li>
 
 					<li>
-						<a  href="/dygzz/admin.php/Config/file">附件配置</a>
+						<a  href="/wcdz/admin.php/Config/file">附件配置</a>
 					</li>
                     <li>
-						<a href="/dygzz/admin.php/Config/master">高级配置</a>
+						<a href="/wcdz/admin.php/Config/master">高级配置</a>
 					</li>
                     <li class="active">
 						<a  href="#">扩展配置</a>
@@ -84,7 +84,7 @@
                       <!-- 添加扩展配置 -->
                        <div class="tab-pane  in active">
                         <p class="title background-blue">添加扩展配置</p>
-                        	<form action="/dygzz/admin.php/Config/extend" method="post">
+                        	<form action="/wcdz/admin.php/Config/extend" method="post">
                         	 <table class="table-form" >
                             	<tr>
                                 	<th class = "table-hover" width="150" >设置项:</th>
@@ -121,7 +121,7 @@
                       </form>
                       <p class="title background-blue">扩展配置</p>
                      <!-- 判断是否为显示列表 -->
-                     <?php if($condition != 1): ?><form action="/dygzz/admin.php/Config/extend" method="post">
+                     <?php if($condition != 1): ?><form action="/wcdz/admin.php/Config/extend" method="post">
 	                      <table class="table table-hover">
 	                      		<tr class="title">
 	                      			<th>序号</th>
@@ -138,8 +138,8 @@
 		                      			<td><?php echo ($config["info"]); ?></td>
 		                      			<td><?php echo ($config["type"]); ?></td>
 		                      			<td class="align-center">
-		                                	<a href="/dygzz/admin.php/Config/extend_edit/id/<?php echo ($config["id"]); ?>/mw/<?php echo ($config["mw"]); ?>">修改</a> |&nbsp;
-											 <a href="javascript:void(0);" onclick="return confirm('/dygzz/admin.php/Config/extend_del/id/<?php echo ($config["id"]); ?>','确定删除?');">删除</a>
+		                                	<a href="/wcdz/admin.php/Config/extend_edit/id/<?php echo ($config["id"]); ?>/mw/<?php echo ($config["mw"]); ?>">修改</a> |&nbsp;
+											 <a href="javascript:void(0);" onclick="return confirm('/wcdz/admin.php/Config/extend_del/id/<?php echo ($config["id"]); ?>','确定删除?');">删除</a>
 		                                    
 		                                </td>
 		                      		</tr><?php endforeach; endif; ?>
@@ -157,10 +157,10 @@
 
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
+	<script src="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
     <!--  -->
-	<script src="/dygzz/Public/e8admin/default/js/e8.js"></script>
+	<script src="/wcdz/Public/e8admin/default/js/e8.js"></script>
     
 
 </body>

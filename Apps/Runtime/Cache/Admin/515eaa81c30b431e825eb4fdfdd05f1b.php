@@ -8,9 +8,9 @@
     <title>e8通用后台</title>
     
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.css">
     
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -18,8 +18,8 @@
     <![endif]-->
     
     <!-- e8 style -->
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/common.css">
-    <link rel="stylesheet" href="/dygzz/Public/e8admin/default/css/main.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/common.css">
+    <link rel="stylesheet" href="/wcdz/Public/e8admin/default/css/main.css">
     
   </head>
   
@@ -31,7 +31,7 @@
         <div class="topbar-mbx">
 	<ul class="list-inline">
 		<li>
-			<a class="color-gray" href="/dygzz/admin.php/Center/index">
+			<a class="color-gray" href="/wcdz/admin.php/Center/index">
 			<i class="fa fa-home fa-lg"></i>
 			控制中心
 			</a>
@@ -65,7 +65,7 @@
 					</li>
 
 					<li>
-						<a href="/dygzz/admin.php/Role/add">添加角色</a>
+						<a href="/wcdz/admin.php/Role/add">添加角色</a>
 					</li>
                   
                     
@@ -96,7 +96,7 @@
                                             <?php else: ?>
                                             ×<?php endif; ?>
                                         </td>
-                                        <td class="align-center">| <a href="/dygzz/admin.php/User/index/role_id/<?php echo ($role["id"]); ?>">成员管理</a> | &nbsp;&nbsp;
+                                        <td class="align-center">| <a href="/wcdz/admin.php/User/index/role_id/<?php echo ($role["id"]); ?>">成员管理</a> | &nbsp;&nbsp;
                                         </td>
                                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                                 <?php if(is_array($roleArr)): $i = 0; $__LIST__ = array_slice($roleArr,1,null,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$role): $mod = ($i % 2 );++$i;?><tr>
@@ -109,10 +109,10 @@
                                             ×<?php endif; ?>
                                         </td>
                                         <td class="align-center">
-                                            <a href="/dygzz/admin.php/Role/access/id/<?php echo ($role["id"]); ?>/mw/<?php echo ($role["mw"]); ?>">权限设置 </a>  |
-                                            <a href="/dygzz/admin.php/User/index/role_id/<?php echo ($role["id"]); ?>">成员管理 </a> |
-                                            <a href="/dygzz/admin.php/Role/edit/id/<?php echo ($role["id"]); ?>/mw/<?php echo ($role["mw"]); ?>"> 修改 </a> |
-                                            <a href="javascript:void(0);" onclick="return confirm('/dygzz/admin.php/Role/del/id/<?php echo ($role["id"]); ?>/mw/<?php echo ($role["mw"]); ?>','确定要删除吗?如果该角色下有子角色或者该角色下有用户则不可以被删除!');"> 删除 </a>
+                                            <a href="/wcdz/admin.php/Role/access/id/<?php echo ($role["id"]); ?>/mw/<?php echo ($role["mw"]); ?>">权限设置 </a>  |
+                                            <a href="/wcdz/admin.php/User/index/role_id/<?php echo ($role["id"]); ?>">成员管理 </a> |
+                                            <a href="/wcdz/admin.php/Role/edit/id/<?php echo ($role["id"]); ?>/mw/<?php echo ($role["mw"]); ?>"> 修改 </a> |
+                                            <a href="javascript:void(0);" onclick="return confirm('/wcdz/admin.php/Role/del/id/<?php echo ($role["id"]); ?>/mw/<?php echo ($role["mw"]); ?>','确定要删除吗?如果该角色下有子角色或者该角色下有用户则不可以被删除!');"> 删除 </a>
                                         </td>
                                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                             </tbody>
@@ -130,10 +130,10 @@
   
     <!-- jQuery文件 -->
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="/dygzz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="/wcdz/Public/e8admin/default/lib/jquery-confirm/jquery.confirm.js"></script>
     <!--  -->
-    <script src="/dygzz/Public/e8admin/default/js/e8.js"></script>
+    <script src="/wcdz/Public/e8admin/default/js/e8.js"></script>
     
   </body>
 </html>
