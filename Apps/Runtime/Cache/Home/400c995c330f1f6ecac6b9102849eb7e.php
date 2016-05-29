@@ -93,14 +93,16 @@ $(function(){
         <div id="shutter" class="shutter">
             <div class="slider">
                 <ul class="slider-main">
+
                     <?php if(is_array($pictureList)): foreach($pictureList as $key=>$picture): ?><li class="slider-panel">
                         <a href="/wcdz/index.php/Show/picture/id/<?php echo ($picture["id"]); ?>"><img src="<?php echo (C("UPLOAD_PATH")); echo ($picture["img"]); ?>"></a>
                     </li><?php endforeach; endif; ?>
+
                 </ul>
                 <div class="slider-extra">
                     <ul class="slider-nav">
                         <!--轮播图的个数-->
-                        <?php $__FOR_START_8293__=1;$__FOR_END_8293__=$imgCount+1;for($i=$__FOR_START_8293__;$i < $__FOR_END_8293__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
+                        <?php $__FOR_START_345__=1;$__FOR_END_345__=$imgCount+1;for($i=$__FOR_START_345__;$i < $__FOR_END_345__;$i+=1){ ?><li class="slider-item"><?php echo ($i); ?></li><?php } ?>
                     </ul>
 
                     <div class="slider-page">
@@ -122,7 +124,7 @@ $(function(){
                    <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;交流园地
 
             </p>
-                <p class="works"><a href=""><img class="works" src="/wcdz/Public/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
+                <p class="works"><a href="/wcdz/index.php/List/content/class/15"><img class="works" src="/wcdz/Public/e8home/default/images/work_01.jpg" height="80px" width="100%"></a></p>
                 <p class="contact"><a href="/wcdz/index.php/List/content/class/24"><img class="contact" src="/wcdz/Public/e8home/default/images/contact_01.jpg" height="80px" width="100%"></a></p>
                 <p class="message"><a href="<?php echo U('Show/leave_word');?>"><img class="message" src="/wcdz/Public/e8home/default/images/message_01.jpg" height="80px" width="100%"></a></p>
          </div>
@@ -141,28 +143,32 @@ $(function(){
     <div id="breakNews">
     <ul id="breakNewsList" class="list6">
         <!--首页公告-->
+
         <?php if(is_array($noticeList)): foreach($noticeList as $key=>$notice): ?><li><a href="/wcdz/index.php/Show/content/id/<?php echo ($notice["id"]); ?>"><?php echo ($notice["title"]); ?><span class="date"><?php echo (date("Y/m/d",$notice["addtime"])); ?></span></a></li><?php endforeach; endif; ?>
 
     </ul>
     </div>
 </div>
+
 <script language="javascript" type="text/javascript">
 var scroll2 = new ScrollText("breakNewsList","pre2","next2",true,70,true);
 scroll2.LineHeight = 24;
 </script>
+
             <div class="content_centerBottom">
                <span class="newspic">
                    <img class="logo_1" src="/wcdz/Public/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;公寓风采
-                    <span class="more"><a href="/wcdz/index.php/List/article/class/10s">more>></a></span>
+                    <span class="more"><a href="/wcdz/index.php/List/domitory/class/10">more>></a></span>
                </span>
                <ul>
-                   <?php if(is_array($domitoryList)): foreach($domitoryList as $key=>$domitory): ?><li><a href=""><img src=<?php echo (C("UPLOAD_PATH")); echo ($domitory["image"]); ?> width="100%" height="90" /></a></li><?php endforeach; endif; ?>
+                   <?php if(is_array($domitoryList)): foreach($domitoryList as $key=>$domitory): ?><li><a href="/wcdz/index.php/Show/domitory/id/<?php echo ($domitory["id"]); ?>"><img src=<?php echo (C("UPLOAD_PATH")); echo ($domitory["image"]); ?> width="100%" height="90" /></a></li><?php endforeach; endif; ?>
                </ul>
             </div>
         </div>
         </div>
         <!--content_right-->
         <div class="content_right">
+
             <div class="content_rightTop">
                 <video width="100%" height="100%" controls="controls" style="text-align:center">
                 <source src="<?php echo ($configList["value"]); ?>" type="video/mp4" />
@@ -172,21 +178,22 @@ scroll2.LineHeight = 24;
 
             <div id="tab">
 
-                <h3 class="up" id="two1" onmouseover="setContentTab('two',1,4)"><a  href="/wcdz/index.php/List/Zuixin">最新</a></h3>
+                <h3 class="up" id="two1" onmouseover="setContentTab('two',1,4)"><a  class="title_01" href="/wcdz/index.php/List/Zuixin">最新</a></h3>
+
                 <div class="block" id="con_two_1">
                     <ul>
                         <?php if(is_array($contentList)): foreach($contentList as $key=>$content): ?><li><a class="tab_menu" href="/wcdz/index.php/List/article/class/<?php echo ($content["classid"]); ?>">[<?php echo ($content["cname"]); ?>]</a><a class="tab_title" href="/wcdz/index.php/Show/content/id/<?php echo ($content["id"]); ?>"><?php echo ($content["title"]); ?></a><span><?php echo (date( "Y-m-d",$content["addtime"])); ?></span></li><?php endforeach; endif; ?>
                     </ul>
                 </div>
 
-                <h3 id="two2" onmouseover="setContentTab('two',2,4)"><a href="/wcdz/index.php/List/article/class/27">通知</a></h3>
+                <h3 id="two2" onmouseover="setContentTab('two',2,4)"><a class="title_01" href="/wcdz/index.php/List/article/class/27">通知</a></h3>
                 <div  id="con_two_2">
                     <ul>
                         <?php if(is_array($tzList)): foreach($tzList as $key=>$tz): ?><li><a class="tab_menu" href="/wcdz/index.php/List/article/class/27">[通知]</a><a class="tab_title" href="/wcdz/index.php/Show/content/id/<?php echo ($tz["id"]); ?>"><?php echo ($tz["title"]); ?></a><span><?php echo (date( "Y-m-d",$tz["addtime"])); ?></span></li><?php endforeach; endif; ?>
                     </ul>
                 </div>
 
-                <h3 id="two3" onmouseover="setContentTab('two',3,4)"><a href="/wcdz/index.php/List/article/class/28">新闻</a></h3>
+                <h3 id="two3" onmouseover="setContentTab('two',3,4)"><a class="title_01" href="/wcdz/index.php/List/article/class/28">新闻</a></h3>
                 <div id="con_two_3">
                     <ul>
                         <?php if(is_array($newList)): foreach($newList as $key=>$new): ?><li><a class="tab_menu" href="/wcdz/index.php/List/article/class/28">[新闻]</a><a class="tab_title" href="/wcdz/index.php/Show/content/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a><span><?php echo (date( "Y-m-d",$new["addtime"])); ?></span></li><?php endforeach; endif; ?>

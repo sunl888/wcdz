@@ -9,7 +9,7 @@ function ScrollText(content,btnPrevious,btnNext,autoStart,timeout,isSmoothScroll
     this.NextButton = this.$(btnNext);
     this.PreviousButton = this.$(btnPrevious);
     this.ScrollContent = this.$(content);
-    this.ScrollContent.innerHTML += this.ScrollContent.innerHTML;//为了平滑滚动再加一遍
+    /*this.ScrollContent.innerHTML += this.ScrollContent.innerHTML;//为了平滑滚动再加一遍*/
 
     if(this.PreviousButton)
 

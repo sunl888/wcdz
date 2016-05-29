@@ -76,11 +76,13 @@ $(function(){
         <div id="shutter" class="shutter">
             <div class="slider">
                 <ul class="slider-main">
+
                     <foreach name = "pictureList" item = "picture">
                     <li class="slider-panel">
                         <a href="__APP__/Show/picture/id/{$picture.id}"><img src="{$Think.config.UPLOAD_PATH}{$picture.img}"></a>
                     </li>
                     </foreach>
+
                 </ul>
                 <div class="slider-extra">
                     <ul class="slider-nav">
@@ -126,6 +128,7 @@ $(function(){
     <div id="breakNews">
     <ul id="breakNewsList" class="list6">
         <!--首页公告-->
+
         <foreach name = "noticeList" item = "notice">
              <li><a href="__APP__/Show/content/id/{$notice.id}">{$notice.title}<span class="date">{$notice.addtime|date="Y/m/d",###}</span></a></li>
         </foreach>
@@ -133,18 +136,20 @@ $(function(){
     </ul>
     </div>
 </div>
+
 <script language="javascript" type="text/javascript">
 var scroll2 = new ScrollText("breakNewsList","pre2","next2",true,70,true);
 scroll2.LineHeight = 24;
 </script>
+
             <div class="content_centerBottom">
                <span class="newspic">
                    <img class="logo_1" src="__PUBLIC__/e8home/default/images/logo_1_03.gif" width="24" height="20" />&nbsp;&nbsp;公寓风采
-                    <span class="more"><a href="__APP__/List/article/class/10s">more>></a></span>
+                    <span class="more"><a href="__APP__/List/domitory/class/10">more>></a></span>
                </span>
                <ul>
                    <foreach name = "domitoryList" item = "domitory">
-                       <li><a href=""><img src={$Think.config.UPLOAD_PATH}{$domitory.image} width="100%" height="90" /></a></li>
+                       <li><a href="__APP__/Show/domitory/id/{$domitory.id}"><img src={$Think.config.UPLOAD_PATH}{$domitory.image} width="100%" height="90" /></a></li>
                    </foreach>
                </ul>
             </div>
@@ -152,6 +157,7 @@ scroll2.LineHeight = 24;
         </div>
         <!--content_right-->
         <div class="content_right">
+
             <div class="content_rightTop">
                 <video width="100%" height="100%" controls="controls" style="text-align:center">
                 <source src="{$configList.value}" type="video/mp4" />
@@ -161,7 +167,8 @@ scroll2.LineHeight = 24;
 
             <div id="tab">
 
-                <h3 class="up" id="two1" onmouseover="setContentTab('two',1,4)"><a  href="__APP__/List/Zuixin">最新</a></h3>
+                <h3 class="up" id="two1" onmouseover="setContentTab('two',1,4)"><a  class="title_01" href="__APP__/List/Zuixin">最新</a></h3>
+
                 <div class="block" id="con_two_1">
                     <ul>
                         <foreach name = "contentList" item = "content">
@@ -170,7 +177,7 @@ scroll2.LineHeight = 24;
                     </ul>
                 </div>
 
-                <h3 id="two2" onmouseover="setContentTab('two',2,4)"><a href="__APP__/List/article/class/27">通知</a></h3>
+                <h3 id="two2" onmouseover="setContentTab('two',2,4)"><a class="title_01" href="__APP__/List/article/class/27">通知</a></h3>
                 <div  id="con_two_2">
                     <ul>
                         <foreach name = "tzList" item = "tz">
@@ -179,7 +186,7 @@ scroll2.LineHeight = 24;
                     </ul>
                 </div>
 
-                <h3 id="two3" onmouseover="setContentTab('two',3,4)"><a href="__APP__/List/article/class/28">新闻</a></h3>
+                <h3 id="two3" onmouseover="setContentTab('two',3,4)"><a class="title_01" href="__APP__/List/article/class/28">新闻</a></h3>
                 <div id="con_two_3">
                     <ul>
                         <foreach name = "newList" item = "new">
