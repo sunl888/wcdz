@@ -166,34 +166,37 @@ div.content_right div.artical p span:first-child img{
 	padding-right:7px;
 }
 
-/*tab_list*/
+/*翻页*/
 div.tab_list{
-    width: 45%;
-    height: 35px;
-    margin: 0 auto;
+	width: 45%;
+	height: 35px;
+	margin: 0 auto;
 	margin-top:20px;
 }
 div.tab_list ul{
 	height:35px;
-    width: 100%;
-	
+	width: 100%;
+	margin-top:-10px;
+
 }
-div.tab_list ul a,div.tab_list ul span{
-	display: block;
-	float: left;
-    width: 12%;
-    height: 30px;
-    border: 1px solid orange;
-    text-align: center;
-    line-height: 30px;
-    margin-left: 1%;
+div.tab_list ul li{
+	width: 12%;
+	height: 30px;
+	border: 1px solid orange;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 1%;
 }
-div.tab_list ul a:hover{
+div.tab_list ul li:hover{
 	background:#f2e59f;
-	}
-div.tab_list ul a{
+}
+div.tab_list ul li a{
 	color:#666;
-	}
-div.tab_list ul a:hover{
+}
+div.tab_list ul li:hover a{
 	color:#c00;
-	}
+}
+
+.box{
+	margin-top: 25px;
+}

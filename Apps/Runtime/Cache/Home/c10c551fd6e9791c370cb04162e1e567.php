@@ -65,6 +65,7 @@
                <div class="tab_list">
                    <?php echo ($page); ?>
                </div>
+
            </div>
        </div>
 <div class="footer">
